@@ -1,0 +1,2918 @@
+{
+ "packs": [
+  {
+   "art": "school",
+   "theme": "第一次返學",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}第一天上學",
+    "canto": "{N}第一日返學",
+    "en": "{N} Goes to School"
+   },
+   "cover": "school-cover.webp",
+   "coverScene": "封面：學校門口，{N}著校服、孭紅色小書包，同媽媽揮手講拜拜",
+   "pages": [
+    {
+     "img": "school-home.webp",
+     "w": "今日係{N}第一天上學，{N}同媽媽一齊收拾書包。",
+     "c": "今日係{N}第一日返學，{N}同媽媽一齊執書包。",
+     "e": "First day of school! {N} packs the bag with Mummy."
+    },
+    {
+     "img": "school-cover.webp",
+     "w": "到咗學校門口，{N}同媽媽揮手講拜拜。",
+     "c": "到咗學校門口，{N}同媽媽揮手講拜拜。",
+     "e": "At the school gate, {N} waves bye-bye to Mummy."
+    },
+    {
+     "img": "school-class.webp",
+     "w": "玩積木、看圖書，{N}認識了新朋友。",
+     "c": "玩積木、睇圖書，{N}識咗新朋友。",
+     "e": "Blocks and books! A new friend!"
+    },
+    {
+     "img": "school-pickup.webp",
+     "w": "放學了！{N}跑去抱住媽媽。",
+     "c": "放學啦！{N}跑去攬住媽媽。",
+     "e": "School is over! A big hug for Mummy!"
+    }
+   ]
+  },
+  {
+   "art": "school-boy",
+   "theme": "第一次返學",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}第一天上學",
+    "canto": "{N}第一日返學",
+    "en": "{N} Goes to School"
+   },
+   "cover": "school-boy-cover.webp",
+   "coverScene": "封面：學校門口櫻花樹下，{N}著白裇衫深藍短褲、孭紅色書包，舉手揮手準備返學",
+   "pages": [
+    {
+     "img": "school-boy-p1.webp",
+     "w": "今天是{N}第一天上學，{N}自己收拾書包。",
+     "c": "今日係{N}第一日返學，{N}自己執書包。",
+     "e": "First day of school! {N} packs the school bag."
+    },
+    {
+     "img": "school-boy-p2.webp",
+     "w": "玩積木、識新朋友，{N}好開心。",
+     "c": "玩積木、識新朋友，{N}好开心。",
+     "e": "Playing blocks! Making new friends!"
+    },
+    {
+     "img": "school-boy-p3.webp",
+     "w": "放學了！{N}跑去抱住媽媽。",
+     "c": "放學啦！{N}跑去攬住媽媽。",
+     "e": "School is over! A big hug for Mummy!"
+    }
+   ]
+  },
+  {
+   "art": "brush",
+   "theme": "自己刷牙",
+   "age": "2–3 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己刷牙",
+    "canto": "{N}自己刷牙仔",
+    "en": "{N} Brushes Teeth"
+   },
+   "cover": "trial-cover.webp",
+   "coverScene": "封面：浴室入面，{N}企喺小凳上面舉起牙刷，媽媽拍手鼓勵",
+   "pages": [
+    {
+     "img": "trial-p1.webp",
+     "w": "這個是{N}，準備拿牙刷。",
+     "c": "呢個係{N}，伸手去拿牙刷。",
+     "e": "This is {N}. Reaching for the toothbrush!"
+    },
+    {
+     "img": "trial-p2.webp",
+     "w": "刷刷刷，嘴巴裏滿是泡泡。",
+     "c": "刷刷刷，成口都係泡泡。",
+     "e": "Brush, brush — foam all around!"
+    },
+    {
+     "img": "trial-cover.webp",
+     "w": "刷好啦！{N}舉起牙刷，媽媽拍手讚叻。",
+     "c": "刷好啦！{N}舉起牙刷，媽媽拍手讚叻。",
+     "e": "All brushed! {N} holds the toothbrush up high — Mummy claps!"
+    },
+    {
+     "img": "trial-p3.webp",
+     "w": "刷完牙，白白的，好開心！",
+     "c": "刷完牙，白雪雪，好開心！",
+     "e": "All done! Clean, white, happy!"
+    }
+   ]
+  },
+  {
+   "art": "brush-boy",
+   "theme": "自己刷牙",
+   "age": "2–3 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己刷牙",
+    "canto": "{N}自己刷牙仔",
+    "en": "{N} Brushes Teeth"
+   },
+   "cover": "brush-boy-cover.webp",
+   "coverScene": "封面：浴室入面，{N}著藍色雲朵睡衣，企喺小凳上面舉起牙刷",
+   "pages": [
+    {
+     "img": "brush-boy-p1.webp",
+     "w": "對著鏡子刷刷刷，泡泡滿嘴巴。",
+     "c": "對住鏡刷刷刷，成口都係泡泡。",
+     "e": "Brush, brush at the mirror — bubbles everywhere!"
+    },
+    {
+     "img": "brush-boy-p2.webp",
+     "w": "漱漱口，把泡泡吐出來。",
+     "c": "漱下口，吐返啲泡泡出嚟。",
+     "e": "Rinse, rinse — spit the bubbles out!"
+    },
+    {
+     "img": "brush-boy-p3.webp",
+     "w": "刷完牙，白白的，好開心！",
+     "c": "刷完牙，白雪雪，好開心！",
+     "e": "All done! Clean, white, happy!"
+    }
+   ]
+  },
+  {
+   "art": "brushbaby-girl",
+   "theme": "自己刷牙",
+   "age": "0–2 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己刷牙",
+    "canto": "{N}自己刷牙仔",
+    "en": "{N} Brushes Teeth"
+   },
+   "cover": "brushbaby-girl-cover.webp",
+   "coverScene": "封面：浴室入面，媽媽扶住{N}企喺小凳上，{N}著粉紅色連身衣拎住牙刷",
+   "pages": [
+    {
+     "img": "brushbaby-girl-p1.webp",
+     "w": "媽媽扶住，{N}自己刷。",
+     "c": "媽媽扶住，{N}自己刷下。",
+     "e": "Mummy holds on. {N} brushes by self."
+    },
+    {
+     "img": "brushbaby-girl-p2.webp",
+     "w": "上面刷，下面也刷。",
+     "c": "上面刷下，下面又刷下。",
+     "e": "Up and down, round and round."
+    },
+    {
+     "img": "brushbaby-girl-p3.webp",
+     "w": "刷完牙，白白的，好開心！",
+     "c": "刷完牙，白雪雪，好開心！",
+     "e": "All done! Clean, white, happy!"
+    }
+   ]
+  },
+  {
+   "art": "brushbaby-boy",
+   "theme": "自己刷牙",
+   "age": "0–2 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己刷牙",
+    "canto": "{N}自己刷牙仔",
+    "en": "{N} Brushes Teeth"
+   },
+   "cover": "brushbaby-boy-cover.webp",
+   "coverScene": "浴室入面，媽媽用雙手扶住{N}腰，{N}著藍色雲朵連身衣赤腳站喺地墊上，拎住藍色牙刷，身旁有木製小凳",
+   "pages": [
+    {
+     "img": "brushbaby-boy-p1.webp",
+     "w": "媽媽扶住，輕輕刷。",
+     "c": "媽媽扶住，輕輕刷下。",
+     "e": "Mummy holds on. Brush, brush, gently."
+    },
+    {
+     "img": "brushbaby-boy-p2.webp",
+     "w": "上面刷下，泡泡出嚟。",
+     "c": "上面刷下，泡泡出嚟。",
+     "e": "Brush up, bubbles come!"
+    },
+    {
+     "img": "brushbaby-boy-p3.webp",
+     "w": "刷完牙，白白的，好開心！",
+     "c": "刷完牙，白雪雪，好開心！",
+     "e": "All done! Clean, white, happy!"
+    }
+   ]
+  },
+  {
+   "art": "dark-girl",
+   "theme": "怕黑",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}不怕黑",
+    "canto": "{N}唔怕黑",
+    "en": "{N} Is Not Afraid of the Dark"
+   },
+   "cover": "dark-girl-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著黃色睡衣坐喺床上望住窗外月亮，攬住兔仔公仔，床邊有星星小夜燈",
+   "pages": [
+    {
+     "img": "dark-girl-p1.webp",
+     "w": "{N}有少少怕，抱住心愛公仔。",
+     "c": "{N}有少少驚，攬住心愛公仔。",
+     "e": "{N} feels a little scared. Hug the toy tight."
+    },
+    {
+     "img": "dark-girl-p2.webp",
+     "w": "原來牆上個大影子，係小熊公仔嚟，不用怕。",
+     "c": "原來牆上面個大影子，係小熊公仔嚟，唔使驚。",
+     "e": "The big shadow is just Teddy. No need to be scared."
+    },
+    {
+     "img": "dark-girl-p3.webp",
+     "w": "晚安，{N}睡得好甜。",
+     "c": "晚安，{N}瞓得好甜。",
+     "e": "Good night. Sweet dreams, {N}."
+    }
+   ]
+  },
+  {
+   "art": "dark-boy",
+   "theme": "怕黑",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}不怕黑",
+    "canto": "{N}唔怕黑",
+    "en": "{N} Is Not Afraid of the Dark"
+   },
+   "cover": "dark-boy-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著藍色睡衣坐喺床上望住窗外月亮，床邊有星星小夜燈",
+   "pages": [
+    {
+     "img": "dark-boy-p1.webp",
+     "w": "{N}有少少怕，抱住心愛公仔。",
+     "c": "{N}有少少驚，攬住心愛公仔。",
+     "e": "{N} feels a little scared. Hug the toy tight."
+    },
+    {
+     "img": "dark-boy-p2.webp",
+     "w": "原來小熊坐喺椅子上，影子投喺牆上面，不用怕。",
+     "c": "原來小熊坐喺椅子上，影子投喺牆上面，唔使驚。",
+     "e": "Teddy sits on the chair. The shadow is on the wall. No need to be scared."
+    },
+    {
+     "img": "dark-boy-p3.webp",
+     "w": "晚安，{N}睡得好甜。",
+     "c": "晚安，{N}瞓得好甜。",
+     "e": "Good night. Sweet dreams, {N}."
+    }
+   ]
+  },
+  {
+   "art": "eat-girl",
+   "theme": "自己食飯",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己食飯",
+    "canto": "{N}自己食飯仔",
+    "en": "{N} Eats Alone"
+   },
+   "cover": "eat-girl-cover.webp",
+   "coverScene": "封面：飯廳入面，{N}著粉紅色圍裙坐喺飯枱前，舉起匙羹準備自己食飯",
+   "pages": [
+    {
+     "img": "eat-girl-p1.webp",
+     "w": "拿起匙羹，舀一口飯。",
+     "c": "拎起匙羹，𢳂一啖飯。",
+     "e": "Pick up the spoon. One scoop!"
+    },
+    {
+     "img": "eat-girl-p2.webp",
+     "w": "自己再試，慢慢舀。",
+     "c": "自己再試，慢慢𢳂。",
+     "e": "Try again, slowly, slowly."
+    },
+    {
+     "img": "eat-girl-p3.webp",
+     "w": "全碗吃完了！{N}把空碗舉起來給媽媽看。",
+     "c": "成碗食晒啦！{N}拎起空碗俾媽媽睇。",
+     "e": "All finished! {N} holds up the empty bowl for Mummy."
+    }
+   ]
+  },
+  {
+   "art": "eat-boy",
+   "theme": "自己食飯",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己食飯",
+    "canto": "{N}自己食飯仔",
+    "en": "{N} Eats Alone"
+   },
+   "cover": "eat-boy-cover.webp",
+   "coverScene": "封面：飯廳入面，{N}著綠色圍裙坐喺飯枱前，舉起匙羹準備自己食飯",
+   "pages": [
+    {
+     "img": "eat-boy-p1.webp",
+     "w": "拿起匙羹，舀一口飯。",
+     "c": "拎起匙羹，𢳂一啖飯。",
+     "e": "Pick up the spoon. One scoop!"
+    },
+    {
+     "img": "eat-boy-p2.webp",
+     "w": "哎呀，飯粒跌到枱上，沒有關係。",
+     "c": "哎呀，飯粒跌咗落枱，唔緊要㗎。",
+     "e": "Oops! Rice on the table. That is okay."
+    },
+    {
+     "img": "eat-boy-p3.webp",
+     "w": "全碗吃完了！{N}把空碗舉起來給媽媽看。",
+     "c": "成碗食晒啦！{N}拎起空碗俾媽媽睇。",
+     "e": "All finished! {N} holds up the empty bowl for Mummy."
+    }
+   ]
+  },
+  {
+   "art": "eatbaby-girl",
+   "theme": "自己食飯",
+   "age": "0–2 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己食飯",
+    "canto": "{N}自己食飯仔",
+    "en": "{N} Eats Alone"
+   },
+   "cover": "eatbaby-girl-cover.webp",
+   "coverScene": "封面：飯廳入面，{N}著粉紅色裙仔坐喺BB高椅，舉起匙羹笑住準備自己食飯",
+   "pages": [
+    {
+     "img": "eatbaby-girl-p1.webp",
+     "w": "拎起香蕉片，放進嘴巴。",
+     "c": "拎起香蕉片，放入口。",
+     "e": "Pick up a banana slice. Into the mouth!"
+    },
+    {
+     "img": "eatbaby-girl-p2.webp",
+     "w": "自己食，好好味！",
+     "c": "自己食，好好味！",
+     "e": "Eating all by myself. Yummy!"
+    },
+    {
+     "img": "eatbaby-girl-p3.webp",
+     "w": "举起小汤匙，准备自己食饭。",
+     "c": "舉起細隻匙羹，準備自己食飯。",
+     "e": "Lift the little spoon. Ready to eat!"
+    }
+   ]
+  },
+  {
+   "art": "eatbaby-boy",
+   "theme": "自己食飯",
+   "age": "0–2 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己食飯",
+    "canto": "{N}自己食飯仔",
+    "en": "{N} Eats Alone"
+   },
+   "cover": "eatbaby-boy-cover.webp",
+   "coverScene": "封面：飯廳入面，{N}著綠色圍兜坐喺BB高椅，舉起匙羹笑住準備自己食飯",
+   "pages": [
+    {
+     "img": "eatbaby-boy-p1.webp",
+     "w": "拿起小食物，放進嘴巴。",
+     "c": "拎起細細粒食物，放入口。",
+     "e": "Pick up a little bite. Into the mouth!"
+    },
+    {
+     "img": "eatbaby-boy-p2.webp",
+     "w": "自己食，好好味！",
+     "c": "自己食，好好味！",
+     "e": "Eating all by myself. Yummy!"
+    },
+    {
+     "img": "eatbaby-boy-p3.webp",
+     "w": "食完了！媽媽拍拍手。",
+     "c": "食完啦！媽媽拍下手。",
+     "e": "All done! Mummy claps!"
+    }
+   ]
+  },
+  {
+   "art": "potty-girl",
+   "theme": "戒尿片",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己去廁所",
+    "canto": "{N}自己去廁所",
+    "en": "{N} Uses the Potty"
+   },
+   "cover": "potty-girl-cover.webp",
+   "coverScene": "封面：廁所入面，{N}著粉紅色衫企喺小馬桶旁邊，雙手叉腰好神氣",
+   "pages": [
+    {
+     "img": "potty-girl-p1.webp",
+     "w": "{N}坐在小馬桶上看圖書，等一等。",
+     "c": "{N}坐喺小馬桶上面睇圖書，等一陣。",
+     "e": "{N} sits on the potty with a book, and waits."
+    },
+    {
+     "img": "potty-girl-p2.webp",
+     "w": "成功了！{N}自己按小馬桶，好厲害！",
+     "c": "得咗！{N}自己按小馬桶，好叻呀！",
+     "e": "Success! {N} pressed the potty all alone!"
+    },
+    {
+     "img": "potty-girl-p3.webp",
+     "w": "拿住新內褲啦！{N}和媽媽開心擊掌。",
+     "c": "举起新内裤啦！{N}同妈妈开心击掌。",
+     "e": "New underpants in hand! High five with Mummy!"
+    }
+   ]
+  },
+  {
+   "art": "potty-boy",
+   "theme": "戒尿片",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己去廁所",
+    "canto": "{N}自己去廁所",
+    "en": "{N} Uses the Potty"
+   },
+   "cover": "potty-boy-cover.webp",
+   "coverScene": "封面：廁所入面，{N}著藍色衫企喺馬桶旁邊，雙手叉腰好神氣",
+   "pages": [
+    {
+     "img": "potty-boy-p1.webp",
+     "w": "{N}坐在小馬桶上看圖書，等一等。",
+     "c": "{N}坐喺小馬桶上面睇圖書，等一陣。",
+     "e": "{N} sits on the potty with a book, and waits."
+    },
+    {
+     "img": "potty-boy-p2.webp",
+     "w": "成功了！{N}自己沖廁，好厲害！",
+     "c": "得咗！{N}自己沖廁，好叻呀！",
+     "e": "Flush! {N} did it — all alone!"
+    },
+    {
+     "img": "potty-boy-p3.webp",
+     "w": "展示新內褲！{N}和媽媽開心擊掌。",
+     "c": "展示新內褲啦！{N}同媽媽開心擊掌。",
+     "e": "Show off new underpants! High five with Mummy!"
+    }
+   ]
+  },
+  {
+   "art": "paci-girl",
+   "theme": "戒奶嘴",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}和奶嘴說再見",
+    "canto": "{N}同奶嘴講拜拜",
+    "en": "{N} Says Bye to the Pacifier"
+   },
+   "cover": "paci-girl-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著紫色睡裙坐喺床上攬住兔仔公仔，準備同奶嘴講拜拜",
+   "pages": [
+    {
+     "img": "paci-girl-p1.webp",
+     "w": "{N}長大了，把奶嘴放進紀念盒，說聲拜拜。",
+     "c": "{N}大個啦，將奶嘴放落紀念盒，講聲拜拜。",
+     "e": "{N} is bigger now. The pacifier goes in the keepsake box. Bye-bye!"
+    },
+    {
+     "img": "paci-girl-p2.webp",
+     "w": "沒有奶嘴，{N}也睡得很甜。",
+     "c": "冇奶嘴，{N}都瞓得好甜。",
+     "e": "No pacifier — and {N} sleeps sweetly."
+    },
+    {
+     "img": "paci-girl-p3.webp",
+     "w": "早上醒來，{N}好自豪！",
+     "c": "朝早醒嚟，{N}好自豪！",
+     "e": "Morning! {N} feels so proud!"
+    }
+   ]
+  },
+  {
+   "art": "paci-boy",
+   "theme": "戒奶嘴",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}和奶嘴說再見",
+    "canto": "{N}同奶嘴講拜拜",
+    "en": "{N} Says Bye to the Pacifier"
+   },
+   "cover": "paci-boy-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著灰藍色睡衣坐喺床上攬住兔仔公仔，準備同奶嘴講拜拜",
+   "pages": [
+    {
+     "img": "paci-boy-p1.webp",
+     "w": "{N}長大了，把奶嘴放進紀念盒，說聲拜拜。",
+     "c": "{N}大個啦，將奶嘴放落紀念盒，講聲拜拜。",
+     "e": "{N} is bigger now. The pacifier goes in the keepsake box. Bye-bye!"
+    },
+    {
+     "img": "paci-boy-p2.webp",
+     "w": "沒有奶嘴，{N}也睡得很甜。",
+     "c": "冇奶嘴，{N}都瞓得好甜。",
+     "e": "No pacifier — and {N} sleeps sweetly."
+    },
+    {
+     "img": "paci-boy-p3.webp",
+     "w": "早上醒來，{N}好自豪！",
+     "c": "朝早醒嚟，{N}好自豪！",
+     "e": "Morning! {N} feels so proud!"
+    }
+   ]
+  },
+  {
+   "art": "pacibaby-girl",
+   "theme": "戒奶嘴",
+   "age": "0–2 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}和奶嘴說再見",
+    "canto": "{N}同奶嘴講拜拜",
+    "en": "{N} Says Bye to the Pacifier"
+   },
+   "cover": "pacibaby-girl-cover.webp",
+   "coverScene": "封面：{N}著紫色睡衣坐喺墊上，含住奶嘴攬住兔仔公仔",
+   "pages": [
+    {
+     "img": "pacibaby-girl-p1.webp",
+     "w": "{N}的奶嘴有新家：小盒子。",
+     "c": "{N}嘅奶嘴有新屋企：小盒仔。",
+     "e": "A new home for the pacifier — a little box!"
+    },
+    {
+     "img": "pacibaby-girl-p2.webp",
+     "w": "沒有奶嘴，也瞓得好甜。",
+     "c": "冇奶嘴，都瞓得好甜。",
+     "e": "No pacifier — still sleeping sweetly."
+    },
+    {
+     "img": "pacibaby-girl-p3.webp",
+     "w": "早上醒來，{N}好自豪！",
+     "c": "朝早醒嚟，{N}好自豪！",
+     "e": "Morning! {N} feels so proud!"
+    }
+   ]
+  },
+  {
+   "art": "pacibaby-boy",
+   "theme": "戒奶嘴",
+   "age": "0–2 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}和奶嘴說再見",
+    "canto": "{N}同奶嘴講拜拜",
+    "en": "{N} Says Bye to the Pacifier"
+   },
+   "cover": "pacibaby-boy-cover.webp",
+   "coverScene": "封面：{N}著藍色星星睡衣坐喺墊上，含住奶嘴攬住熊公仔",
+   "pages": [
+    {
+     "img": "pacibaby-boy-p1.webp",
+     "w": "{N}的奶嘴有新家：小盒子。",
+     "c": "{N}嘅奶嘴有新屋企：小盒仔。",
+     "e": "A new home for the pacifier — a little box!"
+    },
+    {
+     "img": "pacibaby-boy-p2.webp",
+     "w": "沒有奶嘴，也瞓得好甜。",
+     "c": "冇奶嘴，都瞓得好甜。",
+     "e": "No pacifier — still sleeping sweetly."
+    },
+    {
+     "img": "pacibaby-boy-p3.webp",
+     "w": "早上醒來，{N}好自豪！",
+     "c": "朝早醒嚟，{N}好自豪！",
+     "e": "Morning! {N} feels so proud!"
+    }
+   ]
+  },
+  {
+   "art": "sleep-girl",
+   "theme": "自己瞓",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己睡覺",
+    "canto": "{N}自己瞓覺覺",
+    "en": "{N} Sleeps Alone"
+   },
+   "cover": "sleep-girl-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著粉紅色睡衣坐喺自己床上，攬住兔仔公仔",
+   "pages": [
+    {
+     "img": "sleep-girl-p2.webp",
+     "w": "{N}抱住兔仔，望住床上方嘅星星月亮吊飾。",
+     "c": "{N}攬住兔仔，望住枕頭上面嗰啲星星月亮吊飾。",
+     "e": "{N} holds the bunny and looks at the star-and-moon mobile above."
+    },
+    {
+     "img": "sleep-girl-p1.webp",
+     "w": "媽媽坐喺床邊，輕輕拍住{N}背，陪住{N}入睡。",
+     "c": "媽媽坐喺床邊，輕輕拍打{N}個背，陪住{N}瞓覺。",
+     "e": "Mummy sits by the bed, pats {N}'s back, and stays close by."
+    },
+    {
+     "img": "sleep-girl-p3.webp",
+     "w": "早上醒來，{N}自己睡了一整晚！",
+     "c": "朝早醒嚟，{N}自己瞓咗成晚！",
+     "e": "Morning! {N} slept alone all night!"
+    }
+   ]
+  },
+  {
+   "art": "sleep-boy",
+   "theme": "自己瞓",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己睡覺",
+    "canto": "{N}自己瞓覺覺",
+    "en": "{N} Sleeps Alone"
+   },
+   "cover": "sleep-boy-cover.webp",
+   "coverScene": "封面：夜晚睡房，{N}著藍色雲朵睡衣坐喺自己床上，攬住綠色恐龍公仔",
+   "pages": [
+    {
+     "img": "sleep-boy-p1.webp",
+     "w": "今晚，{N}試下自己睡。",
+     "c": "今晚，{N}試下自己瞓。",
+     "e": "Tonight, {N} tries sleeping alone."
+    },
+    {
+     "img": "sleep-boy-p2.webp",
+     "w": "抱著綠色恐龍，慢慢瞓著。",
+     "c": "抱緊綠色恐龍，慢慢瞓著。",
+     "e": "Holding the green dino, falling asleep."
+    },
+    {
+     "img": "sleep-boy-p3.webp",
+     "w": "早上醒來，{N}自己睡了一整晚！",
+     "c": "朝早醒嚟，{N}自己瞓咗成晚！",
+     "e": "Morning! {N} slept alone all night!"
+    }
+   ]
+  },
+  {
+   "art": "sleepbaby-girl",
+   "theme": "自己瞓",
+   "age": "0–2 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己睡覺",
+    "canto": "{N}自己瞓覺覺",
+    "en": "{N} Sleeps Alone"
+   },
+   "cover": "sleepbaby-girl-cover.webp",
+   "coverScene": "封面：夜晚BB房，{N}著粉紅色睡衣瞓喺BB床，攬住兔仔公仔，床邊有星星夜燈",
+   "pages": [
+    {
+     "img": "sleepbaby-girl-p1.webp",
+     "w": "媽媽在床邊，陪住{N}。",
+     "c": "媽媽喺床邊，陪住{N}。",
+     "e": "Mummy stays right beside the crib."
+    },
+    {
+     "img": "sleepbaby-girl-p2.webp",
+     "w": "{N}瞓著了，攬住兔仔公仔。",
+     "c": "{N}瞓著啦，攬住兔仔公仔。",
+     "e": "{N} is asleep, hugging the bunny."
+    },
+    {
+     "img": "sleepbaby-girl-p3.webp",
+     "w": "早上醒來，{N}笑咪咪！",
+     "c": "朝早醒嚟，{N}笑咪咪！",
+     "e": "Morning! {N} wakes up smiling!"
+    }
+   ]
+  },
+  {
+   "art": "sleepbaby-boy",
+   "theme": "自己瞓",
+   "age": "0–2 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己睡覺",
+    "canto": "{N}自己瞓覺覺",
+    "en": "{N} Sleeps Alone"
+   },
+   "cover": "sleepbaby-boy-cover.webp",
+   "coverScene": "封面：夜晚BB房，{N}著藍色雲朵睡衣瞓喺BB床，攬住綠色恐龍公仔，床邊有星星夜燈",
+   "pages": [
+    {
+     "img": "sleepbaby-boy-p1.webp",
+     "w": "媽媽在床邊，陪住{N}。",
+     "c": "媽媽喺床邊，陪住{N}。",
+     "e": "Mummy stays right beside the crib."
+    },
+    {
+     "img": "sleepbaby-boy-p2.webp",
+     "w": "{N}抱住公仔，安心瞓覺。",
+     "c": "{N}攬住公仔，安心瞓覺覺。",
+     "e": "Hug the toy tight. Sleep tight."
+    },
+    {
+     "img": "sleepbaby-boy-p3.webp",
+     "w": "早上醒來，{N}笑咪咪！",
+     "c": "朝早醒嚟，{N}笑咪咪！",
+     "e": "Morning! {N} wakes up smiling!"
+    }
+   ]
+  },
+  {
+   "art": "sibling-girl",
+   "theme": "弟妹出世",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}當大孩子了",
+    "canto": "{N}做大孩子啦",
+    "en": "{N} the Big Kid"
+   },
+   "cover": "sibling-girl-cover.webp",
+   "coverScene": "封面：客廳入面，爸爸媽媽坐喺梳化，{N}著橙黃色裙輕輕摸住媽媽大肚子",
+   "pages": [
+    {
+     "img": "sibling-girl-p1.webp",
+     "w": "寶寶出世了！{N}是家裏的大孩子了。",
+     "c": "寶寶出世啦！{N}係屋企嘅大孩子啦。",
+     "e": "The baby is here! Now {N} is the big kid in the family."
+    },
+    {
+     "img": "sibling-girl-p2.webp",
+     "w": "媽媽抱住寶寶，{N}輕輕摸一下寶寶的小手。",
+     "c": "媽媽抱住寶寶，{N}輕輕摸下寶寶隻手仔。",
+     "e": "Mummy holds the baby. {N} gently touches the tiny hand."
+    },
+    {
+     "img": "sibling-girl-p3.webp",
+     "w": "一家人一起，越來越熱鬧。",
+     "c": "一家人一齊，越嚟越熱鬧。",
+     "e": "One family together, full of love."
+    }
+   ]
+  },
+  {
+   "art": "sibling-boy",
+   "theme": "弟妹出世",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}當大孩子了",
+    "canto": "{N}做大孩子啦",
+    "en": "{N} the Big Kid"
+   },
+   "cover": "sibling-boy-cover.webp",
+   "coverScene": "封面：客廳入面，爸爸媽媽坐喺梳化，{N}著綠色衫輕輕摸住媽媽大肚子",
+   "pages": [
+    {
+     "img": "sibling-boy-p1.webp",
+     "w": "寶寶出世了！{N}是家裏的大孩子了。",
+     "c": "寶寶出世啦！{N}係屋企嘅大孩子啦。",
+     "e": "The baby is here! Now {N} is the big kid in the family."
+    },
+    {
+     "img": "sibling-boy-p2.webp",
+     "w": "媽媽抱住寶寶，{N}輕輕摸一下寶寶的小手。",
+     "c": "媽媽抱住寶寶，{N}輕輕摸下寶寶隻手仔。",
+     "e": "Mummy holds the baby. {N} gently touches the tiny hand."
+    },
+    {
+     "img": "sibling-boy-p3.webp",
+     "w": "一家人一起，越來越熱鬧。",
+     "c": "一家人一齊，越嚟越熱鬧。",
+     "e": "One family together, full of love."
+    }
+   ]
+  },
+  {
+   "art": "doctor-girl",
+   "theme": "去醫院打針",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}打針好勇敢",
+    "canto": "{N}打針唔使驚",
+    "en": "{N} Is Brave at the Doctor"
+   },
+   "cover": "doctor-girl-cover.webp",
+   "coverScene": "封面：木造診所門前，{N}著粉紅色衫，媽媽牽住佢手，{N}有少少擔心。",
+   "pages": [
+    {
+     "img": "doctor-girl-p1.webp",
+     "w": "醫生用聽診器聽一聽，{N}坐定定，好合作。",
+     "c": "醫生用聽診器聽下，{N}坐定定，好合作。",
+     "e": "The doctor listens with a stethoscope. {N} sits very still."
+    },
+    {
+     "img": "doctor-girl-p2.webp",
+     "w": "媽媽說：喊出來沒關係，你好勇敢。",
+     "c": "媽媽話：喊出嚟唔緊要，你好勇敢。",
+     "e": "It is okay to cry. You are so brave."
+    },
+    {
+     "img": "doctor-girl-p3.webp",
+     "w": "打完針，身體有保鏢保護了！",
+     "c": "打完針，身體就有保鑣保護啦！",
+     "e": "All done! Now the body has guards!"
+    }
+   ]
+  },
+  {
+   "art": "doctor-boy",
+   "theme": "去醫院打針",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}打針好勇敢",
+    "canto": "{N}打針唔使驚",
+    "en": "{N} Is Brave at the Doctor"
+   },
+   "cover": "doctor-boy-cover.webp",
+   "coverScene": "封面：健康院门口，{N}著蓝色衫站定定，妈妈牵住佢只手，医生喺度准备检查",
+   "pages": [
+    {
+     "img": "doctor-boy-p1.webp",
+     "w": "醫生用聽診器聽一聽，{N}坐定定，好合作。",
+     "c": "醫生用聽診器聽下，{N}坐定定，好合作。",
+     "e": "The doctor listens with a stethoscope. {N} sits very still."
+    },
+    {
+     "img": "doctor-boy-p2.webp",
+     "w": "妈妈抱着{N}，医生拿着针筒准备打针，{N}抱紧小熊。",
+     "c": "媽媽抱著{N}，医生拿住针筒准备打，{N}抱緊小熊。",
+     "e": "Mom holds {N}, the doctor gets the syringe ready. {N} hugs the bear."
+    },
+    {
+     "img": "doctor-boy-p3.webp",
+     "w": "打完針，身體有保鏢保護了！",
+     "c": "打完針，身體就有保鑣保護啦！",
+     "e": "All done! Now the body has guards!"
+    }
+   ]
+  },
+  {
+   "art": "haircut-girl",
+   "theme": "第一次剪頭髮",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}第一次剪頭髮",
+    "canto": "{N}第一次剪頭髮",
+    "en": "{N}'s First Haircut"
+   },
+   "cover": "haircut-girl-cover.webp",
+   "coverScene": "封面：髮型屋入面，{N}著藍色裙坐喺木椅，肩披灰色圍布，望住圓鏡入面嘅自己，表情有點紧张。",
+   "pages": [
+    {
+     "img": "haircut-girl-p1.webp",
+     "w": "坐在椅子上，圍上圍布，頭髮被噴濕梳順。",
+     "c": "坐低喺椅上，围住圍布，頭髮被噴水梳順。",
+     "e": "Sit on the chair, cape on! Wet and comb smooth."
+    },
+    {
+     "img": "haircut-girl-p2.webp",
+     "w": "剪刀咔嚓咔嚓，頭髮一條條跌下來。",
+     "c": "鉸剪咔嚓咔嚓，頭髮一條條跌落嚟。",
+     "e": "Snip snip! Little hairs fall down."
+    },
+    {
+     "img": "haircut-girl-p3.webp",
+     "w": "剪完啦！{N}脫咗圍布，笑住睇镜。",
+     "c": "剪完啦！{N}脫咗圍布，笑住望住個鏡。",
+     "e": "All done! Off with the cape, {N} smiles at the mirror."
+    }
+   ]
+  },
+  {
+   "art": "haircut-boy",
+   "theme": "第一次剪頭髮",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}第一次剪頭髮",
+    "canto": "{N}第一次剪頭髮",
+    "en": "{N}'s First Haircut"
+   },
+   "cover": "haircut-boy-cover.webp",
+   "coverScene": "封面：髮型屋入面，{N}坐喺高凳圍住圍布，望住大鏡入面嘅自己",
+   "pages": [
+    {
+     "img": "haircut-boy-p1.webp",
+     "w": "坐在椅子上，圍上圍布，理髮師幫{N}濕頭髮。",
+     "c": "坐喺高凳上面，圍住圍布，阿姐幫{N}濕頭髮。",
+     "e": "Up on the chair, cape on! Wetting hair now."
+    },
+    {
+     "img": "haircut-boy-p2.webp",
+     "w": "剪刀咔嚓咔嚓，頭髮一條條跌下來。",
+     "c": "鉸剪咔嚓咔嚓，頭髮一條條跌落嚟。",
+     "e": "Snip snip! Little hairs fall down."
+    },
+    {
+     "img": "haircut-boy-p3.webp",
+     "w": "剪完了！{N}精神又可愛。",
+     "c": "剪完啦！{N}精神又可愛。",
+     "e": "All done! Fresh and cute!"
+    }
+   ]
+  },
+  {
+   "art": "dress-girl",
+   "theme": "自己著衫",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}自己穿衣服",
+    "canto": "{N}自己著衫",
+    "en": "{N} Gets Dressed"
+   },
+   "cover": "dress-girl-cover.webp",
+   "coverScene": "封面：睡房入面，{N}穿住藍白雲朵睡衣，手舉住一件黃T-Shirt，望住床上攤住嘅藍短褲、米色針織衫同襪子。",
+   "pages": [
+    {
+     "img": "dress-girl-p1.webp",
+     "w": "先穿上衣，頭仔鑽出來了！",
+     "c": "著上衫先，頭仔捐出嚟啦！",
+     "e": "Shirt first — pop! Out comes the head!"
+    },
+    {
+     "img": "dress-girl-p2.webp",
+     "w": "穿襪子，試著鞋，{N}自己慢慢來。",
+     "c": "著襪、試著鞋，{N}自己慢慢嚟。",
+     "e": "Socks on, try shoes — slowly, all by myself."
+    },
+    {
+     "img": "dress-girl-p3.webp",
+     "w": "{N}自己著好衫，好神氣！",
+     "c": "{N}自己著好晒衫，好神氣！",
+     "e": "Dressed all alone. So proud!"
+    }
+   ]
+  },
+  {
+   "art": "dress-boy",
+   "theme": "自己著衫",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}自己穿衣服",
+    "canto": "{N}自己著衫",
+    "en": "{N} Gets Dressed"
+   },
+   "cover": "dress-boy-cover.webp",
+   "coverScene": "封面：睡房入面，{N}著藍色長袖睡衣企喺床邊，手举住一件紅色上衫，床上攤住幾件衫俾佢揀",
+   "pages": [
+    {
+     "img": "dress-boy-p1.webp",
+     "w": "先穿上衣，頭仔钻出嚟啦！",
+     "c": "著上衫，頭仔钻出嚟啦！",
+     "e": "Shirt on — head pops out!"
+    },
+    {
+     "img": "dress-boy-p2.webp",
+     "w": "穿襪子，穿鞋子，{N}自己慢慢來。",
+     "c": "著襪、著鞋，{N}自己慢慢嚟。",
+     "e": "Socks on, shoes on — slowly, all by myself."
+    },
+    {
+     "img": "dress-boy-p3.webp",
+     "w": "{N}自己著好衫，好神氣！",
+     "c": "{N}自己著好晒衫，好神氣！",
+     "e": "Dressed all alone. So proud!"
+    }
+   ]
+  },
+  {
+   "art": "plane-girl",
+   "theme": "第一次搭飛機去旅行",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}第一次坐飛機",
+    "canto": "{N}第一次搭飛機",
+    "en": "{N}'s First Flight"
+   },
+   "cover": "plane-girl-cover.webp",
+   "coverScene": "封面：機場大堂，{N}著黃色衫企喺大玻璃窗前，望住窗外停機坪嘅飛機",
+   "pages": [
+    {
+     "img": "plane-girl-p1.webp",
+     "w": "飛機飛上天空，窗外的雲朵像棉花糖一樣。",
+     "c": "飛機飛上天，窗外啲雲好似棉花糖咁。",
+     "e": "Up in the sky! The clouds look like cotton candy."
+    },
+    {
+     "img": "plane-girl-p2.webp",
+     "w": "飛機餐來了，{N}食得好開心。",
+     "c": "飛機餐嚟喇，{N}食得好開心。",
+     "e": "The airplane meal is here — {N} eats happily!"
+    },
+    {
+     "img": "plane-girl-p3.webp",
+     "w": "飛機降落了，新的地方到了！",
+     "c": "飛機落嚟啦，新地方到啦！",
+     "e": "Landing! A new place is here!"
+    }
+   ]
+  },
+  {
+   "art": "plane-boy",
+   "theme": "第一次搭飛機去旅行",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}第一次坐飛機",
+    "canto": "{N}第一次搭飛機",
+    "en": "{N}'s First Flight"
+   },
+   "cover": "plane-boy-cover.webp",
+   "coverScene": "封面：機場大堂，{N}著紅色衫企喺大玻璃窗前，望住窗外停機坪嘅飛機",
+   "pages": [
+    {
+     "img": "plane-boy-p1.webp",
+     "w": "{N}企喺大玻璃窗前，指住停機坪嘅飛機。",
+     "c": "{N}企喺大玻璃窗前，指住停機坪嘅飛機。",
+     "e": "{N} stands by the big window, pointing at the plane."
+    },
+    {
+     "img": "plane-boy-p2.webp",
+     "w": "飛機餐來了，{N}食得好開心。",
+     "c": "飛機餐嚟喇，{N}食得好開心。",
+     "e": "The airplane meal is here — {N} eats happily!"
+    },
+    {
+     "img": "plane-boy-p3.webp",
+     "w": "飛機降落了，新的地方到了！",
+     "c": "飛機落嚟啦，新地方到啦！",
+     "e": "Landing! A new place is here!"
+    }
+   ]
+  },
+  {
+   "art": "share-girl",
+   "theme": "同朋友分享",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}學會分享",
+    "canto": "{N}學識分享",
+    "en": "{N} Learns to Share"
+   },
+   "cover": "share-girl-cover.webp",
+   "coverScene": "封面：客廳入面，{N}著粉紅色衫抱住紅色玩具車，表情唔想分享。",
+   "pages": [
+    {
+     "img": "share-girl-p1.webp",
+     "w": "好朋友望住{N}，好想玩件玩具。",
+     "c": "好朋友望住{N}，好想玩佢手上面嘅玩具。",
+     "e": "A friend looks at {N}, wanting to play with the toy."
+    },
+    {
+     "img": "share-girl-p2.webp",
+     "w": "{N}想了想，把玩具遞過去。",
+     "c": "{N}諗咗陣，將件玩具遞過去。",
+     "e": "{N} thinks… and shares the toy."
+    },
+    {
+     "img": "share-girl-p3.webp",
+     "w": "分享之後，快樂變成兩份。",
+     "c": "分享之後，快樂變咗兩份。",
+     "e": "Sharing makes happiness double."
+    }
+   ]
+  },
+  {
+   "art": "share-boy",
+   "theme": "同朋友分享",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}學會分享",
+    "canto": "{N}學識分享",
+    "en": "{N} Learns to Share"
+   },
+   "cover": "share-boy-cover.webp",
+   "coverScene": "封面：客廳入面，{N}抱住心愛玩具，準備同朋友分享",
+   "pages": [
+    {
+     "img": "share-boy-p1.webp",
+     "w": "{N}抱緊紅車，好朋友望住好想要。",
+     "c": "{N}抱緊架紅車，好朋友望住好想要。",
+     "e": "{N} holds the red car tight. A friend looks, wanting it."
+    },
+    {
+     "img": "share-boy-p2.webp",
+     "w": "{N}想了想，把玩具遞過去。",
+     "c": "{N}諗咗陣，將件玩具遞過去。",
+     "e": "{N} thinks… and shares the toy."
+    },
+    {
+     "img": "share-boy-p3.webp",
+     "w": "分享之後，快樂變成兩份。",
+     "c": "分享之後，快樂變咗兩份。",
+     "e": "Sharing makes happiness double."
+    }
+   ]
+  },
+  {
+   "art": "road-girl",
+   "theme": "過馬路要小心",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}小心過馬路",
+    "canto": "{N}過馬路要小心",
+    "en": "{N} Crosses the Road Safely"
+   },
+   "cover": "road-girl-cover.webp",
+   "coverScene": "封面：馬路邊行人路，{N}著粉紅色衫拖住媽媽隻手企定定等過斑馬線，紅色雙層巴士駛過",
+   "pages": [
+    {
+     "img": "road-girl-p1.webp",
+     "w": "走到馬路邊，{N}先停下來，牽實媽媽的手。媽媽指住紅燈。",
+     "c": "行到馬路邊，{N}停一停，拖實媽媽隻手。媽媽指住紅燈。",
+     "e": "At the kerb, {N} stops and holds Mummy's hand. Mummy points to the red light."
+    },
+    {
+     "img": "road-girl-p2.webp",
+     "w": "綠色小人亮起來，先望右，再望左，再望右。",
+     "c": "綠公仔著咗，先望右，再望左，再望右。",
+     "e": "Green man! Look right, look left, look right again."
+    },
+    {
+     "img": "road-girl-p3.webp",
+     "w": "安全過到對面了！媽媽豎起拇指讚{N}。",
+     "c": "安全過到對面啦！媽媽豎起手指公讚{N}。",
+     "e": "Safe across! Mummy gives {N} a big thumbs up."
+    }
+   ]
+  },
+  {
+   "art": "road-boy",
+   "theme": "過馬路要小心",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}小心過馬路",
+    "canto": "{N}過馬路要小心",
+    "en": "{N} Crosses the Road Safely"
+   },
+   "cover": "road-boy-cover.webp",
+   "coverScene": "封面：馬路邊行人路，{N}拖住媽媽隻手企定定等過斑馬線，紅色雙層巴士駛過",
+   "pages": [
+    {
+     "img": "road-boy-p1.webp",
+     "w": "紅燈亮了，媽媽指住燈，{N}牽着媽媽，站好等。",
+     "c": "紅燈著咗，媽媽指住個燈，{N}拖住媽媽，企定定等。",
+     "e": "Red light! Mummy points to the light. {N} holds her hand and waits."
+    },
+    {
+     "img": "road-boy-p2.webp",
+     "w": "綠色小人亮起來，{N}牽着媽媽走過斑馬線。",
+     "c": "綠公仔著咗，{N}拖住媽媽行過斑馬線。",
+     "e": "Green man! {N} holds Mummy’s hand and crosses."
+    },
+    {
+     "img": "road-boy-p3.webp",
+     "w": "安全過到對面了！媽媽豎起拇指讚{N}。",
+     "c": "安全過到對面啦！媽媽豎起手指公讚{N}。",
+     "e": "Safe across! Mummy gives {N} a big thumbs up."
+    }
+   ]
+  },
+  {
+   "art": "transport-girl",
+   "theme": "香港交通工具",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}認識香港交通工具",
+    "canto": "{N}識搭香港交通工具",
+    "en": "{N} Rides Around Hong Kong"
+   },
+   "cover": "transport-girl-cover.webp",
+   "coverScene": "封面：香港街道，{N}著黃色衫企喺行人路，望住駛過嘅紅色雙層巴士",
+   "pages": [
+    {
+     "img": "transport-girl-p1.webp",
+     "w": "搭雙層巴士，坐上層最前排看風景。",
+     "c": "搭雙層巴士，坐上層最前排睇風景。",
+     "e": "A double-decker bus! Best view on top."
+    },
+    {
+     "img": "transport-girl-p2.webp",
+     "w": "電車叮叮慢慢行，沿途看老店和街道。",
+     "c": "電車叮叮慢慢行，沿途睇老店同街道。",
+     "e": "Ding ding! The tram goes slowly by."
+    },
+    {
+     "img": "transport-girl-p3.webp",
+     "w": "坐天星小輪過海，維港的風吹過來。",
+     "c": "坐天星小輪過海，維港啲風吹埋嚟。",
+     "e": "The Star Ferry crosses the harbour. Breeze!"
+    }
+   ]
+  },
+  {
+   "art": "transport-boy",
+   "theme": "香港交通工具",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}認識香港交通工具",
+    "canto": "{N}識搭香港交通工具",
+    "en": "{N} Rides Around Hong Kong"
+   },
+   "cover": "transport-boy-cover.webp",
+   "coverScene": "封面：香港街道，{N}著紅色衫企喺行人路，望住駛過嘅紅色雙層巴士",
+   "pages": [
+    {
+     "img": "transport-boy-p1.webp",
+     "w": "搭雙層巴士，坐上層最前排看風景。",
+     "c": "搭雙層巴士，坐上層最前排睇風景。",
+     "e": "A double-decker bus! Best view on top."
+    },
+    {
+     "img": "transport-boy-p2.webp",
+     "w": "電車叮叮慢慢行，沿途看老店和街道。",
+     "c": "電車叮叮慢慢行，沿途睇老店同街道。",
+     "e": "Ding ding! The tram goes slowly by."
+    },
+    {
+     "img": "transport-boy-p3.webp",
+     "w": "坐天星小輪過海，維港的風吹過來。",
+     "c": "坐天星小輪過海，維港啲風吹埋嚟。",
+     "e": "The Star Ferry crosses the harbour. Breeze!"
+    }
+   ]
+  },
+  {
+   "art": "mumwork-girl",
+   "theme": "媽媽返工",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}等媽媽回家",
+    "canto": "{N}等媽媽返嚟",
+    "en": "{N} Waits for Mummy"
+   },
+   "cover": "mumwork-girl-cover.webp",
+   "coverScene": "封面：屋企玄關，媽媽着好出門衫拎住手袋，{N}攬住媽媽唔捨得放手",
+   "pages": [
+    {
+     "img": "mumwork-girl-p1.webp",
+     "w": "媽媽出門上班，{N}有少少不捨得，奶奶陪住{N}。",
+     "c": "媽媽出門返工，{N}有少少唔捨得，嫲嫲陪住{N}。",
+     "e": "Mummy leaves for work. {N} misses her a little, and Grandma stays close."
+    },
+    {
+     "img": "mumwork-girl-p2.webp",
+     "w": "白天，{N}在家裏玩積木，等媽媽回來。",
+     "c": "日頭，{N}喺屋企玩積木，等媽媽返嚟。",
+     "e": "{N} plays with blocks at home, waiting for Mummy."
+    },
+    {
+     "img": "mumwork-girl-p3.webp",
+     "w": "傍晚，門口傳來開門聲——媽媽回來了！",
+     "c": "黃昏啦，門口有開門聲——媽媽返嚟啦！",
+     "e": "In the evening, the door opens — Mummy is home!"
+    }
+   ]
+  },
+  {
+   "art": "mumwork-boy",
+   "theme": "媽媽返工",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}等媽媽回家",
+    "canto": "{N}等媽媽返嚟",
+    "en": "{N} Waits for Mummy"
+   },
+   "cover": "mumwork-boy-cover.webp",
+   "coverScene": "封面：屋企玄關，媽媽着好出門衫拎住手袋，{N}攬住媽媽唔捨得放手",
+   "pages": [
+    {
+     "img": "mumwork-boy-p1.webp",
+     "w": "{N}同奶奶揮手說拜拜，目送媽媽出門。",
+     "c": "{N}同奶奶揮手講拜拜，望住媽媽出門口。",
+     "e": "{N} and Grandma wave bye-bye. See you tonight, Mummy!"
+    },
+    {
+     "img": "mumwork-boy-p2.webp",
+     "w": "白天，奶奶陪{N}在家裏玩積木，等媽媽回來。",
+     "c": "日頭，奶奶陪{N}喺屋企玩積木，等媽媽返嚟。",
+     "e": "{N} plays with blocks with Grandma, waiting for Mummy."
+    },
+    {
+     "img": "mumwork-boy-p3.webp",
+     "w": "天黑了，門口傳來開門聲——媽媽回來了！",
+     "c": "天黑啦，門口有開門聲——媽媽返嚟啦！",
+     "e": "The door opens — Mummy is home!"
+    }
+   ]
+  },
+  {
+   "art": "temper-girl",
+   "theme": "發脾氣點算",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}學會深呼吸",
+    "canto": "{N}嬲嗰陣點算",
+    "en": "{N} Learns to Breathe"
+   },
+   "cover": "temper-girl-cover.webp",
+   "coverScene": "客廳入面，{N}著橙色衫握緊拳頭發脾氣，面前係倒咗㗎木塊。",
+   "pages": [
+    {
+     "img": "temper-girl-p1.webp",
+     "w": "{N}好生氣，跟媽媽深呼吸：一、二、三、四，慢慢定下來。",
+     "c": "{N}好嬲，跟媽媽深呼吸：一、二、三、四，慢慢定落嚟。",
+     "e": "{N} feels angry. Deep breath with Mummy: one, two, three, four."
+    },
+    {
+     "img": "temper-girl-p2.webp",
+     "w": "摸一摸肚臍，{N}慢慢冷靜下來。",
+     "c": "摸摸肚臍，{N}慢慢定落嚟。",
+     "e": "Touch tummy. {N} feels calmer."
+    },
+    {
+     "img": "temper-girl-p3.webp",
+     "w": "平靜下來，{N}和媽媽抱抱，笑笑口一起玩。",
+     "c": "定返落嚟，{N}同媽媽攬下，笑笑口一齊玩。",
+     "e": "Calm now — a hug with Mummy, then play together."
+    }
+   ]
+  },
+  {
+   "art": "temper-boy",
+   "theme": "發脾氣點算",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}學會深呼吸",
+    "canto": "{N}嬲嗰陣點算",
+    "en": "{N} Learns to Breathe"
+   },
+   "cover": "temper-boy-cover.webp",
+   "coverScene": "客廳入面，{N}握緊拳頭、臉紅發脾氣，地上散落滿彩色積木。",
+   "pages": [
+    {
+     "img": "temper-boy-p1.webp",
+     "w": "{N}好生氣，跟媽媽深呼吸：一、二、三、四，慢慢定下來。",
+     "c": "{N}好嬲，跟媽媽深呼吸：一、二、三、四，慢慢定落嚟。",
+     "e": "{N} feels angry. Deep breath with Mummy: one, two, three, four."
+    },
+    {
+     "img": "temper-boy-p2.webp",
+     "w": "飲一口水，{N}慢慢冷靜下來。",
+     "c": "飲啖水，{N}慢慢定落嚟。",
+     "e": "A sip of water. {N} feels calmer."
+    },
+    {
+     "img": "temper-boy-p3.webp",
+     "w": "平靜下來，{N}和媽媽抱抱，笑笑口一起玩。",
+     "c": "定返落嚟，{N}同媽媽攬下，笑笑口一齊玩。",
+     "e": "Calm now — a hug with Mummy, then play together."
+    }
+   ]
+  },
+  {
+   "art": "veggie-girl",
+   "theme": "食菜唔偏食",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}試食青菜",
+    "canto": "{N}食菜唔偏食",
+    "en": "{N} Tries Veggies"
+   },
+   "cover": "veggie-girl-cover.webp",
+   "coverScene": "封面：飯枱前，{N}著綠色衫望住一碟青菜，有少少猶豫",
+   "pages": [
+    {
+     "img": "veggie-girl-p1.webp",
+     "w": "晚飯有青菜，{N}皺皺眉頭，用手試了一小口。",
+     "c": "晚飯有青菜，{N}皺下眉頭，用手試咗一細啖。",
+     "e": "Greens for dinner. {N} makes a face — and tries one small bite with her hand!"
+    },
+    {
+     "img": "veggie-girl-p2.webp",
+     "w": "{N}自己再拿一口，媽媽微笑鼓勵。",
+     "c": "{N}自己再拿一啖，媽媽笑住讚佢。",
+     "e": "One more bite — all by myself! Mom smiles."
+    },
+    {
+     "img": "veggie-girl-p3.webp",
+     "w": "食菜會長高高，{N}好自豪！",
+     "c": "食菜會大得高，{N}好自豪！",
+     "e": "Veggies help me grow tall and strong!"
+    }
+   ]
+  },
+  {
+   "art": "veggie-boy",
+   "theme": "食菜唔偏食",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}試食青菜",
+    "canto": "{N}食菜唔偏食",
+    "en": "{N} Tries Veggies"
+   },
+   "cover": "veggie-boy-cover.webp",
+   "coverScene": "封面：飯枱前，{N}著橙色衫望住一碟青菜，有少少猶豫",
+   "pages": [
+    {
+     "img": "veggie-boy-p1.webp",
+     "w": "晚飯有青菜，{N}皺起眉頭，用手抓起一塊西蘭花。",
+     "c": "晚飯有青菜，{N}皺下眉頭，伸手抓咗塊西蘭花。",
+     "e": "Greens for dinner. {N} makes a face — and grabs a piece with his hand!"
+    },
+    {
+     "img": "veggie-boy-p2.webp",
+     "w": "{N}自己再拿一塊，媽媽豎起拇指。",
+     "c": "{N}自己再拿一啖，媽媽豎起手指公。",
+     "e": "One more bite — all by myself!"
+    },
+    {
+     "img": "veggie-boy-p3.webp",
+     "w": "食菜會長高高，{N}好自豪！",
+     "c": "食菜會大得高，{N}好自豪！",
+     "e": "Veggies help me grow tall and strong!"
+    }
+   ]
+  },
+  {
+   "art": "phone-girl",
+   "theme": "放低電話",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}放下平板去公園",
+    "canto": "{N}放低電話",
+    "en": "{N} Puts the Tablet Down"
+   },
+   "cover": "phone-girl-cover.webp",
+   "coverScene": "封面：客廳梳化，{N}著粉紅色衫拎住平板睇到入神，玩具放喺旁邊冇人理",
+   "pages": [
+    {
+     "img": "phone-girl-p1.webp",
+     "w": "媽媽說：夠鐘休息，一起放下屏幕。",
+     "c": "媽媽話：夠鐘休息啦，一齊放低個芒。",
+     "e": "Time for a break — screens down together."
+    },
+    {
+     "img": "phone-girl-p2.webp",
+     "w": "放低平板，去公園追泡泡跑跳！",
+     "c": "放低平板，去公園追下泡泡跑下跳下！",
+     "e": "Tablet down. Off to the park to chase bubbles!"
+    },
+    {
+     "img": "phone-girl-p3.webp",
+     "w": "夜晚，媽媽講故事，{N}抱住公仔甜甜入睡。",
+     "c": "夜晚，媽媽講故事，{N}攬住公仔甜甜瞓覺。",
+     "e": "At night, Mummy reads a story. {N} sleeps sweetly."
+    }
+   ]
+  },
+  {
+   "art": "phone-boy",
+   "theme": "放低電話",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}放下平板去公園",
+    "canto": "{N}放低電話",
+    "en": "{N} Puts the Tablet Down"
+   },
+   "cover": "phone-boy-cover.webp",
+   "coverScene": "封面：客廳梳化，{N}拎住平板眉頭緊鎖，白兔公仔坐喺籃度陪佢。",
+   "pages": [
+    {
+     "img": "phone-boy-p1.webp",
+     "w": "媽媽說：休息一下，看看窗外吧。",
+     "c": "媽媽話：休息下啦，睇下窗外啦。",
+     "e": "Mummy says: time for a break — look outside!"
+    },
+    {
+     "img": "phone-boy-p2.webp",
+     "w": "原來放下屏幕，外面的世界這麼好玩。",
+     "c": "原來放低個芒，出面咁好玩㗎。",
+     "e": "The real world is so much fun!"
+    },
+    {
+     "img": "phone-boy-p3.webp",
+     "w": "夜晚，媽媽講故事，{N}抱住公仔甜甜入睡。",
+     "c": "夜晚，媽媽講故事，{N}攬住公仔甜甜瞓覺。",
+     "e": "At night, Mummy reads a story. {N} sleeps sweetly."
+    }
+   ]
+  },
+  {
+   "art": "wash-girl",
+   "theme": "洗手趕走細菌",
+   "age": "3–4 歲",
+   "gender": "女仔",
+   "title": {
+    "zh": "{N}洗手趕細菌",
+    "canto": "{N}洗手趕走細菌",
+    "en": "{N} Washes Hands"
+   },
+   "cover": "wash-girl-cover.webp",
+   "coverScene": "封面：戶外沙坑邊，{N}著粉紅色衫企住，雙手攬滿棕色泥土，張口露出驚訝表情。",
+   "pages": [
+    {
+     "img": "wash-girl-p1.webp",
+     "w": "搓泡泡，手心手背都要搓。",
+     "c": "搓泡泡，手心手背都要搓勻。",
+     "e": "Bubbles! Rub palms and backs."
+    },
+    {
+     "img": "wash-girl-p2.webp",
+     "w": "搓泡泡，手心手背都要搓。",
+     "c": "搓泡泡，手心手背都要搓勻。",
+     "e": "Bubbles! Rub palms and backs."
+    },
+    {
+     "img": "wash-girl-p3.webp",
+     "w": "洗乾淨手，就可以開心食飯了！",
+     "c": "洗乾淨手，先可以開心食飯！",
+     "e": "Clean hands, happy meal time!"
+    }
+   ]
+  },
+  {
+   "art": "wash-boy",
+   "theme": "洗手趕走細菌",
+   "age": "3–4 歲",
+   "gender": "男仔",
+   "title": {
+    "zh": "{N}洗手趕細菌",
+    "canto": "{N}洗手趕走細菌",
+    "en": "{N} Washes Hands"
+   },
+   "cover": "wash-boy-cover.webp",
+   "coverScene": "封面：戶外沙坑邊，{N}著綠色衫蹲低，雙手攙滿棕色泥巴，背景有樹木同小花。",
+   "pages": [
+    {
+     "img": "wash-boy-p1.webp",
+     "w": "搓泡泡，手心手背都要搓。",
+     "c": "搓泡泡，手心手背都要搓勻。",
+     "e": "Bubbles! Rub palms and backs."
+    },
+    {
+     "img": "wash-boy-p2.webp",
+     "w": "唱著歌搓二十下，再沖乾淨。",
+     "c": "唱住歌搓廿下，再沖乾淨。",
+     "e": "Sing and scrub, then rinse clean."
+    },
+    {
+     "img": "wash-boy-p3.webp",
+     "w": "洗乾淨手，就可以開心食飯了！",
+     "c": "洗乾淨手，先可以開心食飯！",
+     "e": "Clean hands, happy meal time!"
+    }
+   ]
+  }
+ ],
+ "promptStories": {
+  "第一次返學": [
+   {
+    "w": "今天是{N}第一天上學，{N}自己收拾書包。",
+    "c": "今日係{N}第一日返學，{N}自己執書包。",
+    "e": "First day of school! {N} packs the school bag.",
+    "scene": "屋企客廳：{N}著住校服，將圖書放入紅色小書包，媽媽幫手拉拉鏈"
+   },
+   {
+    "w": "媽媽牽著{N}，走到學校門口。",
+    "c": "媽媽拖住{N}，行到學校門口。",
+    "e": "Mummy holds hands. Here is the school gate!",
+    "scene": "學校門口：{N}孭住紅色書包，同媽媽揮手講拜拜"
+   },
+   {
+    "w": "老師牽著{N}的手，走進課室。",
+    "c": "老師拖住{N}隻手，行入課室。",
+    "e": "The teacher holds a hand. Into the classroom!",
+    "scene": "課室入面：老師拖住{N}，紅色書包掛喺牆上掛鉤"
+   },
+   {
+    "w": "玩積木、看圖書，{N}認識了新朋友。",
+    "c": "玩積木、睇圖書，{N}識咗新朋友。",
+    "e": "Blocks and books! A new friend!",
+    "scene": "課室入面：{N}同新朋友一齊玩木積木，老師喺旁邊笑住睇"
+   },
+   {
+    "w": "放學了！{N}跑去抱住媽媽。",
+    "c": "放學啦！{N}跑去攬住媽媽。",
+    "e": "School is over! A big hug for Mummy!",
+    "scene": "放學時間學校門口：{N}孭住書包跑去攬住媽媽，兩個都笑得好開心"
+   }
+  ],
+  "自己刷牙": [
+   {
+    "w": "這個是{N}，今天自己刷牙。",
+    "c": "呢個係{N}，今日自己刷牙仔。",
+    "e": "This is {N}. Brushing time!",
+    "scene": "浴室入面：{N}企喺小凳上面，伸手攞自己支牙刷"
+   },
+   {
+    "w": "擠一點牙膏，刷刷刷。",
+    "c": "唧少少牙膏，刷刷刷！",
+    "e": "A little toothpaste. Brush, brush!",
+    "scene": "浴室洗手盆前：{N}自己拎住牙刷刷牙，嘴邊有少少泡"
+   },
+   {
+    "w": "上面刷，下面也刷。",
+    "c": "上面刷下，下面又刷下。",
+    "e": "Up and down, round and round.",
+    "scene": "浴室入面：{N}舉起牙刷，開心展示刷緊牙嘅自己，媽媽拍手鼓勵"
+   },
+   {
+    "w": "刷完牙，白白的，好開心！",
+    "c": "刷完牙，白雪雪，好開心！",
+    "e": "All done! Clean, white, happy!",
+    "scene": "浴室入面：{N}刷完牙，笑住豎起手指公，媽媽攬住{N}"
+   }
+  ],
+  "戒尿片": [
+   {
+    "w": "{N}長大了，想自己去廁所。",
+    "c": "{N}大個啦，想自己去廁所。",
+    "e": "{N} is growing up. Time to try the potty!",
+    "scene": "屋企廁所門口：{N}指住自己嘅小馬桶，媽媽蹲喺旁邊鼓勵"
+   },
+   {
+    "w": "{N}坐在小馬桶上，等一等。",
+    "c": "{N}坐喺小便盆上面，等一陣。",
+    "e": "{N} sits and waits. One, two, three.",
+    "scene": "廁所入面：{N}坐喺小馬桶上面，雙手放膝頭，專心等"
+   },
+   {
+    "w": "第一次沒有成功，沒有關係。",
+    "c": "第一次唔得，唔緊要㗎。",
+    "e": "Not this time. That is okay.",
+    "scene": "廁所入面：{N}企返起身有少少失望，媽媽笑笑口安慰"
+   },
+   {
+    "w": "媽媽陪著{N}，再試一次。",
+    "c": "媽媽陪住{N}，再試多次。",
+    "e": "Mummy stays close. Let us try again.",
+    "scene": "廁所入面：媽媽陪{N}坐喺小馬桶旁邊一齊睇圖書等"
+   },
+   {
+    "w": "成功了！{N}自己做到了！",
+    "c": "得咗！{N}自己做到啦！",
+    "e": "Yes! {N} did it!",
+    "scene": "廁所入面：{N}望住小馬桶開心舉高手，媽媽拍手"
+   },
+   {
+    "w": "全家一起拍手，好開心。",
+    "c": "全家人一齊拍手，好開心！",
+    "e": "Everyone claps. Hooray for {N}!",
+    "scene": "客廳入面：全家人圍住{N}一齊拍手慶祝"
+   }
+  ],
+  "戒奶嘴": [
+   {
+    "w": "奶嘴陪了{N}好久，是小寶寶的好朋友。",
+    "c": "奶嘴陪咗{N}好耐，係BB嘅好朋友。",
+    "e": "The pacifier is an old friend.",
+    "scene": "睡房入面：{N}攬住被仔，含住奶嘴，瞓得好安穩"
+   },
+   {
+    "w": "現在{N}長大了，可以試下不用奶嘴。",
+    "c": "而家{N}大個啦，可以試下唔用奶嘴。",
+    "e": "{N} is bigger now. Time to try without it.",
+    "scene": "客廳入面：{N}望住奶嘴，媽媽蹲喺旁邊溫柔講解"
+   },
+   {
+    "w": "睡覺前有點不習慣，媽媽抱抱{N}。",
+    "c": "瞓覺之前有啲唔慣，媽媽攬下{N}。",
+    "e": "Bedtime feels strange. Mummy gives a hug.",
+    "scene": "睡房床邊：冇奶嘴，媽媽攬住{N}講故事"
+   },
+   {
+    "w": "{N}把奶嘴放進紀念盒，說聲拜拜。",
+    "c": "{N}將奶嘴放落紀念盒，講聲拜拜。",
+    "e": "{N} puts the pacifier in a keepsake box. Bye-bye!",
+    "scene": "睡房入面：{N}將奶嘴放落紀念盒，同奶嘴講拜拜"
+   },
+   {
+    "w": "沒有奶嘴，{N}也睡得很甜。",
+    "c": "冇奶嘴，{N}都瞓得好甜。",
+    "e": "No pacifier — and {N} sleeps sweetly.",
+    "scene": "睡房入面：{N}攬住小熊公仔，安心瞓著"
+   },
+   {
+    "w": "早上醒來，{N}好自豪！",
+    "c": "朝早醒嚟，{N}好自豪！",
+    "e": "Morning! {N} feels so proud!",
+    "scene": "朝早睡房：陽光入屋，{N}坐起身開心伸懶腰"
+   }
+  ],
+  "自己食飯": [
+   {
+    "w": "{N}坐在自己的小椅子上，準備食飯。",
+    "c": "{N}坐喺自己張小凳上面，準備食飯。",
+    "e": "{N} sits in a little chair. Lunch time!",
+    "scene": "飯廳入面：{N}坐喺小椅子，面前有自己嘅小碗同匙羹"
+   },
+   {
+    "w": "拿起匙羹，舀一口飯。",
+    "c": "拎起匙羹，𢳂一啖飯。",
+    "e": "Pick up the spoon. One scoop!",
+    "scene": "飯枱前：{N}雙手拎住匙羹，𢳂起一啖飯"
+   },
+   {
+    "w": "哎呀，飯粒跌到枱上，沒有關係。",
+    "c": "哎呀，飯粒跌咗落枱，唔緊要㗎。",
+    "e": "Oops! Rice on the table. That is okay.",
+    "scene": "飯枱前：幾粒飯跌咗喺枱面，{N}有少少唔好意思，媽媽笑笑口"
+   },
+   {
+    "w": "自己再試，慢慢舀。",
+    "c": "自己再試，慢慢𢳂。",
+    "e": "Try again, slowly, slowly.",
+    "scene": "飯枱前：{N}專心慢慢𢳂飯，媽媽喺旁邊睇住"
+   },
+   {
+    "w": "食了一大口！好好味！",
+    "c": "食咗一大啖！好好味！",
+    "e": "A big bite! Yummy!",
+    "scene": "飯枱前：{N}食咗一大啖飯，開心到瞇起眼睛"
+   },
+   {
+    "w": "全碗食完，{N}拍拍手。",
+    "c": "成碗食晒，{N}拍下手。",
+    "e": "All finished! {N} claps!",
+    "scene": "飯枱前：{N}拎起空碗俾媽媽睇，全家人拍手"
+   }
+  ],
+  "怕黑": [
+   {
+    "w": "天黑了，房間靜靜的。",
+    "c": "天黑啦，間房靜靜哋。",
+    "e": "Night falls. The room is quiet.",
+    "scene": "夜晚睡房：窗外月亮升起，房間光線昏暗，{N}坐喺床上"
+   },
+   {
+    "w": "{N}有少少怕，抱住心愛公仔。",
+    "c": "{N}有少少驚，攬住心愛公仔。",
+    "e": "{N} feels a little scared. Hug the toy tight.",
+    "scene": "床上：{N}攬實心愛公仔，望住房間角落"
+   },
+   {
+    "w": "媽媽開了小夜燈，房間有微微光。",
+    "c": "媽媽開咗小夜燈，間房有少少光。",
+    "e": "Mummy turns on a small night light.",
+    "scene": "睡房入面：媽媽開著一盞暖黃色小夜燈，房間變得溫暖"
+   },
+   {
+    "w": "原來影子是玩具和書本，不用怕。",
+    "c": "原來啲影係玩具同書嚟嘅，唔使驚。",
+    "e": "The shadows are just toys and books.",
+    "scene": "睡房牆邊：夜燈照出玩具同書本嘅影，{N}指住啲影笑"
+   },
+   {
+    "w": "{N}深呼吸，安心閉上眼睛。",
+    "c": "{N}深呼吸，安心合埋眼。",
+    "e": "Deep breath. {N} closes both eyes.",
+    "scene": "床上：{N}瞇埋眼深呼吸，公仔陪喺枕頭邊"
+   },
+   {
+    "w": "晚安，{N}睡得好甜。",
+    "c": "晚安，{N}瞓得好甜。",
+    "e": "Good night. Sweet dreams, {N}.",
+    "scene": "夜晚睡房：{N}喺夜燈微光下瞓得好甜，月亮喺窗外"
+   }
+  ],
+  "自己瞓": [
+   {
+    "w": "今晚，{N}試下自己睡。",
+    "c": "今晚，{N}試下自己瞓。",
+    "e": "Tonight, {N} tries sleeping alone.",
+    "scene": "夜晚睡房：{N}坐喺自己張床上面，被仔摺得整整齊齊"
+   },
+   {
+    "w": "媽媽講了一個故事，唱了一首歌。",
+    "c": "媽媽講咗一個故事，唱咗一首歌。",
+    "e": "Mummy reads a story and sings a song.",
+    "scene": "床邊：媽媽拎住故事書講故事，{N}瞓喺枕頭上面聽"
+   },
+   {
+    "w": "講完晚安，媽媽回到自己房間。",
+    "c": "講完晚安，媽媽返去自己間房。",
+    "e": "Good night kiss. Mummy goes to her room.",
+    "scene": "房門口：媽媽喺門邊揮手講晚安，{N}喺床上揮手回應"
+   },
+   {
+    "w": "{N}抱住公仔，望住天花板的星星貼紙。",
+    "c": "{N}攬住公仔，望住天花板啲星星貼紙。",
+    "e": "{N} hugs the toy and watches the stars.",
+    "scene": "床上：{N}攬住公仔，望住天花板發光嘅星星貼紙"
+   },
+   {
+    "w": "眼皮越來越重……",
+    "c": "眼皮越嚟越重……",
+    "e": "Eyelids get heavier and heavier…",
+    "scene": "床上特寫：{N}眼皮慢慢合埋，呼吸變得平穩"
+   },
+   {
+    "w": "早上醒來，{N}自己睡了一整晚！",
+    "c": "朝早醒嚟，{N}自己瞓咗成晚！",
+    "e": "Morning! {N} slept alone all night!",
+    "scene": "朝早睡房：陽光入屋，{N}喺自己床上醒嚟，開心舉起雙手"
+   }
+  ],
+  "弟妹出世": [
+   {
+    "w": "媽媽肚子裡，有一個小寶寶。",
+    "c": "媽媽個肚入面，有一個小寶寶。",
+    "e": "There is a baby in Mummy's tummy.",
+    "scene": "客廳入面：{N}輕輕摸住媽媽大肚子，媽媽笑住拖住{N}隻手"
+   },
+   {
+    "w": "寶寶出世了，細細個，好可愛。",
+    "c": "寶寶出世啦，細細粒，好可愛。",
+    "e": "The baby is here! So small, so cute.",
+    "scene": "屋企客廳：媽媽抱住初生寶寶，{N}喺旁邊探頭望"
+   },
+   {
+    "w": "現在{N}是家裡的大孩子了。",
+    "c": "而家{N}係屋企嘅大孩子啦。",
+    "e": "Now {N} is the big kid in the family.",
+    "scene": "客廳入面：{N}企喺BB床邊，神氣咁望住瞓覺嘅寶寶"
+   },
+   {
+    "w": "{N}幫手拿尿片，輕輕唱歌給寶寶聽。",
+    "c": "{N}幫手攞尿片，輕輕唱歌俾寶寶聽。",
+    "e": "{N} helps with a diaper and sings softly.",
+    "scene": "BB床邊：{N}雙手遞尿片俾媽媽，寶寶瞓喺床仔上面"
+   },
+   {
+    "w": "媽媽抱住兩個孩子，心裡滿滿的。",
+    "c": "媽媽攬住兩個小朋友，心入面滿滿哋。",
+    "e": "Mummy hugs both children. Her heart is full.",
+    "scene": "梳化上面：媽媽一邊抱住寶寶，一邊攬住{N}，三個人笑得好溫暖"
+   },
+   {
+    "w": "一家人一起，越來越熱鬧。",
+    "c": "一家人一齊，越嚟越熱鬧。",
+    "e": "One family together, full of love.",
+    "scene": "客廳全家幅：爸爸媽媽、{N}同寶寶一齊，溫馨熱鬧"
+   }
+  ],
+  "去醫院打針": [
+   {
+    "w": "今天{N}要去健康院打針。",
+    "c": "今日{N}要去健康院打針針。",
+    "e": "Today {N} goes for a vaccination.",
+    "scene": "健康院門口：{N}拖住媽媽隻手，望住門口嘅卡通海報"
+   },
+   {
+    "w": "護士姐姐笑笑口，叫{N}坐定定。",
+    "c": "護士姐姐笑笑口，叫{N}坐定定。",
+    "e": "The nurse smiles. Sit still, {N}.",
+    "scene": "健康院房間：護士溫柔同{N}講嘢，媽媽攬住{N}"
+   },
+   {
+    "w": "打針嗰下有少少痛，{N}扁了嘴。",
+    "c": "拮嗰下有少少痛，{N}扁起嘴。",
+    "e": "A tiny pinch! {N} makes a face.",
+    "scene": "打針一刻：{N}捉實媽媽隻手，眼仔有少少淚光"
+   },
+   {
+    "w": "媽媽說：喊出來沒關係，你好勇敢。",
+    "c": "媽媽話：喊出嚟唔緊要，你好勇敢。",
+    "e": "It is okay to cry. You are so brave.",
+    "scene": "媽媽攬實{N}輕輕拍背，護士貼上卡通膠布"
+   },
+   {
+    "w": "貼上星星膠布，{N}破涕為笑。",
+    "c": "黐咗星星膠布，{N}笑返啦。",
+    "e": "A star plaster! {N} smiles again.",
+    "scene": "{N}舉起手臂展示星星膠布，開心笑"
+   },
+   {
+    "w": "打完針，身體有保鏢保護了！",
+    "c": "打完針，身體就有保鑣保護啦！",
+    "e": "All done! Now the body has guards!",
+    "scene": "離開健康院：{N}拖住媽媽，另一隻手舉起膠布好神氣"
+   }
+  ],
+  "幼稚園面試": [
+   {
+    "w": "今天{N}要去幼稚園面試。",
+    "c": "今日{N}要去幼稚園面試啦。",
+    "e": "Today is kindergarten interview day.",
+    "scene": "幼稚園門口：{N}著住整齊衫，拖住爸爸媽媽"
+   },
+   {
+    "w": "老師笑笑口，問{N}叫什麼名字。",
+    "c": "老師笑笑口，問{N}叫咩名。",
+    "e": "The teacher smiles and asks a name.",
+    "scene": "課室入面：老師蹲低同{N}講嘢，{N}細細聲答"
+   },
+   {
+    "w": "老師拿出積木，{N}慢慢疊高高。",
+    "c": "老師拎出積木，{N}慢慢疊高高。",
+    "e": "Blocks! {N} stacks them up slowly.",
+    "scene": "枱前：{N}專心疊積木，老師喺旁邊鼓勵"
+   },
+   {
+    "w": "玩完玩具，{N}自己收拾好。",
+    "c": "玩完玩具，{N}自己執返好。",
+    "e": "Play time over — {N} tidies up.",
+    "scene": "{N}將積木逐件放入盒，老師豎起手指公"
+   },
+   {
+    "w": "講拜拜的時候，{N}揮揮手。",
+    "c": "講拜拜嗰陣，{N}揮下手。",
+    "e": "Time to say bye-bye. {N} waves.",
+    "scene": "學校門口：{N}同老師揮手講拜拜，笑得好開心"
+   },
+   {
+    "w": "不用做到一百分，做自己就最好。",
+    "c": "唔使一百分，做返自己就最好。",
+    "e": "No need to be perfect. Just be yourself.",
+    "scene": "回家路上：一家人拖住手，{N}蹦蹦跳"
+   }
+  ],
+  "第一次剪頭髮": [
+   {
+    "w": "{N}的頭髮長了，要去剪頭髮。",
+    "c": "{N}啲頭髮長咗，要去剪頭髮啦。",
+    "e": "Hair is long. Time for a haircut!",
+    "scene": "屋企鏡前：{N}摸住自己長長嘅頭髮"
+   },
+   {
+    "w": "坐在高高的椅子上，圍上圍布。",
+    "c": "坐喺高高張凳上面，圍住圍布。",
+    "e": "Up on the big chair, cape on!",
+    "scene": "髮型屋：{N}坐喺高凳圍住圍布，髮型師笑笑口"
+   },
+   {
+    "w": "剪刀咔嚓咔嚓，頭髮一條條跌下來。",
+    "c": "鉸剪咔嚓咔嚓，頭髮一條條跌落嚟。",
+    "e": "Snip snip! Little hairs fall down.",
+    "scene": "髮型師輕輕剪頭髮，{N}望住鏡入面嘅自己"
+   },
+   {
+    "w": "有點癢，{N}忍住不動。",
+    "c": "有啲痕，{N}忍住唔郁。",
+    "e": "A little tickly. {N} stays still.",
+    "scene": "{N}扁扁嘴忍住唔郁，媽媽喺旁邊豎起手指公"
+   },
+   {
+    "w": "剪完了！鏡子裡的{N}精神又可愛。",
+    "c": "剪完啦！鏡入面嘅{N}精神又可愛。",
+    "e": "Done! Fresh and cute in the mirror!",
+    "scene": "鏡前：{N}望住新髮型開心笑，髮型師拍手"
+   },
+   {
+    "w": "地上的頭髮掃走了，{N}長大了。",
+    "c": "地下啲頭髮掃走啦，{N}大個咗。",
+    "e": "Hair swept away. {N} is growing up.",
+    "scene": "離開髮型屋：{N}摸住新髮型，拖住媽媽蹦蹦跳"
+   }
+  ],
+  "自己著衫": [
+   {
+    "w": "早上起床，{N}要自己著衫。",
+    "c": "朝早起身，{N}要自己著衫啦。",
+    "e": "Morning! {N} gets dressed alone.",
+    "scene": "睡房入面：{N}企喺床邊，望住櫃入面嘅衫"
+   },
+   {
+    "w": "先穿上衣，頭仔鑽出來了！",
+    "c": "著上衫先，頭仔捐出嚟啦！",
+    "e": "Shirt first — pop! Out comes the head!",
+    "scene": "{N}將上衫笠過頭，個頭捐咗出嚟開心笑"
+   },
+   {
+    "w": "褲子兩條腿，一邊一隻腳。",
+    "c": "長褲兩條腿，一邊一隻腳。",
+    "e": "Two legs, one foot in each side.",
+    "scene": "{N}坐喺床邊慢慢穿褲，一隻腳一隻腳嚟"
+   },
+   {
+    "w": "哎呀，扣錯鈕了，再來一次。",
+    "c": "哎呀，扣錯粒鈕，再嚟多次。",
+    "e": "Oops, wrong button. Try again!",
+    "scene": "{N}望住扣錯嘅鈕有少少皺眉，媽媽笑笑口睇住"
+   },
+   {
+    "w": "襪子和鞋子也穿好了！",
+    "c": "襪同鞋都著好啦！",
+    "e": "Socks and shoes — all done!",
+    "scene": "門口：{N}著好襪同鞋，企直俾全家人睇"
+   },
+   {
+    "w": "{N}自己著好衫，好神氣！",
+    "c": "{N}自己著好晒衫，好神氣！",
+    "e": "Dressed all alone. So proud!",
+    "scene": "客廳入面：{N}叉住腰好神氣，全家人拍手"
+   }
+  ],
+  "自己收拾玩具": [
+   {
+    "w": "玩完玩具，地上滿滿都是。",
+    "c": "玩完玩具，地下滿地都係。",
+    "e": "Play time is over. Toys everywhere!",
+    "scene": "客廳地下：積木、車仔、公仔散滿一地，{N}望住發呆"
+   },
+   {
+    "w": "媽媽說：一件一件慢慢收。",
+    "c": "媽媽話：一件一件慢慢執。",
+    "e": "One by one, slowly, says Mummy.",
+    "scene": "媽媽蹲喺{N}旁邊，指住最近嗰件玩具鼓勵"
+   },
+   {
+    "w": "積木回積木盒，車仔排好隊。",
+    "c": "積木入返積木盒，車仔排好隊。",
+    "e": "Blocks in the box. Cars in a line.",
+    "scene": "{N}將積木放入盒，車仔一架架排好"
+   },
+   {
+    "w": "公仔坐上書架，跟大家說晚安。",
+    "c": "公仔坐上書架，同大家講晚安。",
+    "e": "Teddy sits on the shelf. Good night!",
+    "scene": "{N}將公仔放上書架排好，輕輕拍下公仔個頭"
+   },
+   {
+    "w": "地板乾乾淨淨，看得見笑臉了。",
+    "c": "地下乾乾淨淨，見到笑臉啦。",
+    "e": "The floor is clean and shiny!",
+    "scene": "乾淨嘅客廳：{N}企喺中間望住整齊嘅房間好開心"
+   },
+   {
+    "w": "自己收拾的房間，住得最舒服。",
+    "c": "自己執好嘅房，住得最舒服。",
+    "e": "A tidy room feels the best.",
+    "scene": "夜晚：{N}喺整齊嘅房入面瞓覺，公仔喺書架陪住"
+   }
+  ],
+  "學游水": [
+   {
+    "w": "今天{N}第一次去學游水。",
+    "c": "今日{N}第一次去學游水。",
+    "e": "First swimming lesson today!",
+    "scene": "泳池邊：{N}著住泳衣企喺池邊，望住一大池水"
+   },
+   {
+    "w": "池水涼涼的，{N}有少少怕。",
+    "c": "池水涼浸浸，{N}有少少驚。",
+    "e": "The water is cool. A little scary.",
+    "scene": "{N}用腳趾點下水，縮一縮，教練笑笑口"
+   },
+   {
+    "w": "教練拖住{N}，慢慢落水。",
+    "c": "教練拖住{N}，慢慢落水。",
+    "e": "The coach holds a hand. Slowly in.",
+    "scene": "泳池入面：教練拖住{N}慢慢行入水，媽媽喺池邊睇"
+   },
+   {
+    "w": "抱住浮板，腳仔踢踢水。",
+    "c": "攬住浮板，腳仔踢下水。",
+    "e": "Hold the float. Kick, kick, kick!",
+    "scene": "{N}攬住浮板踢水，水花四濺，笑得好開心"
+   },
+   {
+    "w": "臉仔貼住水面，吹泡泡。",
+    "c": "塊臉貼住水面，吹泡泡。",
+    "e": "Face near the water. Blow bubbles!",
+    "scene": "{N}將嘴貼近水面吹泡泡，教練豎起手指公"
+   },
+   {
+    "w": "{N}學識踢水了，好勇敢！",
+    "c": "{N}學識踢水啦，好勇敢！",
+    "e": "{N} can kick now. So brave!",
+    "scene": "上水之後：{N}包住毛巾，舉起手開心笑"
+   }
+  ],
+  "第一次搭飛機去旅行": [
+   {
+    "w": "今天{N}第一次搭飛機去旅行！",
+    "c": "今日{N}第一次搭飛機去旅行！",
+    "e": "First flight ever! Trip time!",
+    "scene": "機場大堂：{N}拖住自己嘅小行李，望住大玻璃窗外嘅飛機"
+   },
+   {
+    "w": "坐在窗邊，飛機慢慢起飛。",
+    "c": "坐喺窗邊，飛機慢慢起飛。",
+    "e": "By the window. Up, up we go!",
+    "scene": "飛機窗邊：{N}貼住窗望，地下嘅屋越嚟越細"
+   },
+   {
+    "w": "耳朵有點怪怪的，喝一口水就好了。",
+    "c": "耳仔有啲怪怪哋，飲啖水就冇事。",
+    "e": "Ears feel funny. A sip of water helps.",
+    "scene": "機艙入面：{N}掩住耳仔，媽媽遞水俾{N}飲"
+   },
+   {
+    "w": "雲朵在窗外，像棉花糖一樣。",
+    "c": "雲喺窗外面，好似棉花糖咁。",
+    "e": "Clouds outside, like cotton candy.",
+    "scene": "窗外一片雲海，{N}指住雲朵好興奮"
+   },
+   {
+    "w": "飛機降落了，新的地方到了！",
+    "c": "飛機落嚟啦，新地方到啦！",
+    "e": "Landing! A new place is here!",
+    "scene": "飛機降落：{N}望住窗外新城市，拍手歡呼"
+   },
+   {
+    "w": "旅行的第一天，從飛機開始。",
+    "c": "旅行第一日，由飛機開始。",
+    "e": "Day one of the trip begins!",
+    "scene": "機場門口：一家人拖住行李，{N}蹦蹦跳向新地方"
+   }
+  ],
+  "病咗要食藥": [
+   {
+    "w": "{N}病了，鼻子塞塞的。",
+    "c": "{N}病咗，個鼻塞住晒。",
+    "e": "{N} is sick. A stuffy nose.",
+    "scene": "屋企梳化：{N}包住被仔，攞住紙巾，有少少冇精神"
+   },
+   {
+    "w": "醫生聽一聽，說要乖乖食藥。",
+    "c": "醫生聽下聽下，話要乖乖食藥。",
+    "e": "The doctor listens. Time for medicine.",
+    "scene": "診所入面：醫生用聽筒幫{N}檢查，媽媽攬住{N}"
+   },
+   {
+    "w": "藥水甜甜的，{N}一口喝完。",
+    "c": "藥水甜甜哋，{N}一啖飲晒。",
+    "e": "The medicine is sweet. One big gulp!",
+    "scene": "屋企飯枱前：{N}拎住小匙羹藥水，勇敢飲落去"
+   },
+   {
+    "w": "休息多一點，睡個好覺。",
+    "c": "休息多啲，瞓個好覺。",
+    "e": "Rest well. Sleep tight.",
+    "scene": "睡房入面：{N}瞓喺床上，媽媽喺床邊輕輕拍"
+   },
+   {
+    "w": "第二天，{N}精神回來了！",
+    "c": "第二日，{N}精神返嚟啦！",
+    "e": "Next day — energy is back!",
+    "scene": "朝早客廳：{N}坐起身伸懶腰，笑住同媽媽揮手"
+   },
+   {
+    "w": "食藥加休息，身體打勝仗！",
+    "c": "食藥加休息，身體打勝仗！",
+    "e": "Medicine plus rest wins the day!",
+    "scene": "客廳入面：{N}舉起雙手好精神，全家人開心拍手"
+   }
+  ],
+  "同朋友分享": [
+   {
+    "w": "{N}帶了最喜歡的玩具去公園。",
+    "c": "{N}帶咗最鍾意嘅玩具去公園。",
+    "e": "{N} brings a favourite toy to the park.",
+    "scene": "公園入面：{N}抱住心愛玩具車，準備玩"
+   },
+   {
+    "w": "好朋友望住玩具，好想玩。",
+    "c": "好朋友望住件玩具，好想玩。",
+    "e": "A friend looks at the toy, wishing.",
+    "scene": "公園長凳邊：小朋友企喺旁邊望住玩具，{N}留意到"
+   },
+   {
+    "w": "{N}想了想，把玩具遞過去。",
+    "c": "{N}諗咗陣，將件玩具遞過去。",
+    "e": "{N} thinks… and shares the toy.",
+    "scene": "{N}雙手將玩具遞俾朋友，朋友驚喜笑"
+   },
+   {
+    "w": "你玩一陣，我玩一陣，輪流玩。",
+    "c": "你玩陣，我玩陣，輪住玩。",
+    "e": "Your turn, my turn — take turns!",
+    "scene": "兩個小朋友輪流玩玩具車，一齊笑"
+   },
+   {
+    "w": "分享之後，快樂變成兩份。",
+    "c": "分享之後，快樂變咗兩份。",
+    "e": "Sharing makes happiness double.",
+    "scene": "公園草地：兩個小朋友一齊玩，爸爸媽媽喺旁邊笑住睇"
+   },
+   {
+    "w": "好朋友說：下次我也分享給你！",
+    "c": "好朋友話：下次我都分享俾你！",
+    "e": "Next time I will share with you too!",
+    "scene": "黃昏公園：兩個小朋友拖住手，一齊行去搵爸爸媽媽"
+   }
+  ],
+  "唔再咬手指": [
+   {
+    "w": "緊張的時候，{N}會咬手指。",
+    "c": "緊張嗰陣，{N}會咬手指甲。",
+    "e": "When nervous, {N} bites fingernails.",
+    "scene": "課室角落：{N}低頭咬手指，有少少緊張"
+   },
+   {
+    "w": "手指痛痛的，指甲短短的。",
+    "c": "手指痛痛哋，指甲短短哋。",
+    "e": "Fingers hurt. Nails get short.",
+    "scene": "{N}望住自己短短嘅指甲，扁起嘴"
+   },
+   {
+    "w": "媽媽說：我們一起想辦法。",
+    "c": "媽媽話：我哋一齊諗辦法。",
+    "e": "Let us find a way together.",
+    "scene": "客廳入面：媽媽拖住{N}雙手，溫柔講嘢"
+   },
+   {
+    "w": "想咬的時候，抱抱小公仔，深呼吸。",
+    "c": "想咬嗰陣，攬下小公仔，深呼吸。",
+    "e": "Hug the toy and breathe deeply.",
+    "scene": "{N}攬住小公仔深呼吸，雙手放鬆落嚟"
+   },
+   {
+    "w": "過了幾天，指甲長回來了。",
+    "c": "過咗幾日，指甲生返長啦。",
+    "e": "A few days later, nails grow back.",
+    "scene": "窗邊陽光下：{N}舉起雙手，展示長返嘅指甲"
+   },
+   {
+    "w": "{N}的雙手，乾淨又漂亮！",
+    "c": "{N}對手，乾淨又靚靚！",
+    "e": "Clean, pretty hands. Well done!",
+    "scene": "{N}舉起雙手開心笑，全家人拍手"
+   }
+  ],
+  "過馬路要小心": [
+   {
+    "w": "走到馬路邊，{N}先停下來，牽實媽媽的手。",
+    "c": "行到馬路邊，{N}停一停，拖實媽媽隻手。",
+    "e": "At the kerb, {N} stops and holds Mummy's hand tight.",
+    "scene": "行人路邊：{N}拖實媽媽隻手企定定，前面係斑馬線同交通燈"
+   },
+   {
+    "w": "紅燈亮了，車一輛一輛駛過，要企定等。",
+    "c": "紅燈著咗，啲車一架架駛過，要企定定等。",
+    "e": "Red light! Cars go by. Stand still and wait.",
+    "scene": "馬路邊：交通燈係紅色，汽車駛過，{N}同媽媽企喺行人路等"
+   },
+   {
+    "w": "綠色小人亮起來，先望右，再望左，再望右。",
+    "c": "綠公仔著咗，先望右，再望左，再望右。",
+    "e": "Green man! Look right, look left, look right again.",
+    "scene": "交通燈轉綠公仔，{N}先望右邊、再望左邊，媽媽蹲喺旁邊一齊望"
+   },
+   {
+    "w": "沒有車來了，{N}拖住媽媽，行過斑馬線。",
+    "c": "冇車嚟啦，{N}拖住媽媽，行過斑馬線。",
+    "e": "No cars coming. Walk across the zebra crossing.",
+    "scene": "斑馬線上面：{N}拖住媽媽一步一步行，唔跑，兩邊冇車"
+   },
+   {
+    "w": "行到對面行人路，才停下來回頭望。",
+    "c": "行到對面行人路，先至停低回頭望。",
+    "e": "Safe on the other side. Now we can look back.",
+    "scene": "對面行人路：{N}企定回頭望返斑馬線，媽媽豎起手指公"
+   },
+   {
+    "w": "停一停、望清楚、慢慢行，{N}識得安全過馬路了！",
+    "c": "停一停、望清楚、慢慢行，{N}識得安全過馬路啦！",
+    "e": "Stop, look, walk slowly — {N} crosses safely!",
+    "scene": "行人路上：{N}拖住媽媽開心繼續行，交通燈喺後面"
+   }
+  ],
+  "香港交通工具": [
+   {
+    "w": "今天{N}出門，試勻香港的交通工具。",
+    "c": "今日{N}出門口，試勻香港嘅交通工具。",
+    "e": "Today {N} tries Hong Kong transport!",
+    "scene": "屋企樓下街道：{N}拖住爸爸媽媽，望住路上嘅巴士、的士同電車路軌，準備出發"
+   },
+   {
+    "w": "先搭港鐵，拍卡入閘，車廂裡要企穩扶好。",
+    "c": "搭港鐵先，拍卡入閘，入到車廂要企穩扶實。",
+    "e": "MTR first! Tap the card, hold the handrail.",
+    "scene": "港鐵站入面：{N}拍卡入閘，月台有列車埋站，之後喺車廂扶住扶手"
+   },
+   {
+    "w": "再搭雙層巴士，坐上層最前排看風景。",
+    "c": "再搭雙層巴士，坐上層最前排睇風景。",
+    "e": "A double-decker bus! Best view on top.",
+    "scene": "雙層巴士上層最前排：{N}貼住車窗望街景，爸爸媽媽坐喺旁邊"
+   },
+   {
+    "w": "電車叮叮慢慢行，沿途看老店和街道。",
+    "c": "電車叮叮慢慢行，沿途睇老店同街道。",
+    "e": "Ding ding! The tram goes slowly by.",
+    "scene": "香港島街道：一架雙層電車慢慢駛過，{N}喺電車上面望住兩邊唐樓同老店"
+   },
+   {
+    "w": "坐天星小輪過海，維港的風吹過來。",
+    "c": "坐天星小輪過海，維港啲風吹埋嚟。",
+    "e": "The Star Ferry crosses the harbour. Breeze!",
+    "scene": "天星小輪甲板：綠白色船身駛過維多利亞港，{N}扶住欄杆望海同高樓"
+   },
+   {
+    "w": "最後搭紅色的士回家，{N}認識了好多交通工具！",
+    "c": "最後搭紅色的士返屋企，{N}識咗好多交通工具啦！",
+    "e": "A red taxi home. So many ways to travel!",
+    "scene": "黃昏街道：一架紅色的士停喺路邊，{N}同爸爸媽媽上車，準備返屋企"
+   }
+  ],
+  "媽媽返工": [
+   {
+    "w": "媽媽要去上班了，{N}抱住媽媽不捨得。",
+    "c": "媽媽要去返工啦，{N}攬住媽媽唔捨得。",
+    "e": "Mummy goes to work. {N} hugs her tight.",
+    "scene": "屋企玄關：媽媽著好出門衫拎住手袋，{N}攬住媽媽唔放手"
+   },
+   {
+    "w": "媽媽說：傍晚就會回來，拉勾勾約定。",
+    "c": "媽媽話：夜晚就會返嚟㗎啦，勾手指尾約定。",
+    "e": "Mummy will be back tonight. Pinky promise!",
+    "scene": "門口：媽媽蹲低同{N}勾手指尾，手指住牆上時鐘"
+   },
+   {
+    "w": "{N}揮手說拜拜，目送媽媽出門。",
+    "c": "{N}揮手講拜拜，望住媽媽出門口。",
+    "e": "Wave bye-bye. See you tonight, Mummy!",
+    "scene": "門口：{N}揮手講拜拜，媽媽拖住手袋出門"
+   },
+   {
+    "w": "白天，{N}畫了一幅畫，要送給媽媽。",
+    "c": "日頭，{N}畫咗一幅畫，要送俾媽媽。",
+    "e": "{N} draws a picture for Mummy.",
+    "scene": "客廳枱前：{N}畫緊一幅有媽媽嘅畫，家人喺旁邊陪住"
+   },
+   {
+    "w": "天黑了，門口傳來開門聲——媽媽回來了！",
+    "c": "天黑啦，門口有開門聲——媽媽返嚟啦！",
+    "e": "The door opens — Mummy is home!",
+    "scene": "黃昏玄關：門打開，媽媽返嚟，{N}開心跑過去"
+   },
+   {
+    "w": "{N}跑去抱住媽媽，把畫送給她。",
+    "c": "{N}跑去攬住媽媽，將幅畫送俾佢。",
+    "e": "A big hug, and the picture is for Mummy!",
+    "scene": "玄關：{N}攬實媽媽，雙手遞上幅畫，媽媽笑得好開心"
+   }
+  ],
+  "發脾氣點算": [
+   {
+    "w": "想要的玩具被收起來，{N}好生氣。",
+    "c": "想要嘅玩具俾人收起咗，{N}好嬲。",
+    "e": "The toy is put away. {N} is angry!",
+    "scene": "客廳入面：玩具被收起，{N}叉住手皺眉頭，腳踏地"
+   },
+   {
+    "w": "{N}大叫起來，眼淚也流出來。",
+    "c": "{N}大叫起嚟，眼淚都出埋嚟。",
+    "e": "{N} shouts. Tears come out.",
+    "scene": "客廳入面：{N}企住大叫，媽媽蹲喺旁邊安靜等候"
+   },
+   {
+    "w": "媽媽說：生氣可以，我們慢慢呼吸。",
+    "c": "媽媽話：嬲得㗎，我哋慢慢抖氣。",
+    "e": "It is okay to be angry. Breathe slowly.",
+    "scene": "媽媽拖住{N}隻手，示範慢慢深呼吸"
+   },
+   {
+    "w": "一、二、三、四——呼吸慢下來了。",
+    "c": "一、二、三、四——抖氣慢返落嚟啦。",
+    "e": "One, two, three, four — breathing slows.",
+    "scene": "{N}合埋眼深呼吸，隻手放喺心口，表情放鬆"
+   },
+   {
+    "w": "平靜下來，{N}說出自己想要什麼。",
+    "c": "定返落嚟，{N}講出自己想要咩。",
+    "e": "Calm now, {N} uses words to tell.",
+    "scene": "{N}平靜同媽媽講嘢，媽媽留心聽"
+   },
+   {
+    "w": "說出來之後，{N}覺得舒服多了。",
+    "c": "講咗出嚟之後，{N}舒服咗好多。",
+    "e": "Words help. {N} feels much better.",
+    "scene": "{N}同媽媽攬下，笑笑口一齊玩其他玩具"
+   }
+  ],
+  "食菜唔偏食": [
+   {
+    "w": "晚飯有青菜，{N}扭頭不想食。",
+    "c": "晚飯有青菜，{N}擰轉頭唔想食。",
+    "e": "Greens for dinner. {N} turns away.",
+    "scene": "飯枱前：碟上面有西蘭花同紅蘿蔔，{N}擰轉頭，推開隻碟"
+   },
+   {
+    "w": "媽媽說：試一小口，一口就好。",
+    "c": "媽媽話：試一啖仔啦，一啖就好。",
+    "e": "Just one tiny bite, says Mummy.",
+    "scene": "媽媽用匙羹盛起一細啖菜，溫柔遞俾{N}"
+   },
+   {
+    "w": "{N}閉上眼睛，食了一小口。",
+    "c": "{N}合埋眼，食咗一細啖。",
+    "e": "Eyes closed — one small bite!",
+    "scene": "{N}合埋眼食咗一細啖菜，樣有少少緊張"
+   },
+   {
+    "w": "咦？脆脆的，沒有想像中難食！",
+    "c": "咦？脆脆哋，冇想像中咁難食喎！",
+    "e": "Crunchy! Not bad at all!",
+    "scene": "{N}驚喜張開眼，望住碟菜笑"
+   },
+   {
+    "w": "{N}自己再夾一口，媽媽豎起拇指。",
+    "c": "{N}自己再夾一啖，媽媽豎起手指公。",
+    "e": "One more bite — all by myself!",
+    "scene": "{N}自己夾起青菜放入口，媽媽豎起手指公"
+   },
+   {
+    "w": "食菜會長高高，{N}好自豪！",
+    "c": "食菜會大得高，{N}好自豪！",
+    "e": "Veggies help me grow tall and strong!",
+    "scene": "{N}企直舉起手臂展示大力，全家人拍手"
+   }
+  ],
+  "放低電話": [
+   {
+    "w": "{N}拿著平板，看呀看停不下來。",
+    "c": "{N}拎住平板，睇下睇下停唔到手。",
+    "e": "{N} holds the tablet and cannot stop.",
+    "scene": "梳化上面：{N}拎住平板睇到入神，玩具放喺旁邊冇人理"
+   },
+   {
+    "w": "眼睛開始累，{N}揉了揉眼睛。",
+    "c": "對眼開始攰，{N}捽下捽下眼。",
+    "e": "Eyes feel tired. Rub, rub.",
+    "scene": "{N}放低少少平板，揉住眼睛打呵欠"
+   },
+   {
+    "w": "媽媽說：夠鐘休息，一起放下屏幕。",
+    "c": "媽媽話：夠鐘休息啦，一齊放低個芒。",
+    "e": "Time for a break — screens down together.",
+    "scene": "媽媽將平板放入籃，自己部手機都放埋一齊"
+   },
+   {
+    "w": "放下平板，去公園跑跑跳跳！",
+    "c": "放低平板，去公園跑下跳下！",
+    "e": "Tablet down. Off to the park to run!",
+    "scene": "公園草地：{N}同爸爸媽媽追波跑，全家人笑"
+   },
+   {
+    "w": "原來放下屏幕，外面的世界這麼好玩。",
+    "c": "原來放低個芒，出面咁好玩㗎。",
+    "e": "The real world is so much fun!",
+    "scene": "黃昏公園：{N}同家人玩吹泡泡，笑得好開心"
+   },
+   {
+    "w": "回到家，眼睛舒服，心情又好。",
+    "c": "返到屋企，對眼舒服，心情又好。",
+    "e": "Home again — eyes rested, heart happy.",
+    "scene": "夜晚客廳：{N}同媽媽一齊睇圖書，平板安靜放喺籃入面"
+   }
+  ],
+  "洗手趕走細菌": [
+   {
+    "w": "玩完玩具，{N}的雙手髒髒的。",
+    "c": "玩完玩具，{N}對手污糟邋遢。",
+    "e": "After play, hands are dirty!",
+    "scene": "客廳入面：{N}舉起一雙玩到污糟嘅手，望住發呆"
+   },
+   {
+    "w": "食飯之前，要先洗手趕走細菌！",
+    "c": "食飯之前，要洗手趕走啲細菌先！",
+    "e": "Wash hands before eating — germs away!",
+    "scene": "浴室洗手盆前：{N}企喺小凳上面，伸手開水龍頭"
+   },
+   {
+    "w": "搓泡泡，手心手背都要搓。",
+    "c": "搓泡泡，手心手背都要搓勻。",
+    "e": "Bubbles! Rub palms and backs.",
+    "scene": "{N}雙手搓滿白泡泡，笑住望住啲泡泡"
+   },
+   {
+    "w": "唱著歌搓二十下，再沖乾淨。",
+    "c": "唱住歌搓廿下，再沖乾淨。",
+    "e": "Sing and scrub, then rinse clean.",
+    "scene": "水龍頭下面：{N}沖走泡泡，雙手變返乾淨"
+   },
+   {
+    "w": "抹乾雙手，香噴噴，乾乾淨淨。",
+    "c": "抹乾對手，香噴噴，乾乾淨淨。",
+    "e": "Dry hands — clean and fresh!",
+    "scene": "{N}用毛巾抹乾手，舉起雙手俾媽媽睇"
+   },
+   {
+    "w": "洗乾淨手，就可以開心食飯了！",
+    "c": "洗乾淨手，先可以開心食飯！",
+    "e": "Clean hands, happy meal time!",
+    "scene": "飯枱前：{N}展示乾淨雙手，開心準備食飯"
+   }
+  ],
+  "_default": [
+   {
+    "w": "這個是{N}，今天有新挑戰。",
+    "c": "呢個係{N}，今日有新挑戰。",
+    "e": "This is {N}. Today is a big day.",
+    "scene": "屋企入面：{N}企喺同「{T}」有關嘅用品前面，準備開始嘗試"
+   },
+   {
+    "w": "{N}深呼吸，準備試一試。",
+    "c": "{N}深呼吸，準備試下。",
+    "e": "{N} takes a deep breath. Ready?",
+    "scene": "{N}深呼吸，雙手握拳俾自己打氣，家人喺旁邊"
+   },
+   {
+    "w": "第一次有點難，沒有關係。",
+    "c": "第一次有啲難，唔緊要㗎。",
+    "e": "It is a bit hard. That is okay.",
+    "scene": "{N}嘗試緊「{T}」做到一半遇到困難，家人蹲低鼓勵"
+   },
+   {
+    "w": "家人陪著{N}，慢慢學。",
+    "c": "屋企人陪住{N}，慢慢學。",
+    "e": "Family is here. Slowly, slowly.",
+    "scene": "家人陪住{N}一步一步練習「{T}」，氣氛溫暖"
+   },
+   {
+    "w": "{N}成功了一小步！",
+    "c": "{N}成功咗一小步啦！",
+    "e": "{N} did it — one small step!",
+    "scene": "{N}完成咗「{T}」嘅一小步，開心舉起手"
+   },
+   {
+    "w": "全家一起笑，好溫暖。",
+    "c": "全家人一齊笑，好溫暖。",
+    "e": "Everyone smiles. What a warm day!",
+    "scene": "全家人圍住{N}一齊笑，同「{T}」有關嘅用品放喺旁邊"
+   }
+  ]
+ },
+ "promptStoriesBB": {
+  "自己食飯": [
+   {
+    "w": "{N}坐在高椅上，準備食飯。",
+    "c": "{N}坐喺高凳上面，準備食飯。",
+    "e": "{N} sits in the high chair. Yummy time!",
+    "scene": "飯廳入面：{N}坐喺BB高椅，面前有小碗同手指食物"
+   },
+   {
+    "w": "拿起小食物，放進嘴巴。",
+    "c": "拎起細細粒食物，放入口。",
+    "e": "Pick up a little bite. Into the mouth!",
+    "scene": "BB高椅前：{N}用手指拎起一粒手指食物放入口"
+   },
+   {
+    "w": "自己食，好好味！",
+    "c": "自己食，好好味！",
+    "e": "Eating all by myself. Yummy!",
+    "scene": "飯枱前：{N}專心慢慢食，開心瞇起眼"
+   },
+   {
+    "w": "食完了！媽媽拍拍手。",
+    "c": "食完啦！媽媽拍下手。",
+    "e": "All done! Mummy claps!",
+    "scene": "飯廳入面：{N}舉起雙手，媽媽喺旁邊拍手"
+   }
+  ],
+  "自己瞓": [
+   {
+    "w": "瞓覺時間到了，{N}上床床。",
+    "c": "瞓覺覺時間到，{N}上床床。",
+    "e": "Sleepy time. {N} goes into the crib.",
+    "scene": "夜晚BB房：{N}瞓喺BB床上面，攬住心愛公仔，床邊有星星夜燈"
+   },
+   {
+    "w": "媽媽在床邊，陪住{N}。",
+    "c": "媽媽喺床邊，陪住{N}。",
+    "e": "Mummy stays right beside the crib.",
+    "scene": "BB床邊：媽媽溫柔望住{N}，{N}攬住公仔慢慢合埋眼"
+   },
+   {
+    "w": "{N}抱住公仔，安心瞓覺。",
+    "c": "{N}攬住公仔，安心瞓覺覺。",
+    "e": "Hug the toy tight. Sleep tight.",
+    "scene": "夜晚BB房：{N}喺夜燈微光下瞓得好甜"
+   },
+   {
+    "w": "早上醒來，{N}笑咪咪！",
+    "c": "朝早醒嚟，{N}笑咪咪！",
+    "e": "Morning! {N} wakes up smiling!",
+    "scene": "朝早BB房：陽光入屋，{N}扶住BB床邊企起身笑"
+   }
+  ],
+  "戒奶嘴": [
+   {
+    "w": "奶嘴是{N}的好朋友。",
+    "c": "奶嘴係{N}嘅好朋友。",
+    "e": "The pacifier is a good friend.",
+    "scene": "{N}坐喺墊上含住奶嘴，攬住心愛公仔"
+   },
+   {
+    "w": "{N}長大一點點了。",
+    "c": "{N}大個咗少少啦。",
+    "e": "{N} is a little bigger now.",
+    "scene": "媽媽蹲喺{N}旁邊，溫柔同{N}講，準備收好奶嘴"
+   },
+   {
+    "w": "把奶嘴放進小盒子，拜拜！",
+    "c": "將奶嘴放入小盒仔，拜拜！",
+    "e": "Into the little box. Bye-bye!",
+    "scene": "{N}同媽媽一齊將奶嘴放入紀念小盒"
+   },
+   {
+    "w": "沒有奶嘴，也瞓得好甜。",
+    "c": "冇奶嘴，都瞓得好甜。",
+    "e": "No pacifier — still sleeping sweetly.",
+    "scene": "BB床上面：{N}攬住公仔安心瞓著，紀念盒放喺床邊枱"
+   },
+   {
+    "w": "早上醒來，{N}好自豪！",
+    "c": "朝早醒嚟，{N}好自豪！",
+    "e": "Morning! {N} feels so proud!",
+    "scene": "朝早：{N}喺BB床邊開心拍手，紀念盒喺旁邊"
+   }
+  ],
+  "自己刷牙": [
+   {
+    "w": "{N}出第一隻牙仔啦！",
+    "c": "{N}出第一隻牙仔啦！",
+    "e": "A first tooth is here!",
+    "scene": "浴室入面：媽媽扶住{N}企喺小凳上，{N}拎住BB牙刷笑住展示牙仔"
+   },
+   {
+    "w": "媽媽扶住，輕輕刷。",
+    "c": "媽媽扶住，輕輕刷下。",
+    "e": "Mummy holds on. Brush, brush, gently.",
+    "scene": "浴室洗手盆前：媽媽扶住{N}，幫手輕輕刷牙"
+   },
+   {
+    "w": "上面刷，下面也刷。",
+    "c": "上面刷下，下面又刷下。",
+    "e": "Up and down, round and round.",
+    "scene": "浴室入面：{N}自己拎住牙刷刷下刷下，媽媽拍手鼓勵"
+   },
+   {
+    "w": "刷完牙，白白的，好開心！",
+    "c": "刷完牙，白雪雪，好開心！",
+    "e": "All done! Clean, white, happy!",
+    "scene": "浴室入面：{N}刷完牙開心展示牙仔，媽媽攬住{N}"
+   }
+  ]
+ },
+ "titles": {
+  "第一次返學": {
+   "zh": "{N}第一天上學",
+   "canto": "{N}第一日返學",
+   "en": "{N} Goes to School"
+  },
+  "自己刷牙": {
+   "zh": "{N}自己刷牙",
+   "canto": "{N}自己刷牙仔",
+   "en": "{N} Brushes Teeth"
+  },
+  "戒尿片": {
+   "zh": "{N}自己去廁所",
+   "canto": "{N}自己去廁所",
+   "en": "{N} Uses the Potty"
+  },
+  "戒奶嘴": {
+   "zh": "{N}和奶嘴說再見",
+   "canto": "{N}同奶嘴講拜拜",
+   "en": "{N} Says Bye to the Pacifier"
+  },
+  "自己食飯": {
+   "zh": "{N}自己食飯",
+   "canto": "{N}自己食飯仔",
+   "en": "{N} Eats Alone"
+  },
+  "怕黑": {
+   "zh": "{N}不怕黑",
+   "canto": "{N}唔怕黑",
+   "en": "{N} Is Not Afraid of the Dark"
+  },
+  "自己瞓": {
+   "zh": "{N}自己睡覺",
+   "canto": "{N}自己瞓覺覺",
+   "en": "{N} Sleeps Alone"
+  },
+  "弟妹出世": {
+   "zh": "{N}當大孩子了",
+   "canto": "{N}做大孩子啦",
+   "en": "{N} the Big Kid"
+  },
+  "去醫院打針": {
+   "zh": "{N}打針好勇敢",
+   "canto": "{N}打針唔使驚",
+   "en": "{N} Is Brave at the Doctor"
+  },
+  "幼稚園面試": {
+   "zh": "{N}去面試",
+   "canto": "{N}去幼稚園面試",
+   "en": "{N} Visits Kindergarten"
+  },
+  "第一次剪頭髮": {
+   "zh": "{N}第一次剪頭髮",
+   "canto": "{N}第一次剪頭髮",
+   "en": "{N}'s First Haircut"
+  },
+  "自己著衫": {
+   "zh": "{N}自己穿衣服",
+   "canto": "{N}自己著衫",
+   "en": "{N} Gets Dressed"
+  },
+  "自己收拾玩具": {
+   "zh": "{N}自己收拾玩具",
+   "canto": "{N}自己執玩具",
+   "en": "{N} Tidies Up"
+  },
+  "學游水": {
+   "zh": "{N}學游泳",
+   "canto": "{N}學游水",
+   "en": "{N} Learns to Swim"
+  },
+  "第一次搭飛機去旅行": {
+   "zh": "{N}第一次坐飛機",
+   "canto": "{N}第一次搭飛機",
+   "en": "{N}'s First Flight"
+  },
+  "病咗要食藥": {
+   "zh": "{N}乖乖吃藥",
+   "canto": "{N}乖乖食藥",
+   "en": "{N} Takes Medicine"
+  },
+  "同朋友分享": {
+   "zh": "{N}學會分享",
+   "canto": "{N}學識分享",
+   "en": "{N} Learns to Share"
+  },
+  "唔再咬手指": {
+   "zh": "{N}不咬手指了",
+   "canto": "{N}唔咬手指啦",
+   "en": "{N} Stops Biting Nails"
+  },
+  "過馬路要小心": {
+   "zh": "{N}小心過馬路",
+   "canto": "{N}過馬路要小心",
+   "en": "{N} Crosses the Road Safely"
+  },
+  "香港交通工具": {
+   "zh": "{N}認識香港交通工具",
+   "canto": "{N}識搭香港交通工具",
+   "en": "{N} Rides Around Hong Kong"
+  },
+  "媽媽返工": {
+   "zh": "{N}等媽媽回家",
+   "canto": "{N}等媽媽返嚟",
+   "en": "{N} Waits for Mummy"
+  },
+  "發脾氣點算": {
+   "zh": "{N}學會深呼吸",
+   "canto": "{N}嬲嗰陣點算",
+   "en": "{N} Learns to Breathe"
+  },
+  "食菜唔偏食": {
+   "zh": "{N}試食青菜",
+   "canto": "{N}食菜唔偏食",
+   "en": "{N} Tries Veggies"
+  },
+  "放低電話": {
+   "zh": "{N}放下平板去公園",
+   "canto": "{N}放低電話",
+   "en": "{N} Puts the Tablet Down"
+  },
+  "洗手趕走細菌": {
+   "zh": "{N}洗手趕細菌",
+   "canto": "{N}洗手趕走細菌",
+   "en": "{N} Washes Hands"
+  }
+ },
+ "styles": [
+  {
+   "n": "日系高級童話 ★預設",
+   "img": "style-japanese.webp",
+   "spec": "日系高級童話繪本風：柔和粉彩色盤、夢幻柔光、水彩紙質感、精緻細節與留白、人物比例一致、五官畫法統一"
+  },
+  {
+   "n": "溫柔水彩",
+   "img": "style-watercolor.webp",
+   "spec": "溫柔水彩：手繪水彩暈染、暖色調、紙紋質感、線條柔和、人物比例一致"
+  },
+  {
+   "n": "扁平卡通",
+   "img": "style-flat.webp",
+   "spec": "扁平卡通：粗線條、鮮明平色、現代繪本構圖、人物比例一致"
+  },
+  {
+   "n": "蠟筆手繪",
+   "img": "style-crayon.webp",
+   "spec": "蠟筆手繪：蠟筆筆觸、童趣構圖、柔和粉彩、人物比例一致"
+  },
+  {
+   "n": "紙雕立體",
+   "img": "style-papercut.webp",
+   "spec": "紙雕立體：剪紙拼貼、分層紙雕、邊緣有紙嘅厚度同輕微投影、色塊分明、人物比例一致"
+  },
+  {
+   "n": "夢幻粉彩水粉",
+   "img": "style-gouache.webp",
+   "spec": "夢幻粉彩水粉：水粉厚塗、粉彩夢幻色盤、柔霧光感、人物比例一致"
+  },
+  {
+   "n": "彩色鉛筆手繪",
+   "img": "style-pencil.webp",
+   "spec": "彩色鉛筆手繪：彩色鉛筆筆觸同排線、柔和粉彩色盤、紙紋質感、人物比例一致"
+  },
+  {
+   "n": "立體黏土",
+   "img": "style-clay.webp",
+   "spec": "立體黏土定格風：黏土手工質感、圓潤造型、柔和粉彩色盤、微微立體光影、人物比例一致"
+  },
+  {
+   "n": "刺繡布藝",
+   "img": "style-embroidery.webp",
+   "spec": "刺繡布藝風：布料拼貼加刺繡針線、縫線邊緣、溫暖手作質感、柔和色盤、人物比例一致"
+  },
+  {
+   "n": "淡彩水墨",
+   "img": "style-inkwash.webp",
+   "spec": "淡彩水墨：水墨線條加淡彩暈染、大量留白、清雅色盤、人物比例一致"
+  },
+  {
+   "n": "夢幻星空",
+   "img": "style-starry.webp",
+   "spec": "夢幻星空水彩：深藍星夜色盤、星光同螢火蟲光點、柔和水彩暈染、人物比例一致"
+  },
+  {
+   "n": "復古印刷",
+   "img": "style-vintage.webp",
+   "spec": "復古印刷風：懷舊印刷網點、做舊紙色、有限色盤、粗線條、人物比例一致"
+  },
+  {
+   "n": "油畫棒厚塗",
+   "img": "style-oilpastel.webp",
+   "spec": "油畫棒厚塗：油畫棒厚塗筆觸、濃厚肌理、明亮色盤、人物比例一致"
+  },
+  {
+   "n": "自備參考圖",
+   "img": "",
+   "spec": "跟用家上載參考圖嘅畫風：色盤、線條、質感照參考圖、人物比例一致"
+  }
+ ],
+ "ageType": {
+  "0–2 歲": {
+   "ptZh": 28,
+   "ptEn": 26,
+   "maxZh": 8,
+   "maxEn": 5,
+   "maxLines": 2
+  },
+  "2–3 歲": {
+   "ptZh": 26,
+   "ptEn": 24,
+   "maxZh": 10,
+   "maxEn": 6,
+   "maxLines": 2
+  },
+  "3–4 歲": {
+   "ptZh": 24,
+   "ptEn": 23,
+   "maxZh": 12,
+   "maxEn": 8,
+   "maxLines": 3
+  },
+  "5–6 歲": {
+   "ptZh": 22,
+   "ptEn": 22,
+   "maxZh": 15,
+   "maxEn": 10,
+   "maxLines": 3
+  }
+ },
+ "coverType": {
+  "ptZh": 48,
+  "ptEn": 38,
+  "ptPageNum": 13
+ }
+}
