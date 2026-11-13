@@ -15,27 +15,27 @@
    "pages": [
     {
      "img": "school-home.webp",
-     "w": "今日係{N}第一天上學，{N}同媽媽一齊收拾書包。",
-     "c": "今日係{N}第一日返學，{N}同媽媽一齊執書包。",
-     "e": "First day of school! {N} packs the bag with Mummy."
+     "w": "{N}收拾小書包，啪啪啪！同媽媽整理，拍拍拍！",
+     "c": "{N}執執書包仔，啪啪啪！同媽咪整整，拍拍拍！",
+     "e": "Pack the bag, snap snap snap! With Mummy, pat pat pat!"
     },
     {
      "img": "school-cover.webp",
-     "w": "到咗學校門口，{N}同媽媽揮手講拜拜。",
-     "c": "到咗學校門口，{N}同媽媽揮手講拜拜。",
-     "e": "At the school gate, {N} waves bye-bye to Mummy."
+     "w": "到學校門口，揮揮手！{N}同媽媽說拜拜，拜拜拜！",
+     "c": "到學校門口，揮揮手！{N}同媽咪講拜拜，拜拜拜！",
+     "e": "School gate, wave wave wave! Bye-bye Mummy, bye bye bye!"
     },
     {
      "img": "school-class.webp",
-     "w": "玩積木、看圖書，{N}認識了新朋友。",
-     "c": "玩積木、睇圖書，{N}識咗新朋友。",
-     "e": "Blocks and books! A new friend!"
+     "w": "玩積木，疊疊高！翻翻小圖書，嘩嘩嘩！{N}交了新朋友。",
+     "c": "砌積木，疊疊高！揭揭圖書仔，嘩嘩嘩！{N}識咗新朋友。",
+     "e": "Stack blocks, up up up! Read books, wow wow wow! New friends!"
     },
     {
      "img": "school-pickup.webp",
-     "w": "放學了！{N}跑去抱住媽媽。",
-     "c": "放學啦！{N}跑去攬住媽媽。",
-     "e": "School is over! A big hug for Mummy!"
+     "w": "放學啦！{N}跑跑跑，抱緊媽媽！叮！好開心！",
+     "c": "放學啦！{N}跑跑跑，攬緊媽咪！叮！好開心！",
+     "e": "School's done! Run run run! Big hug, Mummy! Ding!"
     }
    ]
   },
@@ -54,21 +54,21 @@
    "pages": [
     {
      "img": "school-boy-p1.webp",
-     "w": "今天是{N}第一天上學，{N}自己收拾書包。",
-     "c": "今日係{N}第一日返學，{N}自己執書包。",
-     "e": "First day of school! {N} packs the school bag."
+     "w": "{N}站得直，手伸伸。自己收拾書包，拍拍拍！",
+     "c": "{N}凳凳企，手伸伸。自己執書包，拍拍拍！",
+     "e": "Stand up tall! Pack the bag, pat pat!"
     },
     {
      "img": "school-boy-p2.webp",
-     "w": "玩積木、識新朋友，{N}好開心。",
-     "c": "玩積木、識新朋友，{N}好开心。",
-     "e": "Playing blocks! Making new friends!"
+     "w": "玩積木，叠叠高！交個新朋友，哈哈笑！",
+     "c": "砌積木，叠叠高！識個新朋友，哈哈笑！",
+     "e": "Stack blocks tall! New friends, ha ha!"
     },
     {
      "img": "school-boy-p3.webp",
-     "w": "放學了！{N}跑去抱住媽媽。",
-     "c": "放學啦！{N}跑去攬住媽媽。",
-     "e": "School is over! A big hug for Mummy!"
+     "w": "放學啦！{N}跑跑跑，抱緊媽咪，叮！",
+     "c": "放學啦！{N}跑跑跑，攬緊媽咪，叮！",
+     "e": "School's done! Run run, hug Mummy, ding!"
     }
    ]
   },
@@ -87,27 +87,27 @@
    "pages": [
     {
      "img": "trial-p1.webp",
-     "w": "這個是{N}，準備拿牙刷。",
-     "c": "呢個係{N}，伸手去拿牙刷。",
-     "e": "This is {N}. Reaching for the toothbrush!"
+     "w": "{N}凳凳站，拿起小牙刷！",
+     "c": "{N}凳凳企，攞支牙刷仔！",
+     "e": "{N} stands tall, grabs the brush!"
     },
     {
      "img": "trial-p2.webp",
-     "w": "刷刷刷，嘴巴裏滿是泡泡。",
-     "c": "刷刷刷，成口都係泡泡。",
-     "e": "Brush, brush — foam all around!"
+     "w": "上下刷，唰唰唰！滿嘴白泡泡，波波波！",
+     "c": "上下刷，唰唰唰！成口白泡泡，波波波！",
+     "e": "Brush, brush, swoosh! Foamy bubbles, pop, pop!"
     },
     {
      "img": "trial-cover.webp",
-     "w": "刷好啦！{N}舉起牙刷，媽媽拍手讚叻。",
-     "c": "刷好啦！{N}舉起牙刷，媽媽拍手讚叻。",
-     "e": "All brushed! {N} holds the toothbrush up high — Mummy claps!"
+     "w": "刷好啦！舉高小牙刷，媽媽拍拍手，讚你棒！",
+     "c": "刷好啦！舉高牙刷仔，媽咪拍手手，讚你叻！",
+     "e": "All done! Brush up high! Mummy claps, wow!"
     },
     {
      "img": "trial-p3.webp",
-     "w": "刷完牙，白白的，好開心！",
-     "c": "刷完牙，白雪雪，好開心！",
-     "e": "All done! Clean, white, happy!"
+     "w": "牙齒白亮亮，叮！閃閃光！{N}哈哈笑，好開心！",
+     "c": "牙齒白雪雪，叮！閃閃亮！{N}哈哈笑，好開心！",
+     "e": "Teeth so white, ding! Sparkle bright! {N} giggles, yay!"
     }
    ]
   },
@@ -126,21 +126,21 @@
    "pages": [
     {
      "img": "brush-boy-p1.webp",
-     "w": "對著鏡子刷刷刷，泡泡滿嘴巴。",
-     "c": "對住鏡刷刷刷，成口都係泡泡。",
-     "e": "Brush, brush at the mirror — bubbles everywhere!"
+     "w": "{N}站站好，對著鏡！刷刷刷，波波波！",
+     "c": "{N}凳凳企，對住鏡！刷刷刷，波波波！",
+     "e": "Up on the stool, brush brush brush!"
     },
     {
      "img": "brush-boy-p2.webp",
-     "w": "漱漱口，把泡泡吐出來。",
-     "c": "漱下口，吐返啲泡泡出嚟。",
-     "e": "Rinse, rinse — spit the bubbles out!"
+     "w": "漱漱口，咕咕咕！吐出泡泡，嘩嘩嘩！",
+     "c": "漱下口，咕咕咕！吐出泡泡，嘩嘩嘩！",
+     "e": "Rinse rinse rinse, spit the bubbles out!"
     },
     {
      "img": "brush-boy-p3.webp",
-     "w": "刷完牙，白白的，好開心！",
-     "c": "刷完牙，白雪雪，好開心！",
-     "e": "All done! Clean, white, happy!"
+     "w": "牙齒白雪雪，叮！{N}哈哈笑，好開心！",
+     "c": "牙齒白雪雪，叮！{N}哈哈笑，好開心！",
+     "e": "Clean white teeth, ding! Happy {N}!"
     }
    ]
   },
@@ -159,21 +159,21 @@
    "pages": [
     {
      "img": "brushbaby-girl-p1.webp",
-     "w": "媽媽扶住，{N}自己刷。",
-     "c": "媽媽扶住，{N}自己刷下。",
-     "e": "Mummy holds on. {N} brushes by self."
+     "w": "媽媽扶著，{N}自己刷！",
+     "c": "媽咪扶扶，{N}自己刷！",
+     "e": "Mummy holds, {N} brushes!"
     },
     {
      "img": "brushbaby-girl-p2.webp",
-     "w": "上面刷，下面也刷。",
-     "c": "上面刷下，下面又刷下。",
-     "e": "Up and down, round and round."
+     "w": "上面刷刷，下面刷刷！",
+     "c": "上面刷刷，下面刷刷！",
+     "e": "Up brush, down brush!"
     },
     {
      "img": "brushbaby-girl-p3.webp",
-     "w": "刷完牙，白白的，好開心！",
-     "c": "刷完牙，白雪雪，好開心！",
-     "e": "All done! Clean, white, happy!"
+     "w": "刷完白雪雪，叮！{N}笑笑！",
+     "c": "刷完白雪雪，叮！{N}笑笑！",
+     "e": "All done! Sparkle! {N} smiles!"
     }
    ]
   },
@@ -192,21 +192,21 @@
    "pages": [
     {
      "img": "brushbaby-boy-p1.webp",
-     "w": "媽媽扶住，輕輕刷。",
-     "c": "媽媽扶住，輕輕刷下。",
-     "e": "Mummy holds on. Brush, brush, gently."
+     "w": "媽媽扶扶，輕輕刷。{N}扭扭站，唰唰唰！",
+     "c": "媽咪扶扶，輕輕刷。{N}扭扭企，唰唰唰！",
+     "e": "Mummy holds tight. Brush brush, gently!"
     },
     {
      "img": "brushbaby-boy-p2.webp",
-     "w": "上面刷下，泡泡出嚟。",
-     "c": "上面刷下，泡泡出嚟。",
-     "e": "Brush up, bubbles come!"
+     "w": "上面刷刷，波波波！滿口白泡泡，啵啵啵！",
+     "c": "上面刷刷，波波波！成口白泡泡，啵啵啵！",
+     "e": "Brush up up! Pop pop pop! Bubbles come!"
     },
     {
      "img": "brushbaby-boy-p3.webp",
-     "w": "刷完牙，白白的，好開心！",
-     "c": "刷完牙，白雪雪，好開心！",
-     "e": "All done! Clean, white, happy!"
+     "w": "刷完啦！牙齒白雪雪，叮！{N}哈哈笑！",
+     "c": "刷完啦！牙齒白雪雪，叮！{N}哈哈笑！",
+     "e": "All done! Clean white, ding! {N} laughs!"
     }
    ]
   },
@@ -225,21 +225,21 @@
    "pages": [
     {
      "img": "dark-girl-p1.webp",
-     "w": "{N}有少少怕，抱住心愛公仔。",
-     "c": "{N}有少少驚，攬住心愛公仔。",
-     "e": "{N} feels a little scared. Hug the toy tight."
+     "w": "{N}抱緊小兔，縮縮縮。暗暗黑麻麻，怕怕怕！",
+     "c": "{N}攬緊兔仔，縮縮縮。暗暗黑麻麻，驚驚驚！",
+     "e": "{N} hugs bunny tight. Dark dark, eek eek!"
     },
     {
      "img": "dark-girl-p2.webp",
-     "w": "原來牆上個大影子，係小熊公仔嚟，不用怕。",
-     "c": "原來牆上面個大影子，係小熊公仔嚟，唔使驚。",
-     "e": "The big shadow is just Teddy. No need to be scared."
+     "w": "牆上大大影？嘩！原來是熊仔，呼呼呼！",
+     "c": "牆上大大影？嘩！原來係熊仔，呼呼呼！",
+     "e": "Big big shadow? Wow! Just teddy, phew phew!"
     },
     {
      "img": "dark-girl-p3.webp",
-     "w": "晚安，{N}睡得好甜。",
-     "c": "晚安，{N}瞓得好甜。",
-     "e": "Good night. Sweet dreams, {N}."
+     "w": "晚安{N}，睡甜甜！星星閃閃，叮！好安心。",
+     "c": "晚安{N}，瞓甜甜！星星閃閃，叮！好安心。",
+     "e": "Night night {N}! Twinkle twinkle, ding! Safe."
     }
    ]
   },
@@ -258,21 +258,21 @@
    "pages": [
     {
      "img": "dark-boy-p1.webp",
-     "w": "{N}有少少怕，抱住心愛公仔。",
-     "c": "{N}有少少驚，攬住心愛公仔。",
-     "e": "{N} feels a little scared. Hug the toy tight."
+     "w": "{N}縮縮腳，抱緊熊熊仔。黑漆漆，心跳跳！",
+     "c": "{N}縮縮埋，攬緊熊熊仔。黑麻麻，心跳跳！",
+     "e": "{N} hides. Hugs bear tight! Dark dark!"
     },
     {
      "img": "dark-boy-p2.webp",
-     "w": "原來小熊坐喺椅子上，影子投喺牆上面，不用怕。",
-     "c": "原來小熊坐喺椅子上，影子投喺牆上面，唔使驚。",
-     "e": "Teddy sits on the chair. The shadow is on the wall. No need to be scared."
+     "w": "熊熊凳凳坐，牆上長長影。不用怕，呼呼！",
+     "c": "熊熊凳凳坐，牆上長長影。唔使驚，呼呼！",
+     "e": "Bear sits. Wall shadow! No fear, whoosh!"
     },
     {
      "img": "dark-boy-p3.webp",
-     "w": "晚安，{N}睡得好甜。",
-     "c": "晚安，{N}瞓得好甜。",
-     "e": "Good night. Sweet dreams, {N}."
+     "w": "晚安～{N}睡甜甜，叮！月光輕輕照。",
+     "c": "晚安～{N}瞓甜甜，叮！月光輕輕照。",
+     "e": "Night night! {N} sleeps. Ding! Moonbeam."
     }
    ]
   },
@@ -291,21 +291,21 @@
    "pages": [
     {
      "img": "eat-girl-p1.webp",
-     "w": "拿起匙羹，舀一口飯。",
-     "c": "拎起匙羹，𢳂一啖飯。",
-     "e": "Pick up the spoon. One scoop!"
+     "w": "{N}坐得好，拿起小匙羹。舀一口飯，啜啜啜！",
+     "c": "{N}凳凳坐，攞起匙羹仔。𢳂一啖飯，啜啜啜！",
+     "e": "Sitting up! Spoon in hand. Scoop and slurp!"
     },
     {
      "img": "eat-girl-p2.webp",
-     "w": "自己再試，慢慢舀。",
-     "c": "自己再試，慢慢𢳂。",
-     "e": "Try again, slowly, slowly."
+     "w": "自己試試，慢慢舀。大口吃飯，嗚嗚嗚！",
+     "c": "自己試試，慢慢𢳂。大啖飯，嗚嗚嗚！",
+     "e": "Try again! Slowly, slowly. Yummy in tummy!"
     },
     {
      "img": "eat-girl-p3.webp",
-     "w": "全碗吃完了！{N}把空碗舉起來給媽媽看。",
-     "c": "成碗食晒啦！{N}拎起空碗俾媽媽睇。",
-     "e": "All finished! {N} holds up the empty bowl for Mummy."
+     "w": "吃光啦！舉高小空碗。媽咪拍拍手，叮！",
+     "c": "食晒啦！舉高空碗仔。媽咪拍手手，叮！",
+     "e": "All done! Bowl up high. Mummy claps, ding!"
     }
    ]
   },
@@ -324,21 +324,21 @@
    "pages": [
     {
      "img": "eat-boy-p1.webp",
-     "w": "拿起匙羹，舀一口飯。",
-     "c": "拎起匙羹，𢳂一啖飯。",
-     "e": "Pick up the spoon. One scoop!"
+     "w": "{N}乖乖坐，拿起小匙羹。舀一口飯，呼呼呼！",
+     "c": "{N}凳凳坐，攞起匙羹仔。𢳂一啖飯，嗚嗚嗚！",
+     "e": "{N} sits up. Spoon up! Scoop!"
     },
     {
      "img": "eat-boy-p2.webp",
-     "w": "哎呀，飯粒跌到枱上，沒有關係。",
-     "c": "哎呀，飯粒跌咗落枱，唔緊要㗎。",
-     "e": "Oops! Rice on the table. That is okay."
+     "w": "哎呀！飯粒掉到桌上。沒關係，抹抹抹！",
+     "c": "哎呀！飯粒跌咗落枱。唔緊要，抹抹抹！",
+     "e": "Oops! Rice drops. Wipe, wipe!"
     },
     {
      "img": "eat-boy-p3.webp",
-     "w": "全碗吃完了！{N}把空碗舉起來給媽媽看。",
-     "c": "成碗食晒啦！{N}拎起空碗俾媽媽睇。",
-     "e": "All finished! {N} holds up the empty bowl for Mummy."
+     "w": "全碗吃光啦！{N}舉高小空碗，叮！真棒！",
+     "c": "成碗食晒啦！{N}舉高空碗仔，叮！叻叻豬！",
+     "e": "All done! {N} holds bowl. Ding!"
     }
    ]
   },
@@ -357,21 +357,21 @@
    "pages": [
     {
      "img": "eatbaby-girl-p1.webp",
-     "w": "拎起香蕉片，放進嘴巴。",
-     "c": "拎起香蕉片，放入口。",
-     "e": "Pick up a banana slice. Into the mouth!"
+     "w": "{N}小手伸，拿香蕉片！放進嘴，啵啵啵！",
+     "c": "{N}手仔伸，攞香蕉片！放入口，啵啵啵！",
+     "e": "Little hand reach, banana slice! Into mouth, pop pop pop!"
     },
     {
      "img": "eatbaby-girl-p2.webp",
-     "w": "自己食，好好味！",
-     "c": "自己食，好好味！",
-     "e": "Eating all by myself. Yummy!"
+     "w": "自己吃，嗒嗒嗒！好好味，姆姆姆！",
+     "c": "自己食，嗒嗒嗒！好好味，姆姆姆！",
+     "e": "Eat by self, tap tap tap! Yummy yum, mmm mmm mmm!"
     },
     {
      "img": "eatbaby-girl-p3.webp",
-     "w": "举起小汤匙，准备自己食饭。",
-     "c": "舉起細隻匙羹，準備自己食飯。",
-     "e": "Lift the little spoon. Ready to eat!"
+     "w": "举高小汤匙，叮！{N}准备吃饭啦！",
+     "c": "舉高匙羹仔，叮！{N}準備食飯啦！",
+     "e": "Lift the spoon, ding! {N} ready to eat!"
     }
    ]
   },
@@ -390,21 +390,21 @@
    "pages": [
     {
      "img": "eatbaby-boy-p1.webp",
-     "w": "拿起小食物，放進嘴巴。",
-     "c": "拎起細細粒食物，放入口。",
-     "e": "Pick up a little bite. Into the mouth!"
+     "w": "{N}小手伸，拿起小食物。放進嘴巴，嗒嗒嗒！",
+     "c": "{N}手仔伸，攞起細細粒。放入口，嗒嗒嗒！",
+     "e": "Little hands reach. Pick it up! Into mouth, nom nom!"
     },
     {
      "img": "eatbaby-boy-p2.webp",
-     "w": "自己食，好好味！",
-     "c": "自己食，好好味！",
-     "e": "Eating all by myself. Yummy!"
+     "w": "自己吃，嚼嚼嚼！好味道，嗱嗱嗱！",
+     "c": "自己食，嚼嚼嚼！好好味，嗱嗱嗱！",
+     "e": "Eat by myself! Chew chew! Yummy yummy, ho ho!"
     },
     {
      "img": "eatbaby-boy-p3.webp",
-     "w": "食完了！媽媽拍拍手。",
-     "c": "食完啦！媽媽拍下手。",
-     "e": "All done! Mummy claps!"
+     "w": "吃完了！媽媽拍拍手。{N}抹抹嘴，叮！",
+     "c": "食完啦！媽咪拍手手。{N}抹嘴嘴，叮！",
+     "e": "All done! Mummy claps. Clean mouth, ding!"
     }
    ]
   },
@@ -423,21 +423,21 @@
    "pages": [
     {
      "img": "potty-girl-p1.webp",
-     "w": "{N}坐在小馬桶上看圖書，等一等。",
-     "c": "{N}坐喺小馬桶上面睇圖書，等一陣。",
-     "e": "{N} sits on the potty with a book, and waits."
+     "w": "{N}坐坐好，翻翻書。等噓噓，等一下！",
+     "c": "{N}凳凳坐，揭揭書。等噓噓，等一陣！",
+     "e": "{N} sits tight, reads a book. Potty wait!"
     },
     {
      "img": "potty-girl-p2.webp",
-     "w": "成功了！{N}自己按小馬桶，好厲害！",
-     "c": "得咗！{N}自己按小馬桶，好叻呀！",
-     "e": "Success! {N} pressed the potty all alone!"
+     "w": "成功了！㗶㗶㗶！{N}自己按按鍵，好棒！",
+     "c": "得咗！㗶㗶㗶！{N}自己按按掣，叻哂！",
+     "e": "Done! Swish! {N} presses the button!"
     },
     {
      "img": "potty-girl-p3.webp",
-     "w": "拿住新內褲啦！{N}和媽媽開心擊掌。",
-     "c": "举起新内裤啦！{N}同妈妈开心击掌。",
-     "e": "New underpants in hand! High five with Mummy!"
+     "w": "舉高新褲仔，叮！{N}和媽咪擊擊掌！",
+     "c": "舉高新褲仔，叮！{N}同媽咪拍拍手！",
+     "e": "New pants up, ding! High five, Mummy!"
     }
    ]
   },
@@ -456,21 +456,21 @@
    "pages": [
     {
      "img": "potty-boy-p1.webp",
-     "w": "{N}坐在小馬桶上看圖書，等一等。",
-     "c": "{N}坐喺小馬桶上面睇圖書，等一陣。",
-     "e": "{N} sits on the potty with a book, and waits."
+     "w": "{N}坐坐好，翻翻書。坐在小馬桶，等一下等！",
+     "c": "{N}凳凳坐，揭揭書。坐喺小馬桶，等下等！",
+     "e": "{N} sits tight, reads a book. Wait wait wait!"
     },
     {
      "img": "potty-boy-p2.webp",
-     "w": "成功了！{N}自己沖廁，好厲害！",
-     "c": "得咗！{N}自己沖廁，好叻呀！",
-     "e": "Flush! {N} did it — all alone!"
+     "w": "成功了！{N}自己按按鍵，沖沖水，好厲害！",
+     "c": "得咗！{N}自己撳撳掣，沖沖廁，好叻呀！",
+     "e": "Done! {N} flushes the potty, all alone!"
     },
     {
      "img": "potty-boy-p3.webp",
-     "w": "展示新內褲！{N}和媽媽開心擊掌。",
-     "c": "展示新內褲啦！{N}同媽媽開心擊掌。",
-     "e": "Show off new underpants! High five with Mummy!"
+     "w": "穿好新內褲，叮！{N}和媽媽擊擊掌，好開心！",
+     "c": "著好新底褲，叮！{N}同媽咪拍拍手，好開心！",
+     "e": "New undies on, ding! High five, {N}!"
     }
    ]
   },
@@ -489,21 +489,21 @@
    "pages": [
     {
      "img": "paci-girl-p1.webp",
-     "w": "{N}長大了，把奶嘴放進紀念盒，說聲拜拜。",
-     "c": "{N}大個啦，將奶嘴放落紀念盒，講聲拜拜。",
-     "e": "{N} is bigger now. The pacifier goes in the keepsake box. Bye-bye!"
+     "w": "{N}長大了，放下奶嘴。拜拜啦，叮叮叮！",
+     "c": "{N}大大個，放低奶嘴仔。拜拜啦，叮叮叮！",
+     "e": "{N} is big! Bye-bye, paci! Ding!"
     },
     {
      "img": "paci-girl-p2.webp",
-     "w": "沒有奶嘴，{N}也睡得很甜。",
-     "c": "冇奶嘴，{N}都瞓得好甜。",
-     "e": "No pacifier — and {N} sleeps sweetly."
+     "w": "沒奶嘴，{N}睡得甜絲絲。呼呼呼，zzz！",
+     "c": "冇奶嘴，{N}瞓到甜絲絲。呼呼呼，zzz！",
+     "e": "No paci? {N} sleeps tight! Zzz!"
     },
     {
      "img": "paci-girl-p3.webp",
-     "w": "早上醒來，{N}好自豪！",
-     "c": "朝早醒嚟，{N}好自豪！",
-     "e": "Morning! {N} feels so proud!"
+     "w": "早晨醒，{N}舉高雙手。好棒呀，叮！",
+     "c": "朝早醒，{N}舉高雙手手。好叻呀，叮！",
+     "e": "Morning! {N} wakes up proud. Ding!"
     }
    ]
   },
@@ -522,21 +522,21 @@
    "pages": [
     {
      "img": "paci-boy-p1.webp",
-     "w": "{N}長大了，把奶嘴放進紀念盒，說聲拜拜。",
-     "c": "{N}大個啦，將奶嘴放落紀念盒，講聲拜拜。",
-     "e": "{N} is bigger now. The pacifier goes in the keepsake box. Bye-bye!"
+     "w": "{N}長大了，盒仔開開。奶嘴拜拜，嘟嘟嘟！",
+     "c": "{N}大大個，盒仔開開。奶嘴拜拜，嘟嘟嘟！",
+     "e": "{N} is bigger! Box opens. Bye-bye, binky!"
     },
     {
      "img": "paci-boy-p2.webp",
-     "w": "沒有奶嘴，{N}也睡得很甜。",
-     "c": "冇奶嘴，{N}都瞓得好甜。",
-     "e": "No pacifier — and {N} sleeps sweetly."
+     "w": "沒有奶嘴，{N}睡得甜甜。呼呼呼，zzz！",
+     "c": "冇奶嘴，{N}瞓得甜甜。呼呼呼，zzz！",
+     "e": "No binky? {N} sleeps sweet. Zzz, zzz, zzz!"
     },
     {
      "img": "paci-boy-p3.webp",
-     "w": "早上醒來，{N}好自豪！",
-     "c": "朝早醒嚟，{N}好自豪！",
-     "e": "Morning! {N} feels so proud!"
+     "w": "早上醒來！{N}舉高雙手，好自豪！叮！",
+     "c": "朝早醒！{N}舉高雙手，好自豪！叮！",
+     "e": "Morning! {N} hands up! So proud! Ding!"
     }
    ]
   },
@@ -555,21 +555,21 @@
    "pages": [
     {
      "img": "pacibaby-girl-p1.webp",
-     "w": "{N}的奶嘴有新家：小盒子。",
-     "c": "{N}嘅奶嘴有新屋企：小盒仔。",
-     "e": "A new home for the pacifier — a little box!"
+     "w": "{N}奶嘴仔，搬新家！進去小盒子，蓋蓋好。",
+     "c": "{N}奶嘴仔，搬新屋！入去小盒仔，冚冚好。",
+     "e": "Pacifier moves in! Little box, click shut."
     },
     {
      "img": "pacibaby-girl-p2.webp",
-     "w": "沒有奶嘴，也瞓得好甜。",
-     "c": "冇奶嘴，都瞓得好甜。",
-     "e": "No pacifier — still sleeping sweetly."
+     "w": "沒奶嘴，也睡得甜。呼呼呼！",
+     "c": "冇奶嘴，都瞓得甜。呼呼呼！",
+     "e": "No pacifier, sleeping sweet. Zzz zzz!"
     },
     {
      "img": "pacibaby-girl-p3.webp",
-     "w": "早上醒來，{N}好自豪！",
-     "c": "朝早醒嚟，{N}好自豪！",
-     "e": "Morning! {N} feels so proud!"
+     "w": "早上醒！{N}拍拍手。好自豪，叮！",
+     "c": "朝早醒！{N}拍手手。好自豪，叮！",
+     "e": "Morning! {N} claps hands. So proud, ding!"
     }
    ]
   },
@@ -588,21 +588,21 @@
    "pages": [
     {
      "img": "pacibaby-boy-p1.webp",
-     "w": "{N}的奶嘴有新家：小盒子。",
-     "c": "{N}嘅奶嘴有新屋企：小盒仔。",
-     "e": "A new home for the pacifier — a little box!"
+     "w": "奶嘴搬新家，盒仔企企！{N}冚冚埋，拍拍！",
+     "c": "奶嘴搬新屋，盒仔企企！{N}冚冚埋，拍拍！",
+     "e": "Paci new home! Box shut, clap clap!"
     },
     {
      "img": "pacibaby-boy-p2.webp",
-     "w": "沒有奶嘴，也瞓得好甜。",
-     "c": "冇奶嘴，都瞓得好甜。",
-     "e": "No pacifier — still sleeping sweetly."
+     "w": "冇奶嘴，{N}睡甜甜。呼呼呼，zzZ！",
+     "c": "冇奶嘴，{N}瞓甜甜。呼呼呼，zzZ！",
+     "e": "No paci, sleep tight. Zzz, night night!"
     },
     {
      "img": "pacibaby-boy-p3.webp",
-     "w": "早上醒來，{N}好自豪！",
-     "c": "朝早醒嚟，{N}好自豪！",
-     "e": "Morning! {N} feels so proud!"
+     "w": "早晨醒！{N}舉高雙手，叮！好棒！",
+     "c": "朝早醒！{N}舉高雙手，叮！好叻！",
+     "e": "Morning wake! Hands up, ding! So proud!"
     }
    ]
   },
@@ -621,21 +621,21 @@
    "pages": [
     {
      "img": "sleep-girl-p2.webp",
-     "w": "{N}抱住兔仔，望住床上方嘅星星月亮吊飾。",
-     "c": "{N}攬住兔仔，望住枕頭上面嗰啲星星月亮吊飾。",
-     "e": "{N} holds the bunny and looks at the star-and-moon mobile above."
+     "w": "{N}抱兔仔，望高高。星星月亮轉，亮亮亮！",
+     "c": "{N}攬兔仔，望高高。星星月亮轉，靚靚靚！",
+     "e": "{N} hugs bunny, looks up high. Stars spin, round and round!"
     },
     {
      "img": "sleep-girl-p1.webp",
-     "w": "媽媽坐喺床邊，輕輕拍住{N}背，陪住{N}入睡。",
-     "c": "媽媽坐喺床邊，輕輕拍打{N}個背，陪住{N}瞓覺。",
-     "e": "Mummy sits by the bed, pats {N}'s back, and stays close by."
+     "w": "媽咪拍拍背，吓吓吓。{N}眼睏睏，嘟嘟嘟！",
+     "c": "媽咪拍拍背，吓吓吓。{N}眼瞓瞓，嘟嘟嘟！",
+     "e": "Mummy pats back, pat pat pat. {N} gets sleepy, shh shh shh!"
     },
     {
      "img": "sleep-girl-p3.webp",
-     "w": "早上醒來，{N}自己睡了一整晚！",
-     "c": "朝早醒嚟，{N}自己瞓咗成晚！",
-     "e": "Morning! {N} slept alone all night!"
+     "w": "早上醒來！{N}自己睡整晚。棒棒叮！",
+     "c": "朝早醒喇！{N}自己瞓成晚。叻叻叮！",
+     "e": "Morning! {N} slept all night. Ding! Clever you!"
     }
    ]
   },
@@ -654,21 +654,21 @@
    "pages": [
     {
      "img": "sleep-boy-p1.webp",
-     "w": "今晚，{N}試下自己睡。",
-     "c": "今晚，{N}試下自己瞓。",
-     "e": "Tonight, {N} tries sleeping alone."
+     "w": "{N}睡覺覺，抱恐龍。自己躺躺床，閉閉眼！",
+     "c": "{N}瞓覺覺，攬恐龍。自己趴趴床，閉閉眼！",
+     "e": "Sleepy time, hug dino. Lie down, close eyes!"
     },
     {
      "img": "sleep-boy-p2.webp",
-     "w": "抱著綠色恐龍，慢慢瞓著。",
-     "c": "抱緊綠色恐龍，慢慢瞓著。",
-     "e": "Holding the green dino, falling asleep."
+     "w": "抱緊綠色恐龍，喘喘息。呼呼呼，慢慢睡著！",
+     "c": "攬緊綠色恐龍，唞唞唸。呼呼呼，慢慢瞓著！",
+     "e": "Hold dino tight, breathe slow. Zzz, fast asleep!"
     },
     {
      "img": "sleep-boy-p3.webp",
-     "w": "早上醒來，{N}自己睡了一整晚！",
-     "c": "朝早醒嚟，{N}自己瞓咗成晚！",
-     "e": "Morning! {N} slept alone all night!"
+     "w": "早上醒醒，伸伸懶腰！{N}自己睡整晚，叮！",
+     "c": "朝早醒醒，伸伸懶腰！{N}自己瞓成晚，叮！",
+     "e": "Morning stretch! {N} slept all night, ta-da!"
     }
    ]
   },
@@ -687,21 +687,21 @@
    "pages": [
     {
      "img": "sleepbaby-girl-p1.webp",
-     "w": "媽媽在床邊，陪住{N}。",
-     "c": "媽媽喺床邊，陪住{N}。",
-     "e": "Mummy stays right beside the crib."
+     "w": "媽咪伴身旁，陪{N}。星星亮亮，眨眨眨！",
+     "c": "媽咪傍傍企，陪{N}。星星亮亮，眨眨眨！",
+     "e": "Mummy stands close, with {N}. Twinkle stars, blink blink!"
     },
     {
      "img": "sleepbaby-girl-p2.webp",
-     "w": "{N}瞓著了，攬住兔仔公仔。",
-     "c": "{N}瞓著啦，攬住兔仔公仔。",
-     "e": "{N} is asleep, hugging the bunny."
+     "w": "{N}睡著啦，抱兔仔。輕輕呼吸，呼呼呼！",
+     "c": "{N}瞓著啦，攬兔仔。唞唞抖抖，呼呼呼！",
+     "e": "{N} is asleep, hugging bunny. Breathing soft, hoo hoo!"
     },
     {
      "img": "sleepbaby-girl-p3.webp",
-     "w": "早上醒來，{N}笑咪咪！",
-     "c": "朝早醒嚟，{N}笑咪咪！",
-     "e": "Morning! {N} wakes up smiling!"
+     "w": "早晨醒來，{N}笑咪咪！叮！精神飽！",
+     "c": "朝早醒醒，{N}笑咪咪！叮！精神飽！",
+     "e": "Morning! {N} wakes up smiling! Ding! All rested!"
     }
    ]
   },
@@ -720,21 +720,21 @@
    "pages": [
     {
      "img": "sleepbaby-boy-p1.webp",
-     "w": "媽媽在床邊，陪住{N}。",
-     "c": "媽媽喺床邊，陪住{N}。",
-     "e": "Mummy stays right beside the crib."
+     "w": "媽咪陪身邊，拍拍拍！{N}被冚冚，暖笠笠。",
+     "c": "媽咪陪身邊，拍拍拍！{N}被冚冚，暖笠笠。",
+     "e": "Mummy pats, pat pat! {N} snug and warm."
     },
     {
      "img": "sleepbaby-boy-p2.webp",
-     "w": "{N}抱住公仔，安心瞓覺。",
-     "c": "{N}攬住公仔，安心瞓覺覺。",
-     "e": "Hug the toy tight. Sleep tight."
+     "w": "抱抱龍仔，錫錫錫！{N}睡覺覺，呼呼呼。",
+     "c": "攬攬龍仔，錫錫錫！{N}瞓覺覺，呼呼呼。",
+     "e": "Hug dino, muah muah! {N} sleep tight, zzz."
     },
     {
      "img": "sleepbaby-boy-p3.webp",
-     "w": "早上醒來，{N}笑咪咪！",
-     "c": "朝早醒嚟，{N}笑咪咪！",
-     "e": "Morning! {N} wakes up smiling!"
+     "w": "早上醒啦！{N}伸懶腰，叮！笑咪咪！",
+     "c": "朝早醒啦！{N}伸懶腰，叮！笑咪咪！",
+     "e": "Morning! {N} stretches, ding! Big smile!"
     }
    ]
   },
@@ -753,21 +753,21 @@
    "pages": [
     {
      "img": "sibling-girl-p1.webp",
-     "w": "寶寶出世了！{N}是家裏的大孩子了。",
-     "c": "寶寶出世啦！{N}係屋企嘅大孩子啦。",
-     "e": "The baby is here! Now {N} is the big kid in the family."
+     "w": "寶寶哇哇叫！{N}站高高，是大姐姐啦！",
+     "c": "寶寶哇哇叫！{N}企高高，係大姐姐啦！",
+     "e": "Baby wah wah! {N} stands tall, big sister!"
     },
     {
      "img": "sibling-girl-p2.webp",
-     "w": "媽媽抱住寶寶，{N}輕輕摸一下寶寶的小手。",
-     "c": "媽媽抱住寶寶，{N}輕輕摸下寶寶隻手仔。",
-     "e": "Mummy holds the baby. {N} gently touches the tiny hand."
+     "w": "媽媽抱寶寶，{N}摸摸小手，嗱嗱嗱！",
+     "c": "媽咪抱BB，{N}摸摸手仔，嗱嗱嗱！",
+     "e": "Mummy hugs baby. {N} pats tiny hand, nah!"
     },
     {
      "img": "sibling-girl-p3.webp",
-     "w": "一家人一起，越來越熱鬧。",
-     "c": "一家人一齊，越嚟越熱鬧。",
-     "e": "One family together, full of love."
+     "w": "一家齊齊拍，熱鬧鬧！{N}冽一聲，得意的！",
+     "c": "一家齊齊拍，熱鬧鬧！{N}冽一聲，得意的！",
+     "e": "Family snap snap! So fun! {N} shines bright, ding!"
     }
    ]
   },
@@ -786,21 +786,21 @@
    "pages": [
     {
      "img": "sibling-boy-p1.webp",
-     "w": "寶寶出世了！{N}是家裏的大孩子了。",
-     "c": "寶寶出世啦！{N}係屋企嘅大孩子啦。",
-     "e": "The baby is here! Now {N} is the big kid in the family."
+     "w": "寶寶哇哇出世！{N}站高高，大哥哥！",
+     "c": "寶寶哇哇出世！{N}企高高，大哥哥！",
+     "e": "Baby is here! {N} stands tall, big bro!"
     },
     {
      "img": "sibling-boy-p2.webp",
-     "w": "媽媽抱住寶寶，{N}輕輕摸一下寶寶的小手。",
-     "c": "媽媽抱住寶寶，{N}輕輕摸下寶寶隻手仔。",
-     "e": "Mummy holds the baby. {N} gently touches the tiny hand."
+     "w": "媽媽抱寶寶，{N}摸摸小手，嗱嗱嗱！",
+     "c": "媽咪抱BB，{N}摸摸手仔，嗱嗱嗱！",
+     "e": "Mummy hugs baby. {N} pats tiny hands!"
     },
     {
      "img": "sibling-boy-p3.webp",
-     "w": "一家人一起，越來越熱鬧。",
-     "c": "一家人一齊，越嚟越熱鬧。",
-     "e": "One family together, full of love."
+     "w": "一家大小齊齊，鬧鬧鬧！叮！好熱鬧！",
+     "c": "一家大細齊齊，鬧鬧鬧！叮！好熱鬧！",
+     "e": "Family together, buzz buzz! Ding! So fun!"
     }
    ]
   },
@@ -819,21 +819,21 @@
    "pages": [
     {
      "img": "doctor-girl-p1.webp",
-     "w": "醫生用聽診器聽一聽，{N}坐定定，好合作。",
-     "c": "醫生用聽診器聽下，{N}坐定定，好合作。",
-     "e": "The doctor listens with a stethoscope. {N} sits very still."
+     "w": "{N}乖乖坐，呼呼呼！醫生聽心心，撲撲撲！",
+     "c": "{N}凳凳坐，呼呼呼！醫生聽心心，撲撲撲！",
+     "e": "{N} sits still. Heart goes thump thump!"
     },
     {
      "img": "doctor-girl-p2.webp",
-     "w": "媽媽說：喊出來沒關係，你好勇敢。",
-     "c": "媽媽話：喊出嚟唔緊要，你好勇敢。",
-     "e": "It is okay to cry. You are so brave."
+     "w": "媽咪抱抱你，哭哭沒關係！{N}好勇敢，棒棒！",
+     "c": "媽咪攬攬你，喊喊唔緊要！{N}好勇敢，叻叻！",
+     "e": "Cry if you want. {N} is so brave!"
     },
     {
      "img": "doctor-girl-p3.webp",
-     "w": "打完針，身體有保鏢保護了！",
-     "c": "打完針，身體就有保鑣保護啦！",
-     "e": "All done! Now the body has guards!"
+     "w": "打完針啦！身體有保鏢，叮！站站站！",
+     "c": "打完針啦！身體有保鑣，叮！企企企！",
+     "e": "All done! Body guards on, ding!"
     }
    ]
   },
@@ -852,21 +852,21 @@
    "pages": [
     {
      "img": "doctor-boy-p1.webp",
-     "w": "醫生用聽診器聽一聽，{N}坐定定，好合作。",
-     "c": "醫生用聽診器聽下，{N}坐定定，好合作。",
-     "e": "The doctor listens with a stethoscope. {N} sits very still."
+     "w": "醫生聽聽心臟，撲撲撲！{N}乖乖坐好，定定吓！",
+     "c": "醫生聽下心心，撲撲撲！{N}凳凳坐，定定吓！",
+     "e": "Doctor checks heart, thump thump! {N} sits very still!"
     },
     {
      "img": "doctor-boy-p2.webp",
-     "w": "妈妈抱着{N}，医生拿着针筒准备打针，{N}抱紧小熊。",
-     "c": "媽媽抱著{N}，医生拿住针筒准备打，{N}抱緊小熊。",
-     "e": "Mom holds {N}, the doctor gets the syringe ready. {N} hugs the bear."
+     "w": "媽媽抱緊{N}，錫錫錫！{N}抱實小熊，嗚嗚嗚！",
+     "c": "媽咪抱緊{N}，錫錫錫！{N}攬實熊仔，嗚嗚嗚！",
+     "e": "Mom hugs {N}, mwah mwah! {N} hugs bear, oo oo!"
     },
     {
      "img": "doctor-boy-p3.webp",
-     "w": "打完針，身體有保鏢保護了！",
-     "c": "打完針，身體就有保鑣保護啦！",
-     "e": "All done! Now the body has guards!"
+     "w": "打完針啦！保鏢入身，鏗鏗鏗！{N}好勇敢，叮！",
+     "c": "打完針啦！保鑣入身，鏗鏗鏗！{N}好勇叻，叮！",
+     "e": "All done! Body guards in, clang clang! {N} is brave, ding!"
     }
    ]
   },
@@ -885,21 +885,21 @@
    "pages": [
     {
      "img": "haircut-girl-p1.webp",
-     "w": "坐在椅子上，圍上圍布，頭髮被噴濕梳順。",
-     "c": "坐低喺椅上，围住圍布，頭髮被噴水梳順。",
-     "e": "Sit on the chair, cape on! Wet and comb smooth."
+     "w": "{N}坐坐好，披圍布。噴濕濕，梳順順！",
+     "c": "{N}凳凳坐，披圍布。噴濕濕，梳順順！",
+     "e": "Sit tight, cape on! Wet wet, comb smooth!"
     },
     {
      "img": "haircut-girl-p2.webp",
-     "w": "剪刀咔嚓咔嚓，頭髮一條條跌下來。",
-     "c": "鉸剪咔嚓咔嚓，頭髮一條條跌落嚟。",
-     "e": "Snip snip! Little hairs fall down."
+     "w": "剪刀咔嚓嚓！頭髮絲絲落下來，颯颯颯！",
+     "c": "鉸剪咔嚓嚓！頭髮絲絲跌落嚟，颯颯颯！",
+     "e": "Snip snip snip! Hairs fall down, swish swish!"
     },
     {
      "img": "haircut-girl-p3.webp",
-     "w": "剪完啦！{N}脫咗圍布，笑住睇镜。",
-     "c": "剪完啦！{N}脫咗圍布，笑住望住個鏡。",
-     "e": "All done! Off with the cape, {N} smiles at the mirror."
+     "w": "剪完啦！{N}照鏡鏡，新髮型，叮！哈哈笑！",
+     "c": "剪完啦！{N}照鏡鏡，新髮型，叮！哈哈笑！",
+     "e": "All done! New haircut, ding! {N} giggles!"
     }
    ]
   },
@@ -918,21 +918,21 @@
    "pages": [
     {
      "img": "haircut-boy-p1.webp",
-     "w": "坐在椅子上，圍上圍布，理髮師幫{N}濕頭髮。",
-     "c": "坐喺高凳上面，圍住圍布，阿姐幫{N}濕頭髮。",
-     "e": "Up on the chair, cape on! Wetting hair now."
+     "w": "{N}凳凳坐，圍布布。姐姐噴水水，嗤嗤嗤！",
+     "c": "{N}凳凳坐，圍布布。阿姐噴水水，嗤嗤嗤！",
+     "e": "Sit sit sit! Cape on! Water spray, sh sh sh!"
     },
     {
      "img": "haircut-boy-p2.webp",
-     "w": "剪刀咔嚓咔嚓，頭髮一條條跌下來。",
-     "c": "鉸剪咔嚓咔嚓，頭髮一條條跌落嚟。",
-     "e": "Snip snip! Little hairs fall down."
+     "w": "剪刀咔嚓咔嚓！頭髮條條落，飄飄飄！",
+     "c": "鉸剪咔嚓咔嚓！頭毛條條跌，飄飄飄！",
+     "e": "Snip snip snip! Hairs fall down, float float float!"
     },
     {
      "img": "haircut-boy-p3.webp",
-     "w": "剪完了！{N}精神又可愛。",
-     "c": "剪完啦！{N}精神又可愛。",
-     "e": "All done! Fresh and cute!"
+     "w": "剪完啦！{N}清爽爽，叮！可愛小靚靚！",
+     "c": "剪完啦！{N}清爽爽，叮！得意小靚靚！",
+     "e": "All done! Fresh and cute, ding! So smart!"
     }
    ]
   },
@@ -951,21 +951,21 @@
    "pages": [
     {
      "img": "dress-girl-p1.webp",
-     "w": "先穿上衣，頭仔鑽出來了！",
-     "c": "著上衫先，頭仔捐出嚟啦！",
-     "e": "Shirt first — pop! Out comes the head!"
+     "w": "{N}拉拉衫，頭仔鑽出來！嚕嚕嚕！",
+     "c": "{N}扯扯衫，頭仔捐出嚟！嚕嚕嚕！",
+     "e": "Pull the shirt — pop! Out comes the head!"
     },
     {
      "img": "dress-girl-p2.webp",
-     "w": "穿襪子，試著鞋，{N}自己慢慢來。",
-     "c": "著襪、試著鞋，{N}自己慢慢嚟。",
-     "e": "Socks on, try shoes — slowly, all by myself."
+     "w": "穿襪襪，穿鞋鞋。{N}慢慢來，得得哋！",
+     "c": "著襪襪，跣跣腳。{N}慢慢嚟，得得哋！",
+     "e": "Socks on, shoes on. Slowly, all by myself!"
     },
     {
      "img": "dress-girl-p3.webp",
-     "w": "{N}自己著好衫，好神氣！",
-     "c": "{N}自己著好晒衫，好神氣！",
-     "e": "Dressed all alone. So proud!"
+     "w": "自己穿好啦，叮！{N}神氣站站！",
+     "c": "自己著好晒，叮！{N}神氣企企！",
+     "e": "Dressed all alone! So proud, standing tall!"
     }
    ]
   },
@@ -984,21 +984,21 @@
    "pages": [
     {
      "img": "dress-boy-p1.webp",
-     "w": "先穿上衣，頭仔钻出嚟啦！",
-     "c": "著上衫，頭仔钻出嚟啦！",
-     "e": "Shirt on — head pops out!"
+     "w": "上衫穿下去，頭仔钻钻钻！{N}出來啦，啵！",
+     "c": "上衫著落去，頭仔钻钻钻！{N}出嚟啦，啵！",
+     "e": "Shirt on, head pop! Peekaboo!"
     },
     {
      "img": "dress-boy-p2.webp",
-     "w": "穿襪子，穿鞋子，{N}自己慢慢來。",
-     "c": "著襪、著鞋，{N}自己慢慢嚟。",
-     "e": "Socks on, shoes on — slowly, all by myself."
+     "w": "左襪右襪，扯扯扯！穿鞋仔，{N}慢慢來。",
+     "c": "左襪右襪，扯扯扯！著鞋仔，{N}慢慢嚟。",
+     "e": "Socks pull, shoes on! Slowly, slowly."
     },
     {
      "img": "dress-boy-p3.webp",
-     "w": "{N}自己著好衫，好神氣！",
-     "c": "{N}自己著好晒衫，好神氣！",
-     "e": "Dressed all alone. So proud!"
+     "w": "自己穿好啦！{N}挺胸胸，叮！好神氣！",
+     "c": "自己著好晒！{N}挺胸胸，叮！好神氣！",
+     "e": "All dressed up! Chest out! So proud!"
     }
    ]
   },
@@ -1017,21 +1017,21 @@
    "pages": [
     {
      "img": "plane-girl-p1.webp",
-     "w": "飛機飛上天空，窗外的雲朵像棉花糖一樣。",
-     "c": "飛機飛上天，窗外啲雲好似棉花糖咁。",
-     "e": "Up in the sky! The clouds look like cotton candy."
+     "w": "飛機飛上天！窗外雲朵朵，軟綿綿。",
+     "c": "飛飛飛上天！窗外雲朵朵，軟綿綿。",
+     "e": "Fly fly fly! Fluffy clouds, so soft!"
     },
     {
      "img": "plane-girl-p2.webp",
-     "w": "飛機餐來了，{N}食得好開心。",
-     "c": "飛機餐嚟喇，{N}食得好開心。",
-     "e": "The airplane meal is here — {N} eats happily!"
+     "w": "飛機餐來了！{N}大口吃，嗱嗱嗱！",
+     "c": "飛機餐嚟喇！{N}大啖啖，嗱嗱嗱！",
+     "e": "Yummy meal! {N} munches, nom nom!"
     },
     {
      "img": "plane-girl-p3.webp",
-     "w": "飛機降落了，新的地方到了！",
-     "c": "飛機落嚟啦，新地方到啦！",
-     "e": "Landing! A new place is here!"
+     "w": "飛機降落了！新地方到了，叮！",
+     "c": "飛機落落嚟！新地方到啦，叮！",
+     "e": "Touch down! New place, ding!"
     }
    ]
   },
@@ -1050,21 +1050,21 @@
    "pages": [
     {
      "img": "plane-boy-p1.webp",
-     "w": "{N}企喺大玻璃窗前，指住停機坪嘅飛機。",
-     "c": "{N}企喺大玻璃窗前，指住停機坪嘅飛機。",
-     "e": "{N} stands by the big window, pointing at the plane."
+     "w": "{N}踮腳站，指指飛機！大飛機，轟轟轟！",
+     "c": "{N}凳凳企，指指飛機！大飛飛，轟轟轟！",
+     "e": "{N} stands tall, points at planes! Big plane, vroom vroom!"
     },
     {
      "img": "plane-boy-p2.webp",
-     "w": "飛機餐來了，{N}食得好開心。",
-     "c": "飛機餐嚟喇，{N}食得好開心。",
-     "e": "The airplane meal is here — {N} eats happily!"
+     "w": "飛機餐來了，{N}大口吃！好味道，嗒嗒嗒！",
+     "c": "飛機餐嚟喇，{N}大啖啖！好味味，嗒嗒嗒！",
+     "e": "Meal is here! {N} big bites! Yummy yum, chomp chomp!"
     },
     {
      "img": "plane-boy-p3.webp",
-     "w": "飛機降落了，新的地方到了！",
-     "c": "飛機落嚟啦，新地方到啦！",
-     "e": "Landing! A new place is here!"
+     "w": "飛機降落了，新地方到！叮！{N}哈哈笑！",
+     "c": "飛機落落嚟，新地方到！叮！{N}哈哈笑！",
+     "e": "Plane lands, new place! Ding! {N} laughs out loud!"
     }
    ]
   },
@@ -1083,21 +1083,21 @@
    "pages": [
     {
      "img": "share-girl-p1.webp",
-     "w": "好朋友望住{N}，好想玩件玩具。",
-     "c": "好朋友望住{N}，好想玩佢手上面嘅玩具。",
-     "e": "A friend looks at {N}, wanting to play with the toy."
+     "w": "朋友望望{N}，眼仔眨眨。好想玩車車，扭扭扭！",
+     "c": "朋友望望{N}，眼仔眨眨。好想玩車車，扭扭扭！",
+     "e": "Friend looks at {N}, blink blink! Wants the car, please please!"
     },
     {
      "img": "share-girl-p2.webp",
-     "w": "{N}想了想，把玩具遞過去。",
-     "c": "{N}諗咗陣，將件玩具遞過去。",
-     "e": "{N} thinks… and shares the toy."
+     "w": "{N}想了想，遞遞手。紅車車分享，給你玩！",
+     "c": "{N}諗諗吓，遞遞手。紅車車分享，俾你玩！",
+     "e": "{N} thinks... reaches out. Red car shared, here you go!"
     },
     {
      "img": "share-girl-p3.webp",
-     "w": "分享之後，快樂變成兩份。",
-     "c": "分享之後，快樂變咗兩份。",
-     "e": "Sharing makes happiness double."
+     "w": "快樂變雙倍，叮！兩個哈哈笑，好開心！",
+     "c": "快樂變雙倍，叮！兩個哈哈笑，好開心！",
+     "e": "Happy times two, ding! Both laugh loud, so fun!"
     }
    ]
   },
@@ -1116,21 +1116,21 @@
    "pages": [
     {
      "img": "share-boy-p1.webp",
-     "w": "{N}抱緊紅車，好朋友望住好想要。",
-     "c": "{N}抱緊架紅車，好朋友望住好想要。",
-     "e": "{N} holds the red car tight. A friend looks, wanting it."
+     "w": "{N}抱緊紅車車，好朋友望望望，好想要！",
+     "c": "{N}抱抱紅車車，好朋友望望望，好想要！",
+     "e": "{N} hugs the car. Friend looks and wants!"
     },
     {
      "img": "share-boy-p2.webp",
-     "w": "{N}想了想，把玩具遞過去。",
-     "c": "{N}諗咗陣，將件玩具遞過去。",
-     "e": "{N} thinks… and shares the toy."
+     "w": "{N}想了想，遞遞手，車車給你玩！",
+     "c": "{N}諗諗下，遞遞手，車車畀你玩！",
+     "e": "{N} thinks... and shares the car!"
     },
     {
      "img": "share-boy-p3.webp",
-     "w": "分享之後，快樂變成兩份。",
-     "c": "分享之後，快樂變咗兩份。",
-     "e": "Sharing makes happiness double."
+     "w": "快樂變兩份，叮！大家哈哈笑！",
+     "c": "快樂變兩份，叮！大家哈哈笑！",
+     "e": "Joy times two! Ding! Happy smiles!"
     }
    ]
   },
@@ -1149,21 +1149,21 @@
    "pages": [
     {
      "img": "road-girl-p1.webp",
-     "w": "走到馬路邊，{N}先停下來，牽實媽媽的手。媽媽指住紅燈。",
-     "c": "行到馬路邊，{N}停一停，拖實媽媽隻手。媽媽指住紅燈。",
-     "e": "At the kerb, {N} stops and holds Mummy's hand. Mummy points to the red light."
+     "w": "{N}站定定，牽實媽媽手。紅紅燈，嘟嘟嘟！",
+     "c": "{N}企定定，拖實媽咪手。紅紅燈，嘟嘟嘟！",
+     "e": "{N} stands tight, holds Mummy's hand. Red light, beep beep!"
     },
     {
      "img": "road-girl-p2.webp",
-     "w": "綠色小人亮起來，先望右，再望左，再望右。",
-     "c": "綠公仔著咗，先望右，再望左，再望右。",
-     "e": "Green man! Look right, look left, look right again."
+     "w": "綠公仔亮！望右望左，再望右，查查查！",
+     "c": "綠公仔著！望右望左，再望右，查查查！",
+     "e": "Green man on! Look right, left, right again, peek peek!"
     },
     {
      "img": "road-girl-p3.webp",
-     "w": "安全過到對面了！媽媽豎起拇指讚{N}。",
-     "c": "安全過到對面啦！媽媽豎起手指公讚{N}。",
-     "e": "Safe across! Mummy gives {N} a big thumbs up."
+     "w": "過馬路啦！媽媽拇指讚{N}，叮！好棒！",
+     "c": "過馬路啦！媽咪手指公讚{N}，叮！好叻！",
+     "e": "Safe across! Mummy thumbs up, ding! Clever {N}!"
     }
    ]
   },
@@ -1182,21 +1182,21 @@
    "pages": [
     {
      "img": "road-boy-p1.webp",
-     "w": "紅燈亮了，媽媽指住燈，{N}牽着媽媽，站好等。",
-     "c": "紅燈著咗，媽媽指住個燈，{N}拖住媽媽，企定定等。",
-     "e": "Red light! Mummy points to the light. {N} holds her hand and waits."
+     "w": "紅燈亮！停停停。{N}牽着媽媽，站定定！",
+     "c": "紅燈著！停停停。{N}拖住媽咪，企定定！",
+     "e": "Red light! Stop, stop! {N} holds Mummy tight!"
     },
     {
      "img": "road-boy-p2.webp",
-     "w": "綠色小人亮起來，{N}牽着媽媽走過斑馬線。",
-     "c": "綠公仔著咗，{N}拖住媽媽行過斑馬線。",
-     "e": "Green man! {N} holds Mummy’s hand and crosses."
+     "w": "綠小人亮！行行行。{N}牽着媽媽，走斑馬！",
+     "c": "綠公仔著！行行行。{N}拖住媽咪，踏斑馬！",
+     "e": "Green man! Step, step! {N} walks on the stripes!"
     },
     {
      "img": "road-boy-p3.webp",
-     "w": "安全過到對面了！媽媽豎起拇指讚{N}。",
-     "c": "安全過到對面啦！媽媽豎起手指公讚{N}。",
-     "e": "Safe across! Mummy gives {N} a big thumbs up."
+     "w": "安全過馬路！媽媽拇指讚你棒，叮！",
+     "c": "安全過馬路！媽咪手指公讚你叻，叮！",
+     "e": "Safe across! Mummy thumbs up, ding!"
     }
    ]
   },
@@ -1215,21 +1215,21 @@
    "pages": [
     {
      "img": "transport-girl-p1.webp",
-     "w": "搭雙層巴士，坐上層最前排看風景。",
-     "c": "搭雙層巴士，坐上層最前排睇風景。",
-     "e": "A double-decker bus! Best view on top."
+     "w": "{N}站站好，望望望！紅色雙層巴士，嘟嘟嘟！上層前排坐，看風景！",
+     "c": "{N}凳凳企，望望望！紅色雙層巴士，嘟嘟嘟！上層前排坐，睇風景！",
+     "e": "Big red bus! Beep beep! Top deck best view!"
     },
     {
      "img": "transport-girl-p2.webp",
-     "w": "電車叮叮慢慢行，沿途看老店和街道。",
-     "c": "電車叮叮慢慢行，沿途睇老店同街道。",
-     "e": "Ding ding! The tram goes slowly by."
+     "w": "電車叮叮叮，慢慢行。沿途看老店，街街街！",
+     "c": "電車叮叮叮，慢慢行。沿途望老店，街街街！",
+     "e": "Ding ding ding! Slow tram goes by. Old shops!"
     },
     {
      "img": "transport-girl-p3.webp",
-     "w": "坐天星小輪過海，維港的風吹過來。",
-     "c": "坐天星小輪過海，維港啲風吹埋嚟。",
-     "e": "The Star Ferry crosses the harbour. Breeze!"
+     "w": "天星小輪過海啦！嘩嘩嘩！維港風吹吹，{N}好開心，叮！",
+     "c": "天星小輪過海啦！嘩嘩嘩！維港風吹吹，{N}好開心，叮！",
+     "e": "Star ferry crosses sea! Wow! Breeze! Ding!"
     }
    ]
   },
@@ -1248,21 +1248,21 @@
    "pages": [
     {
      "img": "transport-boy-p1.webp",
-     "w": "搭雙層巴士，坐上層最前排看風景。",
-     "c": "搭雙層巴士，坐上層最前排睇風景。",
-     "e": "A double-decker bus! Best view on top."
+     "w": "{N}搭巴士，嘟嘟嘟！上層前排坐，看看看！",
+     "c": "{N}搭巴士，嘟嘟嘟！上層前排坐，睇睇睇！",
+     "e": "Bus goes beep! Top seat, look look look!"
     },
     {
      "img": "transport-boy-p2.webp",
-     "w": "電車叮叮慢慢行，沿途看老店和街道。",
-     "c": "電車叮叮慢慢行，沿途睇老店同街道。",
-     "e": "Ding ding! The tram goes slowly by."
+     "w": "叮叮叮！電車慢慢行。望望老舖，逛逛街！",
+     "c": "叮叮叮！電車慢慢行。望望老舖，逛逛街！",
+     "e": "Ding ding ding! Tram rolls slow. Look look look!"
     },
     {
      "img": "transport-boy-p3.webp",
-     "w": "坐天星小輪過海，維港的風吹過來。",
-     "c": "坐天星小輪過海，維港啲風吹埋嚟。",
-     "e": "The Star Ferry crosses the harbour. Breeze!"
+     "w": "搭小輪過海，嘩嘩嘩！風吹吹，{N}哈哈笑，叮！",
+     "c": "搭小輪過海，嘩嘩嘩！風吹吹，{N}哈哈笑，叮！",
+     "e": "Ferry crosses sea! Wind blows, {N} smiles, ding!"
     }
    ]
   },
@@ -1281,21 +1281,21 @@
    "pages": [
     {
      "img": "mumwork-girl-p1.webp",
-     "w": "媽媽出門上班，{N}有少少不捨得，奶奶陪住{N}。",
-     "c": "媽媽出門返工，{N}有少少唔捨得，嫲嫲陪住{N}。",
-     "e": "Mummy leaves for work. {N} misses her a little, and Grandma stays close."
+     "w": "媽咪出門去，{N}攬緊緊！嫲嫲抱抱，不捨得。",
+     "c": "媽咪出門門，{N}攬緊緊！嫲嫲抱抱，唔捨得。",
+     "e": "Mummy goes, {N} hugs tight! Grandma cuddles, not letting go."
     },
     {
      "img": "mumwork-girl-p2.webp",
-     "w": "白天，{N}在家裏玩積木，等媽媽回來。",
-     "c": "日頭，{N}喺屋企玩積木，等媽媽返嚟。",
-     "e": "{N} plays with blocks at home, waiting for Mummy."
+     "w": "白天玩積木，疊疊高！等媽咪，快快回。",
+     "c": "日頭玩積木，疊疊高！等媽咪，快快返。",
+     "e": "Daytime blocks, stack them tall! Waiting Mummy, come back soon."
     },
     {
      "img": "mumwork-girl-p3.webp",
-     "w": "傍晚，門口傳來開門聲——媽媽回來了！",
-     "c": "黃昏啦，門口有開門聲——媽媽返嚟啦！",
-     "e": "In the evening, the door opens — Mummy is home!"
+     "w": "黃昏門口，咔嗒！媽咪回來啦！{N}撲過去，叮！",
+     "c": "黃昏門口，咔嗒！媽咪返嚟啦！{N}撲過去，叮！",
+     "e": "Evening door, click click! Mummy's home! {N} jumps, ding!"
     }
    ]
   },
@@ -1314,21 +1314,21 @@
    "pages": [
     {
      "img": "mumwork-boy-p1.webp",
-     "w": "{N}同奶奶揮手說拜拜，目送媽媽出門。",
-     "c": "{N}同奶奶揮手講拜拜，望住媽媽出門口。",
-     "e": "{N} and Grandma wave bye-bye. See you tonight, Mummy!"
+     "w": "{N}揮揮手，拜拜拜！目送媽媽出門口，嘟嘟！",
+     "c": "{N}揮揮手，拜拜拜！望住媽媽出門口，嘟嘟！",
+     "e": "Wave wave, bye bye! Mummy goes, vroom vroom!"
     },
     {
      "img": "mumwork-boy-p2.webp",
-     "w": "白天，奶奶陪{N}在家裏玩積木，等媽媽回來。",
-     "c": "日頭，奶奶陪{N}喺屋企玩積木，等媽媽返嚟。",
-     "e": "{N} plays with blocks with Grandma, waiting for Mummy."
+     "w": "奶奶陪{N}，疊疊積木。等等媽媽，差唔差？",
+     "c": "奶奶陪{N}，疊疊積木。等等媽媽，差唔差？",
+     "e": "Stack blocks up, up, up! Wait wait, Mummy come!"
     },
     {
      "img": "mumwork-boy-p3.webp",
-     "w": "天黑了，門口傳來開門聲——媽媽回來了！",
-     "c": "天黑啦，門口有開門聲——媽媽返嚟啦！",
-     "e": "The door opens — Mummy is home!"
+     "w": "天黑黑，門口咔嚓！媽媽回來啦，叮！",
+     "c": "天黑黑，門口咔嚓！媽媽返嚟啦，叮！",
+     "e": "Click clack! Door opens! Mummy home, ding!"
     }
    ]
   },
@@ -1347,21 +1347,21 @@
    "pages": [
     {
      "img": "temper-girl-p1.webp",
-     "w": "{N}好生氣，跟媽媽深呼吸：一、二、三、四，慢慢定下來。",
-     "c": "{N}好嬲，跟媽媽深呼吸：一、二、三、四，慢慢定落嚟。",
-     "e": "{N} feels angry. Deep breath with Mummy: one, two, three, four."
+     "w": "{N}好生氣，握緊拳！跟媽媽深呼吸：呼——呼——",
+     "c": "{N}好嬲嬲，握握拳！跟媽咪深呼吸：呼——呼——",
+     "e": "{N} so mad! Tight fists! Deep breaths with Mummy: whoosh, whoosh!"
     },
     {
      "img": "temper-girl-p2.webp",
-     "w": "摸一摸肚臍，{N}慢慢冷靜下來。",
-     "c": "摸摸肚臍，{N}慢慢定落嚟。",
-     "e": "Touch tummy. {N} feels calmer."
+     "w": "摸摸小肚臍，呼——{N}慢慢冷靜下來。",
+     "c": "摸摸肚臍仔，呼——{N}慢慢定落嚟。",
+     "e": "Touch tummy. Whoosh — {N} feels calmer now."
     },
     {
      "img": "temper-girl-p3.webp",
-     "w": "平靜下來，{N}和媽媽抱抱，笑笑口一起玩。",
-     "c": "定返落嚟，{N}同媽媽攬下，笑笑口一齊玩。",
-     "e": "Calm now — a hug with Mummy, then play together."
+     "w": "冷靜啦！抱抱媽媽，叮！{N}笑眯眯一起玩。",
+     "c": "定晒啦！攬攬媽咪，叮！{N}笑笑口一齊玩。",
+     "e": "All calm! Hug Mummy, ding! {N} smiles and plays."
     }
    ]
   },
@@ -1380,21 +1380,21 @@
    "pages": [
     {
      "img": "temper-boy-p1.webp",
-     "w": "{N}好生氣，跟媽媽深呼吸：一、二、三、四，慢慢定下來。",
-     "c": "{N}好嬲，跟媽媽深呼吸：一、二、三、四，慢慢定落嚟。",
-     "e": "{N} feels angry. Deep breath with Mummy: one, two, three, four."
+     "w": "{N}好生氣，臉紅紅！跟媽咪呼呼吸：一、二、三、四！",
+     "c": "{N}好嬲嬲，面紅紅！跟媽咪呼呼吸：一、二、三、四！",
+     "e": "{N} so mad! Red face! Breathe with Mummy: one, two, three, four!"
     },
     {
      "img": "temper-boy-p2.webp",
-     "w": "飲一口水，{N}慢慢冷靜下來。",
-     "c": "飲啖水，{N}慢慢定落嚟。",
-     "e": "A sip of water. {N} feels calmer."
+     "w": "喝口水，咕嚕嚕！{N}慢慢冷靜下來，呼～",
+     "c": "飲啖水，咕嚕嚕！{N}慢慢定落嚟，呼～",
+     "e": "A sip, glug glug! {N} feels calm, whoosh~"
     },
     {
      "img": "temper-boy-p3.webp",
-     "w": "平靜下來，{N}和媽媽抱抱，笑笑口一起玩。",
-     "c": "定返落嚟，{N}同媽媽攬下，笑笑口一齊玩。",
-     "e": "Calm now — a hug with Mummy, then play together."
+     "w": "冷靜啦！和媽咪抱緊緊，{N}笑咪咪，叮！",
+     "c": "定晒喇！同媽咪攬緊緊，{N}笑笑口，叮！",
+     "e": "All calm! Hug Mummy tight. {N} smiles, ding!"
     }
    ]
   },
@@ -1413,21 +1413,21 @@
    "pages": [
     {
      "img": "veggie-girl-p1.webp",
-     "w": "晚飯有青菜，{N}皺皺眉頭，用手試了一小口。",
-     "c": "晚飯有青菜，{N}皺下眉頭，用手試咗一細啖。",
-     "e": "Greens for dinner. {N} makes a face — and tries one small bite with her hand!"
+     "w": "桌上綠青菜，{N}皺皺眉。小手揀一口，啵啵啵！",
+     "c": "枱面綠青菜，{N}皺皺眉。手仔揀一啖，啵啵啵！",
+     "e": "Green greens! {N} frowns. One tiny poke, pop pop!"
     },
     {
      "img": "veggie-girl-p2.webp",
-     "w": "{N}自己再拿一口，媽媽微笑鼓勵。",
-     "c": "{N}自己再拿一啖，媽媽笑住讚佢。",
-     "e": "One more bite — all by myself! Mom smiles."
+     "w": "自己再一口，𠺝𠺝𠺝！媽咪笑笑口，讚你叻！",
+     "c": "自己攞多啖，𠺝𠺝𠺝！媽咪笑笑口，讚你叻！",
+     "e": "One more bite, yum yum! Mommy smiles — you rock!"
     },
     {
      "img": "veggie-girl-p3.webp",
-     "w": "食菜會長高高，{N}好自豪！",
-     "c": "食菜會大得高，{N}好自豪！",
-     "e": "Veggies help me grow tall and strong!"
+     "w": "吃菜長高高，{N}拍拍手。站高高，叮！好自豪！",
+     "c": "食菜大得高，{N}拍手手。企高高，叮！好自豪！",
+     "e": "Veggies grow me tall! {N} claps. Ding! So proud!"
     }
    ]
   },
@@ -1446,21 +1446,21 @@
    "pages": [
     {
      "img": "veggie-boy-p1.webp",
-     "w": "晚飯有青菜，{N}皺起眉頭，用手抓起一塊西蘭花。",
-     "c": "晚飯有青菜，{N}皺下眉頭，伸手抓咗塊西蘭花。",
-     "e": "Greens for dinner. {N} makes a face — and grabs a piece with his hand!"
+     "w": "{N}皺皺眉，拎起西蘭花。掂下下，不想吃？",
+     "c": "{N}皺皺眉，拎起西蘭花。掂下下，唔想食？",
+     "e": "Frowny brows, holds the tree. Touchy touch, not for me?"
     },
     {
      "img": "veggie-boy-p2.webp",
-     "w": "{N}自己再拿一塊，媽媽豎起拇指。",
-     "c": "{N}自己再拿一啖，媽媽豎起手指公。",
-     "e": "One more bite — all by myself!"
+     "w": "自己再吃一塊，嚒嚒嚒！媽媽豎起拇指，讚！",
+     "c": "自己再嗒一啖，嚒嚒嚒！媽咪豎起手指公，讚！",
+     "e": "One more bite, munch munch! Mommy thumbs up, crunch crunch!"
     },
     {
      "img": "veggie-boy-p3.webp",
-     "w": "食菜會長高高，{N}好自豪！",
-     "c": "食菜會大得高，{N}好自豪！",
-     "e": "Veggies help me grow tall and strong!"
+     "w": "吃菜長高高，叮！{N}挺起胸膛，好自豪！",
+     "c": "食菜大得高，叮！{N}挺胸胸，好自豪！",
+     "e": "Veggies grow me tall, ding! {N} puffs up, proud king!"
     }
    ]
   },
@@ -1479,21 +1479,21 @@
    "pages": [
     {
      "img": "phone-girl-p1.webp",
-     "w": "媽媽說：夠鐘休息，一起放下屏幕。",
-     "c": "媽媽話：夠鐘休息啦，一齊放低個芒。",
-     "e": "Time for a break — screens down together."
+     "w": "{N}坐凳凳，手指篤篤篤。媽咪說夠鐘，放低芒芒啦！",
+     "c": "{N}坐凳凳，手指篤篤篤。媽咪話夠鐘，放低芒芒啦！",
+     "e": "Tap tap tap! Mummy says, screens down now!"
     },
     {
      "img": "phone-girl-p2.webp",
-     "w": "放低平板，去公園追泡泡跑跳！",
-     "c": "放低平板，去公園追下泡泡跑下跳下！",
-     "e": "Tablet down. Off to the park to chase bubbles!"
+     "w": "平板攤攤低，去公園！追泡泡跑跑跑，跳跳跳！",
+     "c": "平板攤攤低，去公園！追泡泡跑跑跑，跳跳跳！",
+     "e": "Tablet down! Chase bubbles, run and jump!"
     },
     {
      "img": "phone-girl-p3.webp",
-     "w": "夜晚，媽媽講故事，{N}抱住公仔甜甜入睡。",
-     "c": "夜晚，媽媽講故事，{N}攬住公仔甜甜瞓覺。",
-     "e": "At night, Mummy reads a story. {N} sleeps sweetly."
+     "w": "夜晚媽咪講古仔，{N}抱公仔甜甜睡。叮！著燈燈！",
+     "c": "夜晚媽咪講古仔，{N}攬公仔甜甜瞓。叮！著燈燈！",
+     "e": "Story time! {N} hugs doll, sleeps tight. Ding!"
     }
    ]
   },
@@ -1512,21 +1512,21 @@
    "pages": [
     {
      "img": "phone-boy-p1.webp",
-     "w": "媽媽說：休息一下，看看窗外吧。",
-     "c": "媽媽話：休息下啦，睇下窗外啦。",
-     "e": "Mummy says: time for a break — look outside!"
+     "w": "{N}盯盯屏幕，媽咪叫叫叫。望望窗外邊，去去去！",
+     "c": "{N}盯盯芒，媽咪叫叫叫。望望窗外邊，去去去！",
+     "e": "Screen stare! Mummy calls. Look outside, go go go!"
     },
     {
      "img": "phone-boy-p2.webp",
-     "w": "原來放下屏幕，外面的世界這麼好玩。",
-     "c": "原來放低個芒，出面咁好玩㗎。",
-     "e": "The real world is so much fun!"
+     "w": "放下平板仔，噠噠噠！外面這麼好玩，嘩嘩嘩！",
+     "c": "放低平板仔，噠噠噠！出面咁好玩，嘩嘩嘩！",
+     "e": "Tablet down, tap tap tap! Real world fun, wow wow wow!"
     },
     {
      "img": "phone-boy-p3.webp",
-     "w": "夜晚，媽媽講故事，{N}抱住公仔甜甜入睡。",
-     "c": "夜晚，媽媽講故事，{N}攬住公仔甜甜瞓覺。",
-     "e": "At night, Mummy reads a story. {N} sleeps sweetly."
+     "w": "媽咪講故事，{N}抱抱兔仔。甜甜入睡啦，叮！",
+     "c": "媽咪講故仔，{N}攬攬兔仔。甜甜瞓覺覺，叮！",
+     "e": "Storytime! {N} hugs bunny. Sweet sleep, ding!"
     }
    ]
   },
@@ -1545,21 +1545,21 @@
    "pages": [
     {
      "img": "wash-girl-p1.webp",
-     "w": "搓泡泡，手心手背都要搓。",
-     "c": "搓泡泡，手心手背都要搓勻。",
-     "e": "Bubbles! Rub palms and backs."
+     "w": "{N}搓搓手，嚕嚕嚕！手心手背波波波！",
+     "c": "{N}搓搓手，嚕嚕嚕！手心手背波波波！",
+     "e": "Rub rub rub! Bubbles everywhere!"
     },
     {
      "img": "wash-girl-p2.webp",
-     "w": "搓泡泡，手心手背都要搓。",
-     "c": "搓泡泡，手心手背都要搓勻。",
-     "e": "Bubbles! Rub palms and backs."
+     "w": "手指縫，捽捽捽！手背又搓波波波！",
+     "c": "手指罅，捽捽捽！手背又搓波波波！",
+     "e": "Swish swish swish! Bubbles on backs!"
     },
     {
      "img": "wash-girl-p3.webp",
-     "w": "洗乾淨手，就可以開心食飯了！",
-     "c": "洗乾淨手，先可以開心食飯！",
-     "e": "Clean hands, happy meal time!"
+     "w": "沖走泥巴，叮！{N}開心飯飯！",
+     "c": "沖走泥泥，叮！{N}開心飯飯！",
+     "e": "Clean hands! Yummy yummy meal!"
     }
    ]
   },
@@ -1578,21 +1578,21 @@
    "pages": [
     {
      "img": "wash-boy-p1.webp",
-     "w": "搓泡泡，手心手背都要搓。",
-     "c": "搓泡泡，手心手背都要搓勻。",
-     "e": "Bubbles! Rub palms and backs."
+     "w": "{N}開水龍頭，搓搓搓！手心手背白泡泡，波波波！",
+     "c": "{N}開水水，搓搓搓！手心手背白泡泡，波波波！",
+     "e": "Water on, rub rub rub! Palms and backs, pop pop pop!"
     },
     {
      "img": "wash-boy-p2.webp",
-     "w": "唱著歌搓二十下，再沖乾淨。",
-     "c": "唱住歌搓廿下，再沖乾淨。",
-     "e": "Sing and scrub, then rinse clean."
+     "w": "唱著歌，搓搓二十下！嘩！沖走小泥巴，嘩嘩嘩！",
+     "c": "唱唱歌，搓搓廿下！嘩！沖走泥巴仔，嘩嘩嘩！",
+     "e": "Sing and scrub, twenty times! Mud gone, whoosh whoosh whoosh!"
     },
     {
      "img": "wash-boy-p3.webp",
-     "w": "洗乾淨手，就可以開心食飯了！",
-     "c": "洗乾淨手，先可以開心食飯！",
-     "e": "Clean hands, happy meal time!"
+     "w": "小手乾淨叮！{N}大口吃飯，好開心！",
+     "c": "小手乾淨叮！{N}大口食飯仔，好開心！",
+     "e": "Clean hands, ding! Big happy meal time!"
     }
    ]
   }
