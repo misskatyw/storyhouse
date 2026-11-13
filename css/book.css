@@ -13,6 +13,18 @@
 .bk-page.sq .bk-imgbox{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
 .bk-page.sq .bk-img{width:100%;height:100%;object-fit:contain}
 
+/* A4 直版：固定 210:297，上圖（56%）下字 */
+.bk-page.a4p{aspect-ratio:210/297;display:flex;flex-direction:column}
+.bk-page.a4p .bk-imgbox{flex:0 0 56%;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bk-page.a4p .bk-img{width:100%;height:100%;object-fit:contain}
+.bk-page.a4p .bk-text{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;overflow:hidden}
+
+/* 延伸頁：最後一頁故事圖向中心放大 1.6 倍裁切 */
+.bk-page.ext .bk-imgbox{overflow:hidden}
+.bk-page.ext .bk-img{object-fit:cover;transform:scale(1.6);transform-origin:50% 50%}
+.bk-page.ext:not(.a4p):not(.sq) .bk-imgbox{aspect-ratio:1144/940}
+.bk-page.ext:not(.a4p):not(.sq) .bk-img{height:100%}
+
 /* 字區：同圖區上下分開，高度跟行數自然增長，唔縮字唔裁字 */
 .bk-text{width:100%;background:#FFF8E8;border-top:calc(var(--u)*3) solid #F0DEC9;padding:calc(var(--u)*26) calc(var(--u)*28) calc(var(--u)*18);text-align:center}
 .bk-main,.bk-sub{overflow:visible}
