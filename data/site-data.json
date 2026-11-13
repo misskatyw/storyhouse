@@ -60,8 +60,8 @@
     },
     {
      "img": "school-boy-p2.webp",
-     "w": "玩積木，叠叠高！交個新朋友，哈哈笑！",
-     "c": "砌積木，叠叠高！識個新朋友，哈哈笑！",
+     "w": "玩積木，疊疊高！交個新朋友，哈哈笑！",
+     "c": "砌積木，疊疊高！識個新朋友，哈哈笑！",
      "e": "Stack blocks tall! New friends, ha ha!"
     },
     {
@@ -369,7 +369,7 @@
     },
     {
      "img": "eatbaby-girl-p3.webp",
-     "w": "举高小汤匙，叮！{N}准备吃饭啦！",
+     "w": "舉高小湯匙，叮！{N}準備食飯啦！",
      "c": "舉高匙羹仔，叮！{N}準備食飯啦！",
      "e": "Lift the spoon, ding! {N} ready to eat!"
     }
@@ -848,7 +848,7 @@
     "en": "{N} Is Brave at the Doctor"
    },
    "cover": "doctor-boy-cover.webp",
-   "coverScene": "封面：健康院门口，{N}著蓝色衫站定定，妈妈牵住佢只手，医生喺度准备检查",
+   "coverScene": "封面：健康院門口，{N}著藍色衫站定定，媽媽牽住佢隻手，醫生喺度準備檢查",
    "pages": [
     {
      "img": "doctor-boy-p1.webp",
@@ -980,7 +980,7 @@
     "en": "{N} Gets Dressed"
    },
    "cover": "dress-boy-cover.webp",
-   "coverScene": "封面：睡房入面，{N}著藍色長袖睡衣企喺床邊，手举住一件紅色上衫，床上攤住幾件衫俾佢揀",
+   "coverScene": "封面：睡房入面，{N}著藍色長袖睡衣企喺床邊，手舉住一件紅色上衫，床上攤住幾件衫俾佢揀",
    "pages": [
     {
      "img": "dress-boy-p1.webp",

@@ -64,6 +64,7 @@
 
   function fill(t, name, theme) { var r = String(t == null ? '' : t).replace(/\{N\}/g, name); return theme == null ? r : r.replace(/\{T\}/g, theme); }
   function isEn(k) { return k === 'e'; }
+  function imgSrc(f) { return /^(blob:|data:|https?:)/.test(f) ? f : 'assets/' + f; }
 
   function titleParts(pack, lang, name) {
     var T = pack.title;
@@ -133,7 +134,7 @@
       img.alt = spec.type === 'cover' ? '封面' : '';
       if (!o.exportMode) img.loading = 'lazy';
       img.decoding = 'async';
-      img.src = (o.imgMap && o.imgMap[spec.img]) || 'assets/' + spec.img;
+      img.src = (o.imgMap && o.imgMap[spec.img]) || imgSrc(spec.img);
       box.appendChild(img);
       page.appendChild(box);
     }
@@ -160,6 +161,24 @@
     return (specs || pagesFor(pack)).map(function (spec, i) {
       return buildPage(spec, { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, imgMap: o.imgMap, u: u, num: i + 1, exportMode: true });
     });
+  }
+
+  // A4 橫版字區高度固定：排唔落就按比例縮細字（同 PDF 導出 fitText 一致），唔裁字
+  function fitA4Text(page) {
+    if (!page.classList.contains('a4p')) return;
+    var txt = page.querySelector('.bk-text');
+    if (!txt) return;
+    var cover = txt.classList.contains('cover');
+    var ka = cover ? '--czhs' : '--zhs', kb = cover ? '--cens' : '--ens';
+    var a = parseFloat(page.style.getPropertyValue(ka)) || 0;
+    var b = parseFloat(page.style.getPropertyValue(kb)) || 0;
+    if (!a || !b) return;
+    var f = 1;
+    for (var i = 0; i < 14 && txt.scrollHeight > txt.clientHeight + 1; i++) {
+      f *= 0.92;
+      page.style.setProperty(ka, Math.round(a * f));
+      page.style.setProperty(kb, Math.round(b * f));
+    }
   }
 
   function mount(container, pack, o) {
@@ -192,13 +211,15 @@
     function render() {
       var u = Math.max(stage.clientWidth, 200) / BASE;
       stage.innerHTML = '';
-      stage.appendChild(buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, u: u, num: idx + 1 }));
+      var pg = buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, u: u, num: idx + 1 });
+      stage.appendChild(pg);
+      fitA4Text(pg);
       pager.textContent = '第 ' + (idx + 1) + ' 頁 / 共 ' + total + ' 頁';
       prev.disabled = idx === 0;
       next.disabled = idx === total - 1;
       dotEls.forEach(function (d, i) { d.classList.toggle('on', i === idx); });
       var ahead = specs[idx + 1];
-      if (ahead && ahead.img) { var pre = new Image(); pre.src = 'assets/' + ahead.img; }
+      if (ahead && ahead.img) { var pre = new Image(); pre.src = imgSrc(ahead.img); }
     }
     function go(i) {
       i = Math.max(0, Math.min(total - 1, i));

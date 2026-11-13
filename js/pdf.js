@@ -141,7 +141,13 @@
 
     {
       L = fitText(ctx, lines, sizes, type === 'cover', scale, textBot - textTop, G.textMaxW);
+      // 字區 clip：就算自訂文字超長、縮到 0.5 倍都排唔落，都唔會畫出界壓圖／壓頁碼
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0, textTop - 24, GW, textBot - textTop + 24);
+      ctx.clip();
       drawItems(ctx, L, textTop + Math.max(0, (textBot - textTop - L.h) / 2), GW / 2, G.textMaxW);
+      ctx.restore();
     }
 
     if (hasNum) {
