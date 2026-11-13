@@ -10,13 +10,16 @@
     wce: { label: '三語（書面＋廣東話＋English）', keys: ['w', 'c', 'e'], promptOnly: true }
   };
   var FORMATS = {
-    a4:  { label: 'A4 橫版 PDF', w: 1080, kind: 'pdf' },
+    a4:  { label: 'A4 直版 PDF', w: 1080, h: 1528, kind: 'pdf', portrait: true },
     sq:  { label: '正方形 PDF', w: 1080, kind: 'pdf', square: true },
     img: { label: '只要圖檔', w: 1080, kind: 'img' }
   };
   var BASE = 900;
   var MAX_IMG_W = 1080;
   var data = null;
+  var scenesByTheme = {};
+
+  var EXT_ZOOM = 1.6;
 
   // 900px 基準 px：內文中／英（舊值 37/35、35/32、32/31、29/29 的兩倍左右）、每行中文字數上限
   var AGE_TYPE = {
@@ -28,6 +31,11 @@
   var COVER_PX = { zh: 80, en: 60, num: 17 };
 
   function init(d) { data = d; }
+
+  function setScenes(arr) {
+    scenesByTheme = {};
+    (arr || []).forEach(function (sc) { if (sc && sc.theme) scenesByTheme[sc.theme] = sc; });
+  }
 
   function sizesFor(age) {
     var a = AGE_TYPE[age] || AGE_TYPE['3–4 歲'];
@@ -54,7 +62,7 @@
     return lines;
   }
 
-  function fill(t, name) { return String(t == null ? '' : t).replace(/\{N\}/g, name); }
+  function fill(t, name, theme) { var r = String(t == null ? '' : t).replace(/\{N\}/g, name); return theme == null ? r : r.replace(/\{T\}/g, theme); }
   function isEn(k) { return k === 'e'; }
 
   function titleParts(pack, lang, name) {
@@ -73,9 +81,17 @@
     });
   }
 
+  function specLines(spec, lang, name) {
+    if (spec.type === 'cover') return titleParts(spec.pack, lang, name);
+    return spec.pg ? pageLines(spec.pg, lang, name) : [];
+  }
+
   function pagesFor(pack) {
     var list = [{ type: 'cover', img: pack.cover }];
     pack.pages.forEach(function (pg) { list.push({ type: 'img', pg: pg, img: pg.img }); });
+    var sc = scenesByTheme[pack.theme];
+    if (sc) list.push({ type: 'scene', img: sc.img, pg: sc });
+    if (sc && sc.ext && pack.pages.length) list.push({ type: 'ext', img: pack.pages[pack.pages.length - 1].img, pg: sc.ext });
     return list;
   }
 
@@ -102,7 +118,7 @@
 
   function buildPage(spec, o) {
     var s = sizesFor(o.pack.age);
-    var page = el('div', 'bk-page' + (o.exportMode ? ' is-export' : '') + (o.fmt === 'sq' ? ' sq' : ''));
+    var page = el('div', 'bk-page' + (o.exportMode ? ' is-export' : '') + (o.fmt === 'sq' ? ' sq' : '') + (o.fmt === 'a4' ? ' a4p' : '') + (spec.type === 'ext' ? ' ext' : ''));
     page.style.setProperty('--u', (o.u || 1) + 'px');
     page.style.setProperty('--zhs', s.zh);
     page.style.setProperty('--ens', s.en);
@@ -110,15 +126,17 @@
     page.style.setProperty('--cens', s.cen);
     page.style.setProperty('--nums', s.num);
 
-    var box = el('div', 'bk-imgbox');
-    var img = document.createElement('img');
-    img.className = 'bk-img';
-    img.alt = spec.type === 'cover' ? '封面' : '';
-    if (!o.exportMode) img.loading = 'lazy';
-    img.decoding = 'async';
-    img.src = (o.imgMap && o.imgMap[spec.img]) || 'assets/' + spec.img;
-    box.appendChild(img);
-    page.appendChild(box);
+    if (spec.img) {
+      var box = el('div', 'bk-imgbox');
+      var img = document.createElement('img');
+      img.className = 'bk-img';
+      img.alt = spec.type === 'cover' ? '封面' : '';
+      if (!o.exportMode) img.loading = 'lazy';
+      img.decoding = 'async';
+      img.src = (o.imgMap && o.imgMap[spec.img]) || 'assets/' + spec.img;
+      box.appendChild(img);
+      page.appendChild(box);
+    }
 
     var txt;
     if (spec.type === 'cover') {
@@ -130,7 +148,7 @@
       });
     } else {
       txt = el('div', 'bk-text');
-      lineEls(pageLines(spec.pg, o.lang, o.name), txt, s.cpl);
+      lineEls(specLines(spec, o.lang, o.name), txt, s.cpl);
       txt.appendChild(el('div', 'bk-num', String(o.num)));
     }
     page.appendChild(txt);
@@ -221,8 +239,8 @@
   }
 
   window.Book = {
-    LANGS: LANGS, FORMATS: FORMATS, BASE: BASE, MAX_IMG_W: MAX_IMG_W, AGE_TYPE: AGE_TYPE, wrapZh: wrapZh,
-    init: init, sizesFor: sizesFor, fill: fill, titleParts: titleParts, bookTitle: bookTitle,
+    LANGS: LANGS, FORMATS: FORMATS, EXT_ZOOM: EXT_ZOOM, BASE: BASE, MAX_IMG_W: MAX_IMG_W, AGE_TYPE: AGE_TYPE, wrapZh: wrapZh,
+    init: init, setScenes: setScenes, specLines: specLines, sizesFor: sizesFor, fill: fill, titleParts: titleParts, bookTitle: bookTitle,
     pageLines: pageLines, pagesFor: pagesFor, buildPage: buildPage, buildAll: buildAll, mount: mount
   };
 })();

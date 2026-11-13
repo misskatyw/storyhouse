@@ -1,10 +1,13 @@
 (function () {
   'use strict';
   var CDN = {
-    h2c: 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js',
     jspdf: 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'
   };
   var JPEG_Q = 0.85;
+  var W = 1240;
+  var FONT = '"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif';
+  var SERIF = '"Noto Serif TC","Noto Sans TC","PingFang TC","Microsoft JhengHei",serif';
+  var INK = '#2B1B14', INK2 = '#5C463C', GOLD = '#E9A13B', CREAM = '#FFF8E8', BOXBG = '#F6E8D2';
   var loading = {};
 
   function loadScript(src) {
@@ -20,95 +23,176 @@
     return loading[src];
   }
 
-  function withTimeout(p, ms, msg) {
-    return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error(msg)); }, ms); })]);
-  }
-
   function isIOS() {
     return /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   }
 
-  // 每張圖先縮到闊 ≤1080、JPEG 0.85，再入頁面；一次一張，用完即放記憶
-  function shrinkImage(file) {
+  // 版面幾何：A4 直版 1240x1754；正方形 1240x1240
+  function geometry(fmt) {
+    if (fmt.square) return { H: 1240, mm: [210, 210], imgH: 640 };
+    return { H: 1754, mm: [210, 297], imgH: 940 };
+  }
+
+  function loadImage(file) {
     return new Promise(function (resolve, reject) {
       var im = new Image();
-      im.onload = function () {
-        var w = Math.min(im.naturalWidth, Book.MAX_IMG_W);
-        var h = Math.round(im.naturalHeight * w / im.naturalWidth);
-        var c = document.createElement('canvas');
-        c.width = w; c.height = h;
-        var ctx = c.getContext('2d');
-        ctx.fillStyle = '#FFFFFF';
-        ctx.fillRect(0, 0, w, h);
-        ctx.drawImage(im, 0, 0, w, h);
-        c.toBlob(function (blob) {
-          c.width = c.height = 0;
-          if (blob) resolve(URL.createObjectURL(blob)); else reject(new Error('縮圖失敗'));
-        }, 'image/jpeg', JPEG_Q);
-      };
+      var ext = /^(blob:|data:|https?:)/.test(file);
+      if (/^https?:/.test(file)) im.crossOrigin = 'anonymous';
+      im.onload = function () { resolve(im); };
       im.onerror = function () { reject(new Error('圖片載入失敗：' + file)); };
-      im.src = /^(blob:|data:|https?:)/.test(file) ? file : 'assets/' + file;
+      im.src = ext ? file : 'assets/' + file;
     });
   }
 
-  function shrinkAll(files, onProgress) {
+  function loadAll(files, onProgress) {
     var map = {}, seq = Promise.resolve();
     files.forEach(function (f, i) {
       seq = seq.then(function () {
-        if (onProgress) onProgress('縮圖', i + 1, files.length);
-        return shrinkImage(f).then(function (u) { map[f] = u; });
+        if (onProgress) onProgress('載入圖', i + 1, files.length);
+        return loadImage(f).then(function (im) { map[f] = im; });
       });
     });
     return seq.then(function () { return map; });
   }
 
-  function waitImages(root) {
-    var imgs = Array.prototype.slice.call(root.querySelectorAll('img'));
-    return Promise.all(imgs.map(function (im) {
-      if (im.complete && im.naturalWidth) return null;
-      return new Promise(function (r) { im.onload = im.onerror = r; });
-    }));
+  function wrapEn(ctx, text, maxW) {
+    var words = String(text).split(/\s+/).filter(Boolean), lines = [], cur = '';
+    words.forEach(function (w) {
+      var t = cur ? cur + ' ' + w : w;
+      if (cur && ctx.measureText(t).width > maxW) { lines.push(cur); cur = w; } else cur = t;
+    });
+    if (cur) lines.push(cur);
+    return lines;
   }
 
-  // pages = [{img:'x.webp'|blobURL, ...}] 由 Book.pagesFor 或自訂；回傳每頁 JPEG dataURL＋尺寸
-  function renderPages(pack, o, onProgress, specsOverride) {
-    var fmt = Book.FORMATS[o.fmt] || Book.FORMATS.a4;
-    var libs = [loadScript(CDN.h2c)];
-    if (fmt.kind === 'pdf') libs.push(loadScript(CDN.jspdf));
-    var specs = specsOverride || Book.pagesFor(pack);
-    var files = specs.map(function (s) { return s.img; }).filter(Boolean);
-    var imgMap = {}, host = null;
-    function cleanup() {
-      if (host && host.parentNode) host.parentNode.removeChild(host);
-      Object.keys(imgMap).forEach(function (k) { URL.revokeObjectURL(imgMap[k]); });
-    }
-    return Promise.all(libs.concat([document.fonts ? document.fonts.ready : null])).then(function () {
-      return shrinkAll(files, onProgress);
-    }).then(function (map) {
-      imgMap = map;
-      host = document.createElement('div');
-      host.className = 'export-host';
-      document.body.appendChild(host);
-      var pages = Book.buildAll(pack, { lang: o.lang, name: o.name, fmt: o.fmt, imgMap: imgMap }, fmt.w, specs);
-      pages.forEach(function (p) { p.style.width = fmt.w + 'px'; host.appendChild(p); });
-      var out = [], chain = waitImages(host);
-      pages.forEach(function (p, i) {
-        chain = chain.then(function () {
-          if (onProgress) onProgress('排版', i + 1, pages.length);
-          var h = Math.ceil(p.getBoundingClientRect().height);
-          return withTimeout(window.html2canvas(p, {
-            scale: 1, useCORS: true, logging: false, backgroundColor: '#FFF8E8',
-            width: fmt.w, height: h, scrollX: 0, scrollY: 0,
-            onclone: function (doc) { var hh = doc.querySelector('.export-host'); if (hh) { hh.style.left = '0'; hh.style.top = '0'; } }
-          }), 60000, '第 ' + (i + 1) + ' 頁排版逾時').then(function (c) {
-            var rec = { data: c.toDataURL('image/jpeg', JPEG_Q), w: c.width, h: c.height };
-            c.width = c.height = 0;
-            out.push(rec);
-          });
-        });
+  function drawContain(ctx, im, x, y, w, h) {
+    var r = Math.min(w / im.naturalWidth, h / im.naturalHeight);
+    var dw = im.naturalWidth * r, dh = im.naturalHeight * r;
+    ctx.drawImage(im, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+  }
+
+  function drawCover(ctx, im, x, y, w, h, fx) {
+    var r = Math.max(w / im.naturalWidth, h / im.naturalHeight);
+    var sw = w / r, sh = h / r;
+    var sx = (im.naturalWidth - sw) * fx, sy = (im.naturalHeight - sh) / 2;
+    ctx.drawImage(im, sx, sy, sw, sh, x, y, w, h);
+  }
+
+  // 延伸頁：先按 cover 取景，再向中心放大 EXT_ZOOM 倍（source-rect 置中裁切）
+  function drawCoverZoom(ctx, im, x, y, w, h, z) {
+    var r = Math.max(w / im.naturalWidth, h / im.naturalHeight);
+    var sw = w / r / z, sh = h / r / z;
+    ctx.drawImage(im, (im.naturalWidth - sw) / 2, (im.naturalHeight - sh) / 2, sw, sh, x, y, w, h);
+  }
+
+  // 將主／副行排成逐行清單；放唔落就整體縮細（f<1），保證唔出界
+  function layoutText(ctx, lines, sizes, isCover, scale, f) {
+    var out = [], gap = 10 * scale * f, h = 0;
+    lines.forEach(function (ln, i) {
+      var main = i === 0;
+      var base = isCover ? (ln.cls === 'zh' ? sizes.czh : sizes.cen) : (ln.cls === 'zh' ? sizes.zh : sizes.en);
+      var px = Math.round(base * scale * (main ? 1 : 0.8) * f);
+      var font = isCover ? '900 ' + px + 'px ' + SERIF : (main ? '700 ' : '400 ') + px + 'px ' + FONT;
+      ctx.font = font;
+      var parts = ln.cls === 'zh' ? Book.wrapZh(ln.text, isCover ? sizes.ccpl : sizes.cpl) : wrapEn(ctx, ln.text, 1144);
+      if (!ln.text) parts = [];
+      if (i > 0 && parts.length) h += gap;
+      parts.forEach(function (t) {
+        var lh = px * 1.35;
+        out.push({ text: t, font: font, color: main ? INK : INK2, y: h + lh / 2 });
+        h += lh;
       });
-      return chain.then(function () { cleanup(); return { pages: out, fmt: fmt }; });
-    }).catch(function (e) { cleanup(); throw e; });
+    });
+    return { items: out, h: h };
+  }
+
+  function fitText(ctx, lines, sizes, isCover, scale, availH) {
+    var f = 1, L = layoutText(ctx, lines, sizes, isCover, scale, f);
+    while (L.h > availH && f > 0.5) { f -= 0.05; L = layoutText(ctx, lines, sizes, isCover, scale, f); }
+    return L;
+  }
+
+  function drawItems(ctx, L, top) {
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    L.items.forEach(function (it) {
+      ctx.font = it.font;
+      ctx.fillStyle = it.color;
+      ctx.fillText(it.text, W / 2, top + it.y, 1144);
+    });
+  }
+
+  function drawPage(ctx, spec, pack, o, imgs, G, num) {
+    var H = G.H, scale = W / Book.BASE, sizes = Book.sizesFor(pack.age);
+    var type = spec.type;
+    ctx.fillStyle = CREAM;
+    ctx.fillRect(0, 0, W, H);
+    var hasNum = type === 'img' || type === 'scene' || type === 'ext' || (!type && !!spec.pg);
+    var lines = Book.specLines(type === 'cover' ? { type: 'cover', pack: pack } : spec, o.lang, o.name);
+    var textTop = 48 + G.imgH + 40, textBot = H - (hasNum ? 110 : 60), L;
+
+    if (spec.img) {
+      ctx.fillStyle = BOXBG;
+      ctx.fillRect(48, 48, 1144, G.imgH);
+      if (type === 'ext') drawCoverZoom(ctx, imgs[spec.img], 48, 48, 1144, G.imgH, Book.EXT_ZOOM);
+      else drawContain(ctx, imgs[spec.img], 48, 48, 1144, G.imgH);
+    }
+
+    {
+      L = fitText(ctx, lines, sizes, type === 'cover', scale, textBot - textTop);
+      drawItems(ctx, L, textTop + Math.max(0, (textBot - textTop - L.h) / 2));
+    }
+
+    if (hasNum) {
+      ctx.font = '700 ' + Math.round(sizes.num * scale) + 'px ' + FONT;
+      ctx.fillStyle = INK2;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(String(num), W / 2, H - 56);
+    }
+  }
+
+  function textSample(specs, pack, o) {
+    var t = '';
+    specs.forEach(function (sp) {
+      Book.specLines(sp.type === 'cover' ? { type: 'cover', pack: pack } : sp, o.lang, o.name).forEach(function (l) { t += l.text; });
+    });
+    return t;
+  }
+
+  function loadFonts(sample) {
+    if (!document.fonts || !document.fonts.load) return Promise.resolve();
+    var tasks = ['700 40px "Noto Sans TC"', '400 40px "Noto Sans TC"', '900 40px "Noto Serif TC"'].map(function (f) {
+      return document.fonts.load(f, sample).catch(function () {});
+    });
+    return Promise.all(tasks).then(function () { return document.fonts.ready; });
+  }
+
+  // 逐頁畫上 canvas，即時轉 JPEG dataURL；回傳 { pages:[{data,w,h}], fmt, G }
+  function renderPages(pack, o, onProgress, specsOverride) {
+    var fmt = Book.FORMATS[o.fmt] || Book.FORMATS.a4, G = geometry(fmt);
+    var specs = specsOverride || Book.pagesFor(pack);
+    var files = [];
+    specs.forEach(function (s) {
+      if (s.img && files.indexOf(s.img) < 0) files.push(s.img);
+    });
+    var libs = fmt.kind === 'pdf' ? [loadScript(CDN.jspdf)] : [];
+    return Promise.all(libs.concat([loadFonts(textSample(specs, pack, o))])).then(function () {
+      return loadAll(files, onProgress);
+    }).then(function (imgs) {
+      var c = document.createElement('canvas');
+      c.width = W; c.height = G.H;
+      var ctx = c.getContext('2d');
+      ctx.imageSmoothingQuality = 'high';
+      var out = [];
+      specs.forEach(function (spec, i) {
+        if (onProgress) onProgress('排版', i + 1, specs.length);
+        drawPage(ctx, spec, pack, o, imgs, G, i + 1);
+        out.push({ data: c.toDataURL('image/jpeg', JPEG_Q), w: W, h: G.H });
+      });
+      c.width = c.height = 0;
+      return { pages: out, fmt: fmt, G: G };
+    });
   }
 
   function safeName(s) { return String(s).replace(/[\\/:*?"<>|\s]+/g, '_'); }
@@ -123,11 +207,11 @@
   function exportPdf(pack, o, onProgress, specsOverride, titleOverride) {
     return renderPages(pack, o, onProgress, specsOverride).then(function (r) {
       if (onProgress) onProgress('合成 PDF', 1, 1);
-      var w = r.fmt.w, first = r.pages[0];
-      var doc = new window.jspdf.jsPDF({ orientation: first.w >= first.h ? 'l' : 'p', unit: 'px', format: [first.w, first.h], hotfixes: ['px_scaling'], compress: true });
+      var mm = r.G.mm, fmtArr = mm[0] === mm[1] ? mm : 'a4';
+      var doc = new window.jspdf.jsPDF({ orientation: 'portrait', unit: 'mm', format: fmtArr, compress: true });
       r.pages.forEach(function (pg, i) {
-        if (i > 0) doc.addPage([pg.w, pg.h], pg.w >= pg.h ? 'l' : 'p');
-        doc.addImage(pg.data, 'JPEG', 0, 0, pg.w, pg.h);
+        if (i > 0) doc.addPage(fmtArr, 'portrait');
+        doc.addImage(pg.data, 'JPEG', 0, 0, mm[0], mm[1]);
       });
       var name = safeName(titleOverride || Book.bookTitle(pack, o.lang, o.name)) + '.pdf';
       return { files: [{ blob: doc.output('blob'), name: name }] };
