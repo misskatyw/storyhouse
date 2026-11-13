@@ -64,6 +64,7 @@
 
   function fill(t, name, theme) { var r = String(t == null ? '' : t).replace(/\{N\}/g, name); return theme == null ? r : r.replace(/\{T\}/g, theme); }
   function isEn(k) { return k === 'e'; }
+  function imgSrc(f) { return /^(blob:|data:|https?:)/.test(f) ? f : 'assets/' + f; }
 
   function titleParts(pack, lang, name) {
     var T = pack.title;
@@ -133,7 +134,7 @@
       img.alt = spec.type === 'cover' ? '封面' : '';
       if (!o.exportMode) img.loading = 'lazy';
       img.decoding = 'async';
-      img.src = (o.imgMap && o.imgMap[spec.img]) || 'assets/' + spec.img;
+      img.src = (o.imgMap && o.imgMap[spec.img]) || imgSrc(spec.img);
       box.appendChild(img);
       page.appendChild(box);
     }
@@ -218,7 +219,7 @@
       next.disabled = idx === total - 1;
       dotEls.forEach(function (d, i) { d.classList.toggle('on', i === idx); });
       var ahead = specs[idx + 1];
-      if (ahead && ahead.img) { var pre = new Image(); pre.src = 'assets/' + ahead.img; }
+      if (ahead && ahead.img) { var pre = new Image(); pre.src = imgSrc(ahead.img); }
     }
     function go(i) {
       i = Math.max(0, Math.min(total - 1, i));
