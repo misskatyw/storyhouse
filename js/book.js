@@ -10,20 +10,48 @@
     wce: { label: '三語（書面＋廣東話＋English）', keys: ['w', 'c', 'e'], promptOnly: true }
   };
   var FORMATS = {
-    a4:  { label: 'A4 橫版 PDF', ratio: 297 / 210, w: 1123, h: 794, kind: 'pdf' },
-    sq:  { label: '正方形 PDF', ratio: 1, w: 1123, h: 1123, kind: 'pdf' },
-    img: { label: '只要圖檔', ratio: 297 / 210, w: 1123, h: 794, kind: 'img' }
+    a4:  { label: 'A4 橫版 PDF', w: 1080, kind: 'pdf' },
+    sq:  { label: '正方形 PDF', w: 1080, kind: 'pdf', square: true },
+    img: { label: '只要圖檔', w: 1080, kind: 'img' }
   };
   var BASE = 900;
+  var MAX_IMG_W = 1080;
   var data = null;
 
+  // 900px 基準 px：內文中／英（舊值 37/35、35/32、32/31、29/29 的兩倍左右）、每行中文字數上限
+  var AGE_TYPE = {
+    '0–2 歲': { zh: 72, en: 68, cpl: 11 },
+    '2–3 歲': { zh: 68, en: 62, cpl: 12 },
+    '3–4 歲': { zh: 64, en: 62, cpl: 13 },
+    '5–6 歲': { zh: 58, en: 58, cpl: 14 }
+  };
+  var COVER_PX = { zh: 80, en: 60, num: 17 };
+
   function init(d) { data = d; }
-  function px(pt) { return Math.round(pt * 4 / 3); }
 
   function sizesFor(age) {
-    var a = data.ageType[age] || data.ageType['3–4 歲'];
-    var c = data.coverType;
-    return { zh: px(a.ptZh), en: px(a.ptEn), czh: px(c.ptZh), cen: px(c.ptEn), num: px(c.ptPageNum) };
+    var a = AGE_TYPE[age] || AGE_TYPE['3–4 歲'];
+    return { zh: a.zh, en: a.en, cpl: a.cpl, czh: COVER_PX.zh, cen: COVER_PX.en, num: COVER_PX.num, ccpl: Math.floor((BASE - 56) / COVER_PX.zh) };
+  }
+
+  var OPEN_P = '，。！？、；：」』）”’';
+  function wrapZh(text, n) {
+    var clauses = String(text).match(/[^，。！？、；：]+[，。！？、；：]?|[，。！？、；：]/g) || [String(text)];
+    var lines = [], cur = '';
+    clauses.forEach(function (c) {
+      while (c.length > n) {
+        var cut = n;
+        if (OPEN_P.indexOf(c.charAt(cut)) >= 0) cut -= 1;
+        if (cur) { lines.push(cur); cur = ''; }
+        lines.push(c.slice(0, cut));
+        c = c.slice(cut);
+      }
+      if (!c) return;
+      if ((cur + c).length <= n) cur += c;
+      else { if (cur) lines.push(cur); cur = c; }
+    });
+    if (cur) lines.push(cur);
+    return lines;
   }
 
   function fill(t, name) { return String(t == null ? '' : t).replace(/\{N\}/g, name); }
@@ -47,10 +75,7 @@
 
   function pagesFor(pack) {
     var list = [{ type: 'cover', img: pack.cover }];
-    pack.pages.forEach(function (pg) {
-      list.push({ type: 'img', pg: pg, img: pg.img });
-      list.push({ type: 'big', pg: pg });
-    });
+    pack.pages.forEach(function (pg) { list.push({ type: 'img', pg: pg, img: pg.img }); });
     return list;
   }
 
@@ -61,58 +86,61 @@
     return n;
   }
 
-  function lineEls(lines, parent) {
+  function textLines(cls, text, n) {
+    var box = el('span', 'lns');
+    (cls === 'zh' ? wrapZh(text, n) : [text]).forEach(function (t) { box.appendChild(el('span', 'ln', t)); });
+    return box;
+  }
+
+  function lineEls(lines, parent, n) {
     lines.forEach(function (ln, i) {
-      parent.appendChild(el('div', (i === 0 ? 'bk-main ' : 'bk-sub ') + ln.cls, ln.text));
+      var d = el('div', (i === 0 ? 'bk-main ' : 'bk-sub ') + ln.cls);
+      d.appendChild(textLines(ln.cls, ln.text, n));
+      parent.appendChild(d);
     });
   }
 
   function buildPage(spec, o) {
     var s = sizesFor(o.pack.age);
-    var page = el('div', 'bk-page' + (o.exportMode ? ' is-export' : ''));
+    var page = el('div', 'bk-page' + (o.exportMode ? ' is-export' : '') + (o.fmt === 'sq' ? ' sq' : ''));
     page.style.setProperty('--u', (o.u || 1) + 'px');
-    page.style.setProperty('--ratio', String(o.ratio));
     page.style.setProperty('--zhs', s.zh);
     page.style.setProperty('--ens', s.en);
     page.style.setProperty('--czhs', s.czh);
     page.style.setProperty('--cens', s.cen);
     page.style.setProperty('--nums', s.num);
 
-    if (spec.type !== 'big') {
-      var img = document.createElement('img');
-      img.className = 'bk-img';
-      img.alt = spec.type === 'cover' ? '封面' : '';
-      if (!o.exportMode) img.loading = 'lazy';
-      img.decoding = 'async';
-      img.src = 'assets/' + spec.img;
-      page.appendChild(img);
-    }
+    var box = el('div', 'bk-imgbox');
+    var img = document.createElement('img');
+    img.className = 'bk-img';
+    img.alt = spec.type === 'cover' ? '封面' : '';
+    if (!o.exportMode) img.loading = 'lazy';
+    img.decoding = 'async';
+    img.src = (o.imgMap && o.imgMap[spec.img]) || 'assets/' + spec.img;
+    box.appendChild(img);
+    page.appendChild(box);
 
+    var txt;
     if (spec.type === 'cover') {
-      var plate = el('div', 'bk-cover-plate');
-      titleParts(o.pack, o.lang, o.name).forEach(function (t) { plate.appendChild(el('div', 'ct ' + t.cls, t.text)); });
-      page.appendChild(plate);
-    } else if (spec.type === 'img') {
-      var band = el('div', 'bk-band');
-      var inner = el('div', 't');
-      lineEls(pageLines(spec.pg, o.lang, o.name), inner);
-      band.appendChild(inner);
-      page.appendChild(band);
-      page.appendChild(el('div', 'bk-num on-img', String(o.num)));
+      txt = el('div', 'bk-text cover');
+      titleParts(o.pack, o.lang, o.name).forEach(function (t) {
+        var d = el('div', 'ct ' + t.cls);
+        d.appendChild(textLines(t.cls, t.text, s.ccpl));
+        txt.appendChild(d);
+      });
     } else {
-      var big = el('div', 'bk-big');
-      lineEls(pageLines(spec.pg, o.lang, o.name), big);
-      page.appendChild(big);
-      page.appendChild(el('div', 'bk-num on-big', String(o.num)));
+      txt = el('div', 'bk-text');
+      lineEls(pageLines(spec.pg, o.lang, o.name), txt, s.cpl);
+      txt.appendChild(el('div', 'bk-num', String(o.num)));
     }
+    page.appendChild(txt);
     return page;
   }
 
-  function buildAll(pack, o, width) {
-    var fmt = FORMATS[o.fmt] || FORMATS.a4;
+  function buildAll(pack, o, width, specs) {
     var u = width / BASE;
-    return pagesFor(pack).map(function (spec, i) {
-      return buildPage(spec, { pack: pack, lang: o.lang, name: o.name, ratio: fmt.ratio, u: u, num: i + 1, exportMode: true });
+    return (specs || pagesFor(pack)).map(function (spec, i) {
+      return buildPage(spec, { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, imgMap: o.imgMap, u: u, num: i + 1, exportMode: true });
     });
   }
 
@@ -146,7 +174,7 @@
     function render() {
       var u = Math.max(stage.clientWidth, 200) / BASE;
       stage.innerHTML = '';
-      stage.appendChild(buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, ratio: fmt.ratio, u: u, num: idx + 1 }));
+      stage.appendChild(buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, u: u, num: idx + 1 }));
       pager.textContent = '第 ' + (idx + 1) + ' 頁 / 共 ' + total + ' 頁';
       prev.disabled = idx === 0;
       next.disabled = idx === total - 1;
@@ -193,7 +221,7 @@
   }
 
   window.Book = {
-    LANGS: LANGS, FORMATS: FORMATS, BASE: BASE,
+    LANGS: LANGS, FORMATS: FORMATS, BASE: BASE, MAX_IMG_W: MAX_IMG_W, AGE_TYPE: AGE_TYPE, wrapZh: wrapZh,
     init: init, sizesFor: sizesFor, fill: fill, titleParts: titleParts, bookTitle: bookTitle,
     pageLines: pageLines, pagesFor: pagesFor, buildPage: buildPage, buildAll: buildAll, mount: mount
   };

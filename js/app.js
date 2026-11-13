@@ -20,7 +20,7 @@
   function packByArt(a) { return D.packs.filter(function (p) { return p.art === a; })[0]; }
   function packMeta(p) { return p.theme + ' · ' + p.age + ' · ' + p.gender + ' · 共 ' + totalPages(p) + ' 頁'; }
   function imageFiles(p) { return Book.pagesFor(p).map(function (sp) { return sp.img; }).filter(Boolean); }
-  function totalPages(p) { return 1 + p.pages.length * 2; }
+  function totalPages(p) { return 1 + p.pages.length; }
   function cleanName(s) { return String(s || '').replace(/\s+/g, ' ').trim().slice(0, 8); }
   function scrollKeep(fn) { var y = window.scrollY; fn(); window.scrollTo(0, y); }
 
@@ -82,8 +82,18 @@
     } else empty.hidden = true;
   }
 
+  function renderAgeTiles() {
+    var tiles = ['0–2 歲', '2–3 歲', '3–4 歲'].map(function (a) {
+      var n = D.packs.filter(function (p) { return p.age === a; }).length;
+      return '<a class="modecard" href="#/shelf?age=' + encodeURIComponent(a) + '"><h3>' + esc(a) + '</h3><p>' + n + ' 套現成繪本</p></a>';
+    });
+    tiles.push('<a class="modecard sel" href="#/create/prompt"><h3>✍️ Prompt 制</h3><p>幾多歲都得，自己生圖</p></a>');
+    $('#ageTiles').innerHTML = tiles.join('');
+  }
+
   function initHome() {
     renderFeatured();
+    renderAgeTiles();
     renderFilters();
     renderShelf();
     function bind(id, key) {
@@ -178,8 +188,8 @@
     return bb || D.promptStories[theme] || D.promptStories._default;
   }
   function pageOptions(P) {
-    var n = storyFor(P.theme, P.age).length, out = [];
-    for (var i = Math.min(3, n + 1); i <= n + 1; i++) out.push(i);
+    var out = [];
+    for (var i = 4; i <= 14; i++) out.push(i);
     return out;
   }
   function pickBeats(list, k) {
@@ -222,7 +232,7 @@
       ['畫風', st.n.replace(/\s*★預設/, '') + '：' + st.spec],
       ['相片參考', photoTxt], ['加嘢', P.extras.trim() || '冇'],
       ['語言', Book.LANGS[P.lang].label + (P.lang === 'wce' ? '（拼音：' + (P.pinyin ? '要' : '唔要') + '）' : '')],
-      ['格式', fmt.label], ['頁數', P.pages + ' 頁（封面 ＋ ' + beats.length + ' 頁內文）'], ['每行字數', cplTxt]
+      ['格式', fmt.label], ['頁數', P.pages + ' 頁（封面 ＋ ' + (P.pages - 1) + ' 頁內文）'], ['每行字數', cplTxt]
     ];
     var ratio = P.fmt === 'sq' ? '正方形 1:1' : P.fmt === 'img' ? '橫向 3:2' : '橫向 A4（297:210）';
     var instr = [
@@ -230,11 +240,13 @@
       '全書主角「' + name + '」（' + P.age + P.gender + '）外貌、髮型、衣著、五官畫法保持一致；畫風統一用「' + st.n.replace(/\s*★預設/, '') + '」：' + st.spec + '。',
       photo || P.photoURL ? '主角外觀跟相片參考：' + photoTxt + '。' : '冇相片參考，請畫一個親切、符合年齡嘅小朋友。',
       '圖入面唔好出現任何文字、字母、數字或水印；文字之後再排上去。',
-      '畫面底部留約 22% 空位俾文字帶，主角面同重點唔好放喺最底。',
+      '圖唔好內嵌文字；畫面底部留一段平靜空間，主角面同重點唔好放喺最底（文字會排喺圖下面獨立字區）。',
+      P.pages - 1 > beats.length ? '下面逐頁表得 ' + beats.length + ' 個節拍，但用家要 ' + (P.pages - 1) + ' 頁內文：請將節拍拆細，並喺中段加一次「練習→失敗→再試」，擴展到剛好 ' + (P.pages - 1) + ' 頁，每頁同樣寫出場景同文字。' : '',
       '喺同一個對話裏面逐頁生成，每次貼一個場景，並提醒「保持同上一張同一個主角同畫風」。'
     ];
     if (P.extras.trim()) instr.push('額外要求：' + P.extras.trim());
-    instr.push('排版：' + cplTxt + '；字體大細跟年齡（約 ' + age.ptZh + 'pt 中文／' + age.ptEn + 'pt 英文），唔好縮細。');
+    instr.push('排版：' + cplTxt + '；文字喺圖下方字區，字體大細跟年齡（書頁闊 900px 時約 ' + Book.AGE_TYPE[P.age].zh + 'px），唔好縮細。');
+    instr = instr.filter(Boolean);
     if (P.lang === 'wce' && P.pinyin) instr.push('每句中文下面加一行拼音。');
     return { title: title, card: card, rows: rows, instr: instr, comp: cp, name: name };
   }
@@ -252,7 +264,7 @@
 
   function renderPrompt(root) {
     if (!P) P = newPrompt();
-    if (P.step === 'result') return promptResult(root);
+    if (P.step !== 'form') return wizard(root);
     var opts = pageOptions(P);
     if (opts.indexOf(P.pages) < 0) P.pages = opts[opts.length - 1];
     var themes = Object.keys(D.titles).map(function (t) { return { v: t, label: t }; });
@@ -286,7 +298,7 @@
       '<details class="fold"' + (P.cpl ? ' open' : '') + '><summary>進階：一行幾多隻字（選填，預設照年齡建議）</summary><div class="fold-body">' +
       '<p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">照年齡建議：中文每行最多 ' + age.maxZh + ' 隻字、英文 ' + age.maxEn + ' 個字、最多 ' + age.maxLines + ' 行。唔撳開就唔使答。</p>' +
       '<label for="pCpl" style="font-weight:700;font-size:15px">中文每行最多</label> <input class="numin" id="pCpl" type="number" min="4" max="30" inputmode="numeric" placeholder="' + age.maxZh + '" value="' + esc(P.cpl) + '"> 隻字</div></details>' +
-      '<button type="button" class="cta big" id="pGo" style="margin-top:24px">出 Prompt 包 →</button>' +
+      '<button type="button" class="cta big" id="pGo" style="margin-top:24px">確認，繼續 →</button>' +
       '</div></div>';
 
     var redraw = function () { scrollKeep(function () { renderPrompt(root); }); };
@@ -316,7 +328,7 @@
     $('#pGo', root).addEventListener('click', function () {
       P.name = cleanName($('#pName', root).value);
       if (!P.name) { var i = $('#pName', root); i.classList.add('bad'); i.focus(); Share.toast('先寫低小朋友個名喇'); return; }
-      P.step = 'result';
+      P.step = 'cover';
       renderPrompt(root);
       window.scrollTo(0, 0);
     });
@@ -348,6 +360,106 @@
     });
     $('#rBack', root).addEventListener('click', function () { P.step = 'form'; renderPrompt(root); window.scrollTo(0, 0); });
   }
+  function wizHead(n, title, todo) {
+    var names = ['揀設定', '封面', '畫風', 'Overview＋砌書'];
+    return '<div class="formwrap"><div class="wizsteps">' + names.map(function (t, i) { return '<span class="' + (i + 1 === n ? 'on' : i + 1 < n ? 'ok' : '') + '">' + (i + 1) + ' ' + t + '</span>'; }).join('') + '</div>' +
+      '<div class="q-head"><h2>' + esc(title) + '</h2><p>' + esc(todo) + '</p></div>';
+  }
+  function pbox(i, title, text) {
+    return '<div class="flabel">' + esc(title) + '</div><div class="promptbox">' + esc(text) + '</div><button type="button" class="cta ghost mt14" data-copy="' + i + '">複製呢段 Prompt</button>';
+  }
+
+  function wizard(root) {
+    var M = buildModel(P), PR = [];
+    var st = D.styles[P.style], sn = st.n.replace(/\s*★預設/, '');
+    var look = P.photoText.trim() || '親切、符合年齡嘅小朋友';
+    var ratio = P.fmt === 'sq' ? '正方形 1:1' : '橫向 3:2';
+    var chara = '主角「' + P.name + '」（' + P.age + P.gender + '），外貌：' + look + '；畫風：' + sn + '（' + st.spec + '）';
+    var rule = '圖入面唔好有任何文字、字母、數字或水印；畫面底部留一段平靜空間；比例「' + ratio + '」。';
+    var coverP = '請畫一張兒童繪本封面插圖。\n' + chara + '\n封面畫面：' + M.rows[0].scene + '\n要求：' + rule + '主角面清楚。';
+    var nContent = P.pages - 1, beatN = M.rows.length - 1;
+    var scenes = M.rows.slice(1).map(function (r) { return r.label + '. ' + r.scene; }).join('\n');
+    var expand = nContent > beatN ? '\n故事得 ' + beatN + ' 個節拍，但要 ' + nContent + ' 頁內文：請將節拍拆細，並喺中段加一次「練習→失敗→再試」，擴展到剛好 ' + nContent + ' 頁，每頁寫出場景同文字（' + Book.LANGS[P.lang].label + '）。' : '';
+    var ovP = '請一次過畫「一張」全書分鏡總覽圖（contact sheet）：全書 ' + P.pages + ' 頁（封面＋' + nContent + ' 頁內文）按次序排成格仔，每格一個畫面，唔好一張張散生。\n同時用文字列出「角色一致性設定」（外貌、髮型、衣著、五官、色板），之後逐頁畫圖一定要跟。\n' + chara + '\n節拍：\n' + scenes + expand + '\n' + rule;
+    var pageP = M.rows.slice(1).map(function (r) { return '第 ' + r.label + ' 頁：' + r.scene + '\n要求：跟總覽圖同角色設定；' + rule; }).join('\n\n') + (expand ? '\n\n（擴展出嚟嘅頁數都用同一格式：場景＋「' + rule + '」）' : '');
+    function go(s) { P.step = s; renderPrompt(root); window.scrollTo(0, 0); }
+    function copyBind() {
+      $$('[data-copy]', root).forEach(function (b) {
+        b.addEventListener('click', function () { Share.copyText(PR[+b.getAttribute('data-copy')]).then(function (ok) { Share.toast(ok ? '已複製，去貼俾 AI 啦' : '複製唔到，請手動揀字複製'); }); });
+      });
+    }
+    var html;
+    if (P.step === 'cover') {
+      PR.push(coverP);
+      html = wizHead(2, '封面確認', '睇清楚封面內容，OK 就繼續。') +
+        '<div class="card"><dl class="pp-kv"><dt>書名</dt><dd>《' + esc(M.title[0]) + '》</dd><dt>主角設定</dt><dd>' + esc(chara) + '</dd><dt>封面畫面</dt><dd>' + esc(M.rows[0].scene) + '</dd><dt>已揀畫風</dt><dd>' + esc(sn) + '</dd></dl>' +
+        pbox(0, '封面專用 Prompt', coverP) + '<div class="donewhen">完成條件：封面內容冇問題，㩒「確認，繼續」。</div>' +
+        '<div class="btnrow"><button type="button" class="cta ghost" id="wBack">‹ 改設定</button><button type="button" class="cta grow2" id="wNext">確認，繼續</button></div></div></div>';
+      root.innerHTML = html; copyBind();
+      $('#wBack', root).addEventListener('click', function () { go('form'); });
+      $('#wNext', root).addEventListener('click', function () { go('style'); });
+    } else if (P.step === 'style') {
+      PR.push(coverP);
+      root.innerHTML = wizHead(3, '畫風確認', '先生一張封面圖，對吓畫風啱唔啱。') +
+        '<div class="card"><ol class="pp-inst"><li>複製下面封面 Prompt，貼去 ChatGPT／Gemini 生一張封面圖。</li><li>睇吓畫風係咪你想要嘅（' + esc(sn) + '）。</li><li>OK 就㩒「畫風 OK」；唔啱就返去改畫風。</li></ol>' +
+        '<button type="button" class="cta ghost mt14" data-copy="0">複製封面 Prompt</button><div class="donewhen">完成條件：你手上有一張畫風滿意嘅封面圖。</div>' +
+        '<div class="btnrow"><button type="button" class="cta ghost" id="wStyle">‹ 返去改畫風</button><button type="button" class="cta grow2" id="wNext">畫風 OK，繼續</button></div></div></div>';
+      copyBind();
+      $('#wStyle', root).addEventListener('click', function () { go('form'); });
+      $('#wNext', root).addEventListener('click', function () { P.ov = false; go('overview'); });
+    } else {
+      PR.push(ovP, pageP, toMd(M));
+      var slots = ['封面'].concat(M.rows.slice(1).map(function (r) { return '第 ' + r.label + ' 頁'; }));
+      for (var k = M.rows.length; k < P.pages; k++) slots.push('第 ' + (k + 1) + ' 頁');
+      P.ups = P.ups || []; P.texts = P.texts || [];
+      html = wizHead(4, 'Overview＋砌成書', '先出全書總覽，再逐頁定稿，最後上載成品圖砌書。') +
+        '<div class="card">' + pbox(0, 'A. 全書 overview Prompt（一次過出一張分鏡總覽圖＋角色一致性設定）', ovP) +
+        '<div class="donewhen">完成條件：AI 俾咗你一張全書總覽圖同角色設定，你覺得 OK。</div>';
+      if (!P.ov) html += '<button type="button" class="cta big mt24" id="wOv">Overview OK，繼續</button></div></div>';
+      else {
+        html += '</div><div class="card mt14"><h3>B. 逐頁定稿 Prompt</h3><p>喺同一個對話逐頁貼，每頁一張成品圖（圖唔好內嵌文字、底部留平靜空間）。</p>' + pbox(1, '逐頁 Prompt', pageP) +
+          '<button type="button" class="cta ghost mt14" data-copy="2">複製整包 .md</button></div>' +
+          '<div class="card mt14"><h3>C. 拎圖返嚟砌書</h3><p>逐頁上載成品圖（封面＋' + nContent + ' 頁）；文字可改，雙語每行一種語言。圖會排喺上、字喺下。</p><div class="uplist">' +
+          slots.map(function (s, i) {
+            var u = P.ups[i], tx = P.texts[i] != null ? P.texts[i] : (i > 0 && M.rows[i] ? M.rows[i].lines.join('\n') : '');
+            return '<div class="uprow"><div class="nm">' + esc(s) + '</div>' + (u ? '<img src="' + esc(u.url) + '" alt="">' : '') + '<button type="button" class="opt" data-up="' + i + '">' + (u ? '換圖' : '上載圖') + '</button>' +
+              (i > 0 ? '</div><textarea class="areain" data-tx="' + i + '" placeholder="呢頁文字">' + esc(tx) + '</textarea>' : '</div>');
+          }).join('') + '</div><input type="file" id="wFile" accept="image/*" hidden>' +
+          '<button type="button" class="cta big mt24" id="wBuild">砌成書 →</button><div id="wBook"></div></div><div class="btnrow"><button type="button" class="cta ghost" id="wBack">‹ 返去畫風</button></div></div>';
+      }
+      root.innerHTML = html; copyBind();
+      var ovb = $('#wOv', root);
+      if (ovb) ovb.addEventListener('click', function () { P.ov = true; renderPrompt(root); });
+      $('#wBack', root).addEventListener('click', function () { go('style'); });
+      if (!P.ov) return;
+      var file = $('#wFile', root), cur = 0;
+      $$('[data-up]', root).forEach(function (b) { b.addEventListener('click', function () { cur = +b.getAttribute('data-up'); file.click(); }); });
+      $$('[data-tx]', root).forEach(function (t) { t.addEventListener('input', function () { P.texts[+t.getAttribute('data-tx')] = t.value; }); });
+      file.addEventListener('change', function () {
+        var f = file.files && file.files[0]; if (!f) return;
+        P.ups[cur] = { url: URL.createObjectURL(f), name: f.name };
+        scrollKeep(function () { renderPrompt(root); });
+      });
+      $('#wBuild', root).addEventListener('click', function () {
+        for (var i = 0; i < slots.length; i++) if (!P.ups[i]) { Share.toast('「' + slots[i] + '」未上載圖'); return; }
+        var keys = Book.LANGS[P.lang].keys, T = D.titles[P.theme];
+        var pack = { age: P.age, title: { zh: T.zh, canto: T.canto, en: T.en }, cover: P.ups[0].url, pages: [] };
+        for (var j = 1; j < slots.length; j++) {
+          var tx = P.texts[j] != null ? P.texts[j] : (M.rows[j] ? M.rows[j].lines.join('\n') : ''), ls = tx.split('\n'), pg = { img: P.ups[j].url };
+          keys.forEach(function (key, n) { pg[key] = ls[n] || ''; });
+          pack.pages.push(pg);
+        }
+        var opt = { name: P.name, lang: P.lang, fmt: P.fmt }, box = $('#wBook', root);
+        box.innerHTML = '<div class="bookframe"><div id="wViewer"></div></div><div class="actions"><button type="button" class="cta done wide" id="wDl">' + (P.fmt === 'img' ? '下載圖檔' : '下載 PDF') + '</button></div>';
+        if (viewer) viewer.destroy();
+        viewer = Book.mount($('#wViewer', box), pack, opt);
+        $('#wDl', box).addEventListener('click', function () {
+          var fn = P.fmt === 'img' ? PDFExport.exportImages : PDFExport.exportPdf;
+          PDFExport.run($('#wDl', box), box, function (prog) { return fn(pack, opt, prog); }, P.fmt === 'img');
+        });
+      });
+    }
+  }
   /*PROMPT-FORM-END*/
 
   /* ---------- 成品頁 ---------- */
@@ -373,15 +485,10 @@
       Share.share({ title: '《' + title + '》', text: name + '嘅專屬繪本，一齊睇', url: location.href });
     });
     $('#bCopy', root).addEventListener('click', function () { Share.copyLink(location.href); });
-    var dl = $('#bDl', root), label = dl.textContent, busy = false;
+    var dl = $('#bDl', root);
     dl.addEventListener('click', function () {
-      if (busy) return;
-      busy = true; dl.disabled = true;
       var fn = isImg ? PDFExport.exportImages : PDFExport.exportPdf;
-      fn(pack, { name: name, lang: lang, fmt: fmt }, function (i, n) { dl.textContent = '整緊 ' + i + ' / ' + n + '…'; })
-        .then(function () { Share.toast(isImg ? '圖檔整好啦' : 'PDF 整好啦'); })
-        .catch(function () { Share.toast('匯出唔成功，請檢查網絡再試'); })
-        .then(function () { busy = false; dl.disabled = false; dl.textContent = label; });
+      PDFExport.run(dl, $('.actions', root).parentNode, function (prog) { return fn(pack, { name: name, lang: lang, fmt: fmt }, prog); }, isImg);
     });
     return true;
   }
@@ -404,8 +511,12 @@
     if (viewer) { viewer.destroy(); viewer = null; }
     document.title = 'Katy的小小故事屋 · 個人化兒童繪本';
     var view = 'home', nav = p0, scroll = null;
-    if (p0 === 'shelf') { scroll = 'shelf'; }
-    else if (p0 === 'create') {
+    if (p0 === 'shelf') {
+      view = 'shelf';
+      var qa = r.q.get('age');
+      filter.age = qa && AGES.indexOf(qa) >= 0 ? qa : 'all';
+      renderFilters(); renderShelf();
+    } else if (p0 === 'create') {
       view = 'create';
       var root = $('#view-create');
       if (r.parts[1] === 'prompt') renderPrompt(root);
@@ -429,10 +540,6 @@
   function boot() {
     $('#siteShare').addEventListener('click', function () {
       Share.share({ title: Share.SITE, text: '幫小朋友整專屬繪本', url: location.origin + location.pathname });
-    });
-    document.addEventListener('click', function (e) {
-      var a = e.target.closest('a[href="#/shelf"]');
-      if (a && location.hash === '#/shelf') { var t = document.getElementById('shelf'); if (t) t.scrollIntoView(); }
     });
     fetch('data/site-data.json').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
