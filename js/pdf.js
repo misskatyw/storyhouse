@@ -27,10 +27,11 @@
     return /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   }
 
-  // 版面幾何：A4 直版 1240x1754；正方形 1240x1240
+  // 版面幾何：A4 橫版 1754x1240；正方形 1240x1240；圖檔（非 PDF）保持直版 1240x1754
   function geometry(fmt) {
-    if (fmt.square) return { H: 1240, mm: [210, 210], imgH: 640 };
-    return { H: 1754, mm: [210, 297], imgH: 940 };
+    if (fmt.square) return { W: 1240, H: 1240, mm: [210, 210], imgH: 640, textMaxW: 1144 };
+    if (fmt.landscape) return { W: 1754, H: 1240, mm: [297, 210], imgH: 760, textMaxW: 1658 };
+    return { W: 1240, H: 1754, mm: [210, 297], imgH: 940, textMaxW: 1144 };
   }
 
   function loadImage(file) {
@@ -86,7 +87,7 @@
   }
 
   // 將主／副行排成逐行清單；放唔落就整體縮細（f<1），保證唔出界
-  function layoutText(ctx, lines, sizes, isCover, scale, f) {
+  function layoutText(ctx, lines, sizes, isCover, scale, f, maxW) {
     var out = [], gap = 10 * scale * f, h = 0;
     lines.forEach(function (ln, i) {
       var main = i === 0;
@@ -94,7 +95,7 @@
       var px = Math.round(base * scale * (main ? 1 : 0.8) * f);
       var font = isCover ? '900 ' + px + 'px ' + SERIF : (main ? '700 ' : '400 ') + px + 'px ' + FONT;
       ctx.font = font;
-      var parts = ln.cls === 'zh' ? Book.wrapZh(ln.text, isCover ? sizes.ccpl : sizes.cpl) : wrapEn(ctx, ln.text, 1144);
+      var parts = ln.cls === 'zh' ? Book.wrapZh(ln.text, isCover ? sizes.ccpl : sizes.cpl) : wrapEn(ctx, ln.text, maxW || 1144);
       if (!ln.text) parts = [];
       if (i > 0 && parts.length) h += gap;
       parts.forEach(function (t) {
@@ -106,41 +107,41 @@
     return { items: out, h: h };
   }
 
-  function fitText(ctx, lines, sizes, isCover, scale, availH) {
-    var f = 1, L = layoutText(ctx, lines, sizes, isCover, scale, f);
-    while (L.h > availH && f > 0.5) { f -= 0.05; L = layoutText(ctx, lines, sizes, isCover, scale, f); }
+  function fitText(ctx, lines, sizes, isCover, scale, availH, maxW) {
+    var f = 1, L = layoutText(ctx, lines, sizes, isCover, scale, f, maxW);
+    while (L.h > availH && f > 0.5) { f -= 0.05; L = layoutText(ctx, lines, sizes, isCover, scale, f, maxW); }
     return L;
   }
 
-  function drawItems(ctx, L, top) {
+  function drawItems(ctx, L, top, cx, maxW) {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     L.items.forEach(function (it) {
       ctx.font = it.font;
       ctx.fillStyle = it.color;
-      ctx.fillText(it.text, W / 2, top + it.y, 1144);
+      ctx.fillText(it.text, cx, top + it.y, maxW);
     });
   }
 
   function drawPage(ctx, spec, pack, o, imgs, G, num) {
-    var H = G.H, scale = W / Book.BASE, sizes = Book.sizesFor(pack.age);
+    var H = G.H, GW = G.W, scale = W / Book.BASE, sizes = Book.sizesFor(pack.age);
     var type = spec.type;
     ctx.fillStyle = CREAM;
-    ctx.fillRect(0, 0, W, H);
+    ctx.fillRect(0, 0, GW, H);
     var hasNum = type === 'img' || type === 'scene' || type === 'ext' || (!type && !!spec.pg);
     var lines = Book.specLines(type === 'cover' ? { type: 'cover', pack: pack } : spec, o.lang, o.name);
     var textTop = 48 + G.imgH + 40, textBot = H - (hasNum ? 110 : 60), L;
 
     if (spec.img) {
       ctx.fillStyle = BOXBG;
-      ctx.fillRect(48, 48, 1144, G.imgH);
-      if (type === 'ext') drawCoverZoom(ctx, imgs[spec.img], 48, 48, 1144, G.imgH, Book.EXT_ZOOM);
-      else drawContain(ctx, imgs[spec.img], 48, 48, 1144, G.imgH);
+      ctx.fillRect(48, 48, GW - 96, G.imgH);
+      if (type === 'ext') drawCoverZoom(ctx, imgs[spec.img], 48, 48, GW - 96, G.imgH, Book.EXT_ZOOM);
+      else drawContain(ctx, imgs[spec.img], 48, 48, GW - 96, G.imgH);
     }
 
     {
-      L = fitText(ctx, lines, sizes, type === 'cover', scale, textBot - textTop);
-      drawItems(ctx, L, textTop + Math.max(0, (textBot - textTop - L.h) / 2));
+      L = fitText(ctx, lines, sizes, type === 'cover', scale, textBot - textTop, G.textMaxW);
+      drawItems(ctx, L, textTop + Math.max(0, (textBot - textTop - L.h) / 2), GW / 2, G.textMaxW);
     }
 
     if (hasNum) {
@@ -148,7 +149,7 @@
       ctx.fillStyle = INK2;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(String(num), W / 2, H - 56);
+      ctx.fillText(String(num), GW / 2, H - 56);
     }
   }
 
@@ -181,14 +182,14 @@
       return loadAll(files, onProgress);
     }).then(function (imgs) {
       var c = document.createElement('canvas');
-      c.width = W; c.height = G.H;
+      c.width = G.W; c.height = G.H;
       var ctx = c.getContext('2d');
       ctx.imageSmoothingQuality = 'high';
       var out = [];
       specs.forEach(function (spec, i) {
         if (onProgress) onProgress('排版', i + 1, specs.length);
         drawPage(ctx, spec, pack, o, imgs, G, i + 1);
-        out.push({ data: c.toDataURL('image/jpeg', JPEG_Q), w: W, h: G.H });
+        out.push({ data: c.toDataURL('image/jpeg', JPEG_Q), w: G.W, h: G.H });
       });
       c.width = c.height = 0;
       return { pages: out, fmt: fmt, G: G };
@@ -208,9 +209,10 @@
     return renderPages(pack, o, onProgress, specsOverride).then(function (r) {
       if (onProgress) onProgress('合成 PDF', 1, 1);
       var mm = r.G.mm, fmtArr = mm[0] === mm[1] ? mm : 'a4';
-      var doc = new window.jspdf.jsPDF({ orientation: 'portrait', unit: 'mm', format: fmtArr, compress: true });
+      var orient = r.fmt.landscape ? 'landscape' : 'portrait';
+      var doc = new window.jspdf.jsPDF({ orientation: orient, unit: 'mm', format: fmtArr, compress: true });
       r.pages.forEach(function (pg, i) {
-        if (i > 0) doc.addPage(fmtArr, 'portrait');
+        if (i > 0) doc.addPage(fmtArr, orient);
         doc.addImage(pg.data, 'JPEG', 0, 0, mm[0], mm[1]);
       });
       var name = safeName(titleOverride || Book.bookTitle(pack, o.lang, o.name)) + '.pdf';
@@ -241,6 +243,7 @@
     if (old) old.parentNode.removeChild(old);
     var panel = document.createElement('div');
     panel.className = 'pdfpanel';
+    panel.style.gridColumn = '1 / -1';
     var p = document.createElement('p');
     p.textContent = kindLabel + '整好啦！' + (isIOS() ? '㩒下面掣開啟，再用分享鍵「儲存到檔案」。' : '如果冇自動下載，㩒下面掣。');
     panel.appendChild(p);
@@ -267,6 +270,7 @@
     if (old) old.parentNode.removeChild(old);
     var panel = document.createElement('div');
     panel.className = 'pdfpanel err';
+    panel.style.gridColumn = '1 / -1';
     var p = document.createElement('p');
     p.textContent = msg;
     panel.appendChild(p);

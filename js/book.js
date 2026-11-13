@@ -10,7 +10,7 @@
     wce: { label: '三語（書面＋廣東話＋English）', keys: ['w', 'c', 'e'], promptOnly: true }
   };
   var FORMATS = {
-    a4:  { label: 'A4 直版 PDF', w: 1080, h: 1528, kind: 'pdf', portrait: true },
+    a4:  { label: 'A4 橫版 PDF', w: 1528, h: 1080, kind: 'pdf', landscape: true },
     sq:  { label: '正方形 PDF', w: 1080, kind: 'pdf', square: true },
     img: { label: '只要圖檔', w: 1080, kind: 'img' }
   };

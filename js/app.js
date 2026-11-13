@@ -115,7 +115,8 @@
       '<div class="modegrid" style="margin-top:16px">' +
       '<a class="modecard" href="#/shelf"><span class="tag alt">即刻出書</span><h3>🥫 罐頭素材制</h3><p>喺書架揀一套現成插圖，填個名就出書連 PDF。</p></a>' +
       '<a class="modecard sel" href="#/create/prompt"><span class="tag">最似你小朋友 · 推介</span><h3>✍️ Prompt 制</h3><p>網站幫你寫好成套 Prompt，拎去 ChatGPT／Gemini 生圖。</p></a>' +
-      '</div></div>';
+      '</div>' +
+      '<a class="cta ghost" href="#/skill" style="display:flex;margin-top:12px">📚 繪本 Skill（免費下載）</a></div>';
   }
 
   /*CANNED-FORM-START*/
@@ -525,7 +526,7 @@
     var dl = $('#bDl', root);
     dl.addEventListener('click', function () {
       var fn = isImg ? PDFExport.exportImages : PDFExport.exportPdf;
-      PDFExport.run(dl, $('.actions', root).parentNode, function (prog) { return fn(pack, { name: name, lang: lang, fmt: fmt }, prog); }, isImg);
+      PDFExport.run(dl, $('.actions', root), function (prog) { return fn(pack, { name: name, lang: lang, fmt: fmt }, prog); }, isImg);
     });
     return true;
   }
