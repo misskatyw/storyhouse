@@ -195,11 +195,11 @@
     var bb = age === '0–2 歲' && has(D.promptStoriesBB, theme) && D.promptStoriesBB[theme];
     return bb || (has(D.promptStories, theme) && D.promptStories[theme]) || D.promptStories._default;
   }
-  var GATE = '【流程總則】呢個任務分 4 步：①封面內容 ②畫風 ③全書 overview ④砌 PDF。每步做完必須停低，等我回覆「OK」先做下一步，唔好自動繼續，唔好一次過出晒。';
-  var COVER_STOP = '【今步只出封面圖一張】出完問我兩條問題：（1）主角同場景啱唔啱？（2）畫風（色盤、線條、質感）啱唔啱？我話畫風唔啱，就只重畫封面，唔好出 overview，唔好出其他頁。等我回覆「OK」先停。';
-  var OV_HEAD = '【第 3 步：全書 overview】第三步先出 overview。';
-  var OV_STOP = '出完總覽圖＋角色一致性設定就停低，等我確認全書走向（回覆「Overview OK」），先至可以逐頁出成品圖。';
-  var STEP4 = '【第 4 步：砌書】逐頁圖出齊都唔好自行砌 PDF 或拼圖；等我講「OK 砌書」，先按頁序砌 PDF（格式跟設定、圖上字下、文字唔好縮細），或者俾我逐張下載、返網站上載砌書。';
+  var GATE = '【流程總則・一條 Prompt 過晒】跟住呢份 Prompt 包，一次過做晒成個任務，唔使等我逐步貼新 Prompt。除以下 3 個確認位之外，其餘步驟自己連續做，唔好停低問我：（甲）封面確認——出完封面圖後停低，一次過問我一條合併問題「封面內容＋畫風啱唔啱？」，等我回覆 OK 先繼續；（乙）Overview 確認——出完全書 overview（總覽圖＋角色一致性設定）後停低，等我回覆「Overview OK」先逐頁出成品圖；（丙）砌書確認——逐頁圖出齊後唔好自行砌 PDF，等我講「OK 砌書」先砌。除咗呢 3 個位，唔好加其他確認，唔好逐步問。';
+  var COVER_STOP = '【確認位（甲）・封面：只出封面圖一張】出完封面圖就停低，一次過問我一條合併問題：「封面內容（主角同場景）＋畫風（色盤、線條、質感）啱唔啱？」——封面內容同畫風同一次問，唔好分兩次。等我回覆「OK」先繼續；我話唔啱，就只重畫封面再問同一個問題，唔好出 overview，唔好出其他頁。';
+  var OV_HEAD = '【全書 overview】我喺確認位（甲）回覆 OK 之後，自己繼續出 overview，唔使等我貼新 Prompt。';
+  var OV_STOP = '【確認位（乙）・Overview】出完總覽圖＋角色一致性設定就停低，等我確認全書走向（回覆「Overview OK」），先至可以逐頁出成品圖。';
+  var STEP4 = '【確認位（丙）・砌書】逐頁圖出齊都唔好自行砌 PDF 或拼圖；等我講「OK 砌書」，先按頁序砌 PDF（格式跟設定、圖上字下、文字唔好縮細），或者俾我逐張下載、返網站上載砌書。';
   var SAFE = [
     '只做日常正面成長情境；唔好恐怖、鬼怪、暴力、武器、流血、受傷特寫、成人內容。',
     '危險動作（過馬路、游水、用火電等）必須有大人陪同嘅安全版本，主角唔獨自離開大人視線，唔示範可模仿嘅危險行為。',
@@ -264,7 +264,7 @@
       '圖入面唔好出現任何文字、字母、數字或水印；文字之後再排上去。',
       '圖唔好內嵌文字；畫面底部留一段平靜空間，主角面同重點唔好放喺最底（文字會排喺圖下面獨立字區）。',
       P.pages - 1 > beats.length ? '下面逐頁表得 ' + beats.length + ' 個節拍，但用家要 ' + (P.pages - 1) + ' 頁內文：請將節拍拆細，並喺中段加一次「練習→失敗→再試」，擴展到剛好 ' + (P.pages - 1) + ' 頁，每頁同樣寫出場景同文字。' : '',
-      '喺同一個對話裏面逐頁生成，每次貼一個場景，並提醒「保持同上一張同一個主角同畫風」。'
+      '喺同一個對話裏面跟「做書流程確認位」嘅次序逐頁生成成書每一頁，每頁提醒自己「保持同上一張同一個主角同畫風」，唔使等我逐頁貼場景。'
     ];
     if (P.extras.trim()) instr.push('額外要求：' + P.extras.trim());
     if (custom) instr.push('每個節拍入面嘅「' + theme + '」要換成具體場景、用品同步驟，唔好照抄通用句。');
@@ -276,20 +276,23 @@
   }
 
   function toMd(M) {
-    var out = ['# 《' + M.title[0] + '》Prompt 包', '', GATE, ''];
+    var out = ['# 《' + M.title[0] + '》Prompt 包', '', GATE, '', SAFE_TXT, ''];
     out.push('## 人物設定卡', '');
     M.card.forEach(function (kv) { out.push('- **' + kv[0] + '**：' + kv[1]); });
     out.push('', '## 逐頁表', '', '| 頁 | 場景 | 文字 |', '|---|---|---|');
     M.rows.forEach(function (r) { out.push('| ' + r.label + ' | ' + r.scene + ' | ' + r.lines.join('<br>') + ' |'); });
     out.push('', '## 生圖指示', '');
     M.instr.forEach(function (t, i) { out.push((i + 1) + '. ' + t); });
-    out.push('', STEP4);
+    out.push('', '## 做書流程確認位（成份 Prompt 只停呢 3 處，其餘自己連續做）', '');
+    out.push('1）' + COVER_STOP);
+    out.push('2）' + OV_HEAD + OV_STOP);
+    out.push('3）' + STEP4);
     return out.join('\n');
   }
 
   function renderPrompt(root) {
     if (!P) P = newPrompt();
-    if (P.step !== 'form') return wizard(root);
+    if (P.step === 'result') return promptResult(root);
     var opts = pageOptions(P);
     if (opts.indexOf(P.pages) < 0) P.pages = opts[opts.length - 1];
     var themes = Object.keys(D.titles).map(function (t) { return { v: t, label: t }; }).concat([{ v: '__custom', label: '✍️ 自己寫主題' }]);
@@ -365,7 +368,7 @@
         P.theme = cleanTheme($('#pThemeTxt', root).value);
         if (!P.theme) { var ti = $('#pThemeTxt', root); ti.classList.add('bad'); ti.focus(); Share.toast('先寫低自己嘅主題喇'); return; }
       }
-      P.step = 'cover';
+      P.step = 'result';
       renderPrompt(root);
       window.scrollTo(0, 0);
     });
@@ -374,6 +377,10 @@
   function promptResult(root) {
     var M = buildModel(P);
     var md = toMd(M);
+    var nContent = P.pages - 1;
+    var slots = ['封面'].concat(M.rows.slice(1).map(function (r) { return '第 ' + r.label + ' 頁'; }));
+    for (var k = M.rows.length; k < P.pages; k++) slots.push('第 ' + (k + 1) + ' 頁');
+    P.ups = P.ups || []; P.texts = P.texts || [];
     root.innerHTML =
       '<div class="formwrap"><div class="q-head"><span class="tag alt">已完成</span><h2>《' + esc(M.title[0]) + '》Prompt 包</h2><p>複製全文，貼落 ChatGPT／Gemini，逐頁生圖。</p></div>' +
       (M.comp ? '<div class="notebox warm">呢個主題有罐頭版，可以即刻出書 → <a href="#/create/can/' + esc(M.comp.art) + '">用罐頭版《' + esc(Book.fill(M.comp.title.zh, SAMPLE)) + '》</a></div>' : '') +
@@ -383,6 +390,13 @@
       M.rows.map(function (r) { return '<tr><td class="n">' + esc(r.label) + '</td><td>' + esc(r.scene) + '</td><td>' + r.lines.map(function (l) { return '<span class="line">' + esc(l) + '</span>'; }).join('') + '</td></tr>'; }).join('') +
       '</tbody></table></div></div>' +
       '<div class="card pp-card"><h3>生圖指示</h3><ol class="pp-inst">' + M.instr.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ol></div>' +
+      '<div class="card pp-card"><h3>拎圖返嚟砌書</h3><p>喺你個 AI 度出好圖之後，逐頁上載成品圖（封面＋' + nContent + ' 頁）返嚟呢度砌書；文字可改，雙語每行一種語言。圖會排喺上、字喺下。唔使再確認，上載齊就㩒「砌成書」。</p><div class="uplist">' +
+      slots.map(function (s2, i) {
+        var u = P.ups[i], tx = P.texts[i] != null ? P.texts[i] : (i > 0 && M.rows[i] ? M.rows[i].lines.join('\n') : '');
+        return '<div class="uprow"><div class="nm">' + esc(s2) + '</div>' + (u ? '<img src="' + esc(u.url) + '" alt="">' : '') + '<button type="button" class="opt" data-up="' + i + '">' + (u ? '換圖' : '上載圖') + '</button>' +
+          (i > 0 ? '</div><textarea class="areain" data-tx="' + i + '" placeholder="呢頁文字">' + esc(tx) + '</textarea>' : '</div>');
+      }).join('') + '</div><input type="file" id="wFile" accept="image/*" hidden>' +
+      '<button type="button" class="cta big mt24" id="wBuild">砌成書 →</button><div id="wBook"></div></div>' +
       '<div class="btnrow"><button type="button" class="cta ghost" id="rBack">‹ 返去改設定</button></div></div>';
     $('#rCopy', root).addEventListener('click', function () {
       Share.copyText(md).then(function (ok) { Share.toast(ok ? '已複製全文，去貼俾 AI 啦' : '複製唔到，請手動揀字複製'); });
@@ -396,107 +410,32 @@
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 500);
     });
     $('#rBack', root).addEventListener('click', function () { P.step = 'form'; renderPrompt(root); window.scrollTo(0, 0); });
-  }
-  function wizHead(n, title, todo) {
-    var names = ['揀設定', '封面', '畫風', 'Overview＋砌書'];
-    return '<div class="formwrap"><div class="wizsteps">' + names.map(function (t, i) { return '<span class="' + (i + 1 === n ? 'on' : i + 1 < n ? 'ok' : '') + '">' + (i + 1) + ' ' + t + '</span>'; }).join('') + '</div>' +
-      '<div class="q-head"><h2>' + esc(title) + '</h2><p>' + esc(todo) + '</p></div>';
-  }
-  function pbox(i, title, text) {
-    return '<div class="flabel">' + esc(title) + '</div><div class="promptbox">' + esc(text) + '</div><button type="button" class="cta ghost mt14" data-copy="' + i + '">複製呢段 Prompt</button>';
-  }
-
-  function wizard(root) {
-    var M = buildModel(P), PR = [];
-    var st = D.styles[P.style], sn = st.n.replace(/\s*★預設/, '');
-    var look = P.photoText.trim() || '親切、符合年齡嘅小朋友';
-    var ratio = M.ratio;
-    var pre = GATE + '\n' + SAFE_TXT + (M.custom ? '\n每個節拍入面嘅「' + P.theme + '」要換成具體場景、用品同步驟，唔好照抄通用句。' : '') + '\n';
-    var chara = '主角「' + P.name + '」（' + P.age + P.gender + '），外貌：' + look + '；畫風：' + sn + '（' + st.spec + '）';
-    var rule = '圖入面唔好有任何文字、字母、數字或水印；畫面底部留一段平靜空間；比例「' + ratio + '」。';
-    var coverP = pre + '請畫一張兒童繪本封面插圖。\n' + chara + '\n封面畫面：' + M.rows[0].scene + '\n要求：' + rule + '主角面清楚。\n' + COVER_STOP;
-    var nContent = P.pages - 1, beatN = M.rows.length - 1;
-    var scenes = M.rows.slice(1).map(function (r) { return r.label + '. ' + r.scene; }).join('\n');
-    var expand = nContent > beatN ? '\n故事得 ' + beatN + ' 個節拍，但要 ' + nContent + ' 頁內文：請將節拍拆細，並喺中段加一次「練習→失敗→再試」，擴展到剛好 ' + nContent + ' 頁，每頁寫出場景同文字（' + Book.LANGS[P.lang].label + '）。' : '';
-    var ovP = pre + OV_HEAD + '\n請一次過畫「一張」全書分鏡總覽圖（contact sheet）：全書 ' + P.pages + ' 頁（封面＋' + nContent + ' 頁內文）按次序排成格仔，每格一個畫面，唔好一張張散生。\n同時用文字列出「角色一致性設定」（外貌、髮型、衣著、五官、色板），之後逐頁畫圖一定要跟。\n' + chara + '\n節拍：\n' + scenes + expand + '\n' + rule + '\n' + OV_STOP;
-    var pageP = pre + M.rows.slice(1).map(function (r) { return '第 ' + r.label + ' 頁：' + r.scene + '\n要求：跟總覽圖同角色設定；' + rule; }).join('\n\n') + (expand ? '\n\n（擴展出嚟嘅頁數都用同一格式：場景＋「' + rule + '」）' : '') + '\n\n' + STEP4;
-    function go(s) { P.step = s; renderPrompt(root); window.scrollTo(0, 0); }
-    function copyBind() {
-      $$('[data-copy]', root).forEach(function (b) {
-        b.addEventListener('click', function () { Share.copyText(PR[+b.getAttribute('data-copy')]).then(function (ok) { Share.toast(ok ? '已複製，去貼俾 AI 啦' : '複製唔到，請手動揀字複製'); }); });
-      });
-    }
-    var html;
-    if (P.step === 'cover') {
-      PR.push(coverP);
-      html = wizHead(2, '封面確認', '睇清楚封面內容，OK 就繼續。') +
-        '<div class="card"><dl class="pp-kv"><dt>書名</dt><dd>《' + esc(M.title[0]) + '》</dd><dt>主角設定</dt><dd>' + esc(chara) + '</dd><dt>封面畫面</dt><dd>' + esc(M.rows[0].scene) + '</dd><dt>已揀畫風</dt><dd>' + esc(sn) + '</dd></dl>' +
-        pbox(0, '封面專用 Prompt', coverP) + '<div class="donewhen">完成條件：封面內容冇問題，㩒「確認，繼續」。</div>' +
-        '<div class="btnrow"><button type="button" class="cta ghost" id="wBack">‹ 改設定</button><button type="button" class="cta grow2" id="wNext">確認，繼續</button></div></div></div>';
-      root.innerHTML = html; copyBind();
-      $('#wBack', root).addEventListener('click', function () { go('form'); });
-      $('#wNext', root).addEventListener('click', function () { go('style'); });
-    } else if (P.step === 'style') {
-      PR.push(coverP);
-      root.innerHTML = wizHead(3, '畫風確認', '先生一張封面圖，對吓畫風啱唔啱。') +
-        '<div class="card"><ol class="pp-inst"><li>複製下面封面 Prompt，貼去 ChatGPT／Gemini 生一張封面圖。</li><li>睇吓畫風係咪你想要嘅（' + esc(sn) + '）。</li><li>OK 就㩒「畫風 OK」；唔啱就返去改畫風。</li></ol>' +
-        '<button type="button" class="cta ghost mt14" data-copy="0">複製封面 Prompt</button><div class="donewhen">完成條件：你手上有一張畫風滿意嘅封面圖。</div>' +
-        '<div class="btnrow"><button type="button" class="cta ghost" id="wStyle">‹ 返去改畫風</button><button type="button" class="cta grow2" id="wNext">畫風 OK，繼續</button></div></div></div>';
-      copyBind();
-      $('#wStyle', root).addEventListener('click', function () { go('form'); });
-      $('#wNext', root).addEventListener('click', function () { P.ov = false; go('overview'); });
-    } else {
-      PR.push(ovP, pageP, toMd(M));
-      var slots = ['封面'].concat(M.rows.slice(1).map(function (r) { return '第 ' + r.label + ' 頁'; }));
-      for (var k = M.rows.length; k < P.pages; k++) slots.push('第 ' + (k + 1) + ' 頁');
-      P.ups = P.ups || []; P.texts = P.texts || [];
-      html = wizHead(4, 'Overview＋砌成書', '先出全書總覽，再逐頁定稿，最後上載成品圖砌書。') +
-        '<div class="card">' + pbox(0, 'A. 全書 overview Prompt（一次過出一張分鏡總覽圖＋角色一致性設定）', ovP) +
-        '<div class="donewhen">完成條件：AI 俾咗你一張全書總覽圖同角色設定，你覺得 OK。</div>';
-      if (!P.ov) html += '<button type="button" class="cta big mt24" id="wOv">Overview OK，繼續</button></div></div>';
-      else {
-        html += '</div><div class="card mt14"><h3>B. 逐頁定稿 Prompt</h3><p>喺同一個對話逐頁貼，每頁一張成品圖（圖唔好內嵌文字、底部留平靜空間）。</p>' + pbox(1, '逐頁 Prompt', pageP) +
-          '<button type="button" class="cta ghost mt14" data-copy="2">複製整包 .md</button></div>' +
-          '<div class="card mt14"><h3>C. 拎圖返嚟砌書</h3><p>逐頁上載成品圖（封面＋' + nContent + ' 頁）；文字可改，雙語每行一種語言。圖會排喺上、字喺下。</p><div class="uplist">' +
-          slots.map(function (s, i) {
-            var u = P.ups[i], tx = P.texts[i] != null ? P.texts[i] : (i > 0 && M.rows[i] ? M.rows[i].lines.join('\n') : '');
-            return '<div class="uprow"><div class="nm">' + esc(s) + '</div>' + (u ? '<img src="' + esc(u.url) + '" alt="">' : '') + '<button type="button" class="opt" data-up="' + i + '">' + (u ? '換圖' : '上載圖') + '</button>' +
-              (i > 0 ? '</div><textarea class="areain" data-tx="' + i + '" placeholder="呢頁文字">' + esc(tx) + '</textarea>' : '</div>');
-          }).join('') + '</div><input type="file" id="wFile" accept="image/*" hidden>' +
-          '<button type="button" class="cta big mt24" id="wBuild">砌成書 →</button><div id="wBook"></div></div><div class="btnrow"><button type="button" class="cta ghost" id="wBack">‹ 返去畫風</button></div></div>';
+    var file = $('#wFile', root), cur = 0;
+    $$('[data-up]', root).forEach(function (b) { b.addEventListener('click', function () { cur = +b.getAttribute('data-up'); file.click(); }); });
+    $$('[data-tx]', root).forEach(function (t) { t.addEventListener('input', function () { P.texts[+t.getAttribute('data-tx')] = t.value; }); });
+    file.addEventListener('change', function () {
+      var f = file.files && file.files[0]; if (!f) return;
+      P.ups[cur] = { url: URL.createObjectURL(f), name: f.name };
+      scrollKeep(function () { renderPrompt(root); });
+    });
+    $('#wBuild', root).addEventListener('click', function () {
+      for (var i = 0; i < slots.length; i++) if (!P.ups[i]) { Share.toast('「' + slots[i] + '」未上載圖'); return; }
+      var keys = Book.LANGS[P.lang].keys, T = titleFor(P.theme);
+      var pack = { age: P.age, title: { zh: T.zh, canto: T.canto, en: T.en }, cover: P.ups[0].url, pages: [] };
+      for (var j = 1; j < slots.length; j++) {
+        var tx = P.texts[j] != null ? P.texts[j] : (M.rows[j] ? M.rows[j].lines.join('\n') : ''), ls = tx.split('\n'), pg = { img: P.ups[j].url };
+        keys.forEach(function (key, n) { pg[key] = ls[n] || ''; });
+        pack.pages.push(pg);
       }
-      root.innerHTML = html; copyBind();
-      var ovb = $('#wOv', root);
-      if (ovb) ovb.addEventListener('click', function () { P.ov = true; renderPrompt(root); });
-      $('#wBack', root).addEventListener('click', function () { go('style'); });
-      if (!P.ov) return;
-      var file = $('#wFile', root), cur = 0;
-      $$('[data-up]', root).forEach(function (b) { b.addEventListener('click', function () { cur = +b.getAttribute('data-up'); file.click(); }); });
-      $$('[data-tx]', root).forEach(function (t) { t.addEventListener('input', function () { P.texts[+t.getAttribute('data-tx')] = t.value; }); });
-      file.addEventListener('change', function () {
-        var f = file.files && file.files[0]; if (!f) return;
-        P.ups[cur] = { url: URL.createObjectURL(f), name: f.name };
-        scrollKeep(function () { renderPrompt(root); });
+      var opt = { name: P.name, lang: P.lang, fmt: P.fmt }, box = $('#wBook', root);
+      box.innerHTML = '<div class="bookframe"><div id="wViewer"></div></div><div class="actions"><button type="button" class="cta done wide" id="wDl">' + (P.fmt === 'img' ? '下載圖檔' : '下載 PDF') + '</button></div>';
+      if (viewer) viewer.destroy();
+      viewer = Book.mount($('#wViewer', box), pack, opt);
+      $('#wDl', box).addEventListener('click', function () {
+        var fn = P.fmt === 'img' ? PDFExport.exportImages : PDFExport.exportPdf;
+        PDFExport.run($('#wDl', box), box, function (prog) { return fn(pack, opt, prog); }, P.fmt === 'img');
       });
-      $('#wBuild', root).addEventListener('click', function () {
-        for (var i = 0; i < slots.length; i++) if (!P.ups[i]) { Share.toast('「' + slots[i] + '」未上載圖'); return; }
-        var keys = Book.LANGS[P.lang].keys, T = titleFor(P.theme);
-        var pack = { age: P.age, title: { zh: T.zh, canto: T.canto, en: T.en }, cover: P.ups[0].url, pages: [] };
-        for (var j = 1; j < slots.length; j++) {
-          var tx = P.texts[j] != null ? P.texts[j] : (M.rows[j] ? M.rows[j].lines.join('\n') : ''), ls = tx.split('\n'), pg = { img: P.ups[j].url };
-          keys.forEach(function (key, n) { pg[key] = ls[n] || ''; });
-          pack.pages.push(pg);
-        }
-        var opt = { name: P.name, lang: P.lang, fmt: P.fmt }, box = $('#wBook', root);
-        box.innerHTML = '<div class="bookframe"><div id="wViewer"></div></div><div class="actions"><button type="button" class="cta done wide" id="wDl">' + (P.fmt === 'img' ? '下載圖檔' : '下載 PDF') + '</button></div>';
-        if (viewer) viewer.destroy();
-        viewer = Book.mount($('#wViewer', box), pack, opt);
-        $('#wDl', box).addEventListener('click', function () {
-          var fn = P.fmt === 'img' ? PDFExport.exportImages : PDFExport.exportPdf;
-          PDFExport.run($('#wDl', box), box, function (prog) { return fn(pack, opt, prog); }, P.fmt === 'img');
-        });
-      });
-    }
+    });
   }
   /*PROMPT-FORM-END*/
 
