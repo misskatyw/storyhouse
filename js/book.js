@@ -162,6 +162,24 @@
     });
   }
 
+  // A4 橫版字區高度固定：排唔落就按比例縮細字（同 PDF 導出 fitText 一致），唔裁字
+  function fitA4Text(page) {
+    if (!page.classList.contains('a4p')) return;
+    var txt = page.querySelector('.bk-text');
+    if (!txt) return;
+    var cover = txt.classList.contains('cover');
+    var ka = cover ? '--czhs' : '--zhs', kb = cover ? '--cens' : '--ens';
+    var a = parseFloat(page.style.getPropertyValue(ka)) || 0;
+    var b = parseFloat(page.style.getPropertyValue(kb)) || 0;
+    if (!a || !b) return;
+    var f = 1;
+    for (var i = 0; i < 14 && txt.scrollHeight > txt.clientHeight + 1; i++) {
+      f *= 0.92;
+      page.style.setProperty(ka, Math.round(a * f));
+      page.style.setProperty(kb, Math.round(b * f));
+    }
+  }
+
   function mount(container, pack, o) {
     var fmt = FORMATS[o.fmt] || FORMATS.a4;
     var specs = pagesFor(pack);
@@ -192,7 +210,9 @@
     function render() {
       var u = Math.max(stage.clientWidth, 200) / BASE;
       stage.innerHTML = '';
-      stage.appendChild(buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, u: u, num: idx + 1 }));
+      var pg = buildPage(specs[idx], { pack: pack, lang: o.lang, name: o.name, fmt: o.fmt, u: u, num: idx + 1 });
+      stage.appendChild(pg);
+      fitA4Text(pg);
       pager.textContent = '第 ' + (idx + 1) + ' 頁 / 共 ' + total + ' 頁';
       prev.disabled = idx === 0;
       next.disabled = idx === total - 1;
