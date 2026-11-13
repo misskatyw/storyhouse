@@ -47,14 +47,9 @@
       <div class="featured" id="featured"></div>
     </section>
 
-    <section class="block" id="shelf">
-      <div class="sec-head"><h2>按年齡揀書</h2><p>現成插圖套裝，填個名就出書</p></div>
-      <div class="filters">
-        <div class="agetabs" id="ageFilter" role="group" aria-label="年齡篩選"></div>
-        <div class="agetabs" id="genderFilter" role="group" aria-label="性別篩選"></div>
-      </div>
-      <div class="shelf" id="shelfGrid"></div>
-      <p class="empty" id="shelfEmpty" hidden></p>
+    <section class="block">
+      <div class="sec-head"><h2>揀年齡</h2><p>撳入去睇該年齡嘅書架</p></div>
+      <div class="agegrid" id="ageTiles"></div>
     </section>
 
     <section class="block">
@@ -72,6 +67,17 @@
         </a>
       </div>
     </section>
+  </section>
+
+  <!-- VIEW 書架 -->
+  <section class="view" id="view-shelf" data-view="shelf" hidden>
+    <div class="sec-head"><h2>書架</h2><p>現成插圖套裝，填個名就出書</p></div>
+    <div class="filters">
+      <div class="agetabs" id="ageFilter" role="group" aria-label="年齡篩選"></div>
+      <div class="agetabs" id="genderFilter" role="group" aria-label="性別篩選"></div>
+    </div>
+    <div class="shelf" id="shelfGrid"></div>
+    <p class="empty" id="shelfEmpty" hidden></p>
   </section>
 
   <!-- VIEW 2 製作 -->
